@@ -1,0 +1,325 @@
+* {padding:0;margin:0;outline:none}
+img {border:0}
+ul {list-style:none}
+table {border-collapse:collapse;border:0}
+table td {padding:0;margin:0}
+a {color:#536168;text-decoration:none}
+a:hover {text-decoration:underline}
+.clearfix:after {content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;font-size:0}
+.clearfix {display:inline-block}
+html[xmlns] .clearfix {display:block}
+.clear {
+clear:both;
+line-height:1%;
+margin-bottom:-1px;
+height:1px;
+overflow:hidden;
+font-size:0px
+}
+.content {position:relative}
+.bg {
+	position:absolute;
+	left:50%;
+	margin-left:-560px;
+	top:0;
+	width:1121px;
+	height:464px;
+	background:url(../images/bg.jpg) no-repeat
+}
+body {
+text-align:center;
+font:12px/14px Arial, Helvetica, sans-serif;
+color:#536168;
+background:url(../images/uzor.jpg);
+margin: 0;
+padding: 0;
+width: 100%;
+}
+.main {
+width:980px;
+margin:0 auto;
+text-align:left
+}
+.header {width:980px;position:relative}
+.logo {
+width:175px;
+height:116px;
+background:url(../images/logo.png);
+margin:0 auto;
+display:block;
+cursor:pointer;
+position:relative;
+left:-12px;
+top:8px
+}
+.venecia_go, .prizes {margin-left:42px}
+.ul_middle {
+margin:50px 0 40px 0;
+display:block;
+padding-left:200px
+}
+.ul_middle li {
+float:left;
+width:216px;
+margin-right:132px
+}
+.ul_middle li.marr0 {margin-right:0}
+.ul_middle li span {
+	font:12px Arial, Helvetica, sans-serif;
+	font-style:italic;
+	color:#536168;
+	margin:5px 0 0 15px;
+	width:190px;
+	display:inline-block
+	}
+.ul_middle li a {
+background:url(../images/rama_middle.png);
+width:216px;
+height:217px;
+display:block;
+cursor:pointer;
+}
+.ul_middle li a img {
+display:block;
+width:192px;
+height:192px;
+display:block;
+padding:11px 0 0 12px
+}
+.ul_small {
+display:block;
+margin:26px 0 30px 0
+}
+.ul_small li {
+float:left;
+width:228px;
+margin:0 0 35px 0
+}
+.ul_small li b {margin-left:4px;font-style:italic;float:left;width:125px;font-weight:normal}
+.ul_small li a {
+background:url(../images/rama_small.png);
+width:81px;
+height:80px;
+float:left;
+cursor:pointer
+}
+.ul_small li a img {
+display:block;
+width:71px;
+height:71px;
+padding:4px 0 0 5px
+}
+.ul_small li strong {
+display:block;
+margin:2px 0 5px 5px
+}
+.ul_small li span {margin-left:5px}
+strong.red {
+color:#ed1413;
+font-size:16px;
+display:block;
+margin:5px 0 0 15px
+}
+strong.grey {
+color:#8e8e8e;
+font-size:14px;
+display:block;
+margin:3px 0 0 15px
+}
+.footer {
+width:914px;
+border-top:1px solid #c6c6c6;
+padding:14px 0 16px 0;
+color:#535353;
+font-size:11px;
+position:relative;
+line-height:16px
+}
+.copy {
+position:absolute;
+left:-12px;
+top:14px;
+}
+.media5 {vertical-align:middle}
+.l {float:left}
+.r {float:right}
+.shadow {
+background:#000;
+opacity:0.7;
+filter:alpha(opacity=70);
+display:none;
+left:0;
+position:fixed;
+top:0;
+bottom:0;
+width:100%;
+z-index:999;
+height:100%;
+}
+.big_ph { display:none; position:absolute; top:0; z-index:9999;}
+.big_ph img { display:none; padding:0; margin:0;left:50%; margin-left:-250px; border:solid 10px #fff; position:fixed; top:50%; margin-top:-250px; z-index:9999;}
+
+.big_ph_two { display:none; position:absolute; top:0; z-index:9999;}
+#bigimg { 
+  background: #fff;
+  display:none; 
+  padding:10px; 
+  margin:0;
+  left:50%; 
+  margin-left:-250px; 
+  border:solid 10px #fff; 
+  position:fixed; top:50%; 
+  margin-top:-250px; 
+  z-index:9999;}
+#bigimg img {
+  display: block !important;
+}
+#bigimg p {
+  position: fixed;
+  left:50%; 
+  margin: 5px 0;
+  text-align:  center;
+}
+.center {text-align:center}
+
+.raf_box {padding:33px 0 0 73px;width:350px;margin:0 auto 25px auto;height:52px;position:relative}
+.grey_plashka {width:540px;height:50px;background:#f7f7f7;position:absolute;top:22px;left:-55px}
+.raf {background:url(../images/raf.png) no-repeat;width:76px;height:82px;position:absolute;top:0;left:-20px;z-index:1}
+.rel {position:relative}
+
+
+.ul_small_two {
+display:block;
+margin:0px 0 30px 0
+}
+.ul_small_two li {
+float:left;
+width:115px;
+margin:0 0 35px 0
+}
+.ul_small_two li a {
+float:left;
+cursor:pointer
+}
+.ul_small_two li a img {
+display: block;
+    height: 71px;
+    padding: 0 0 0 5px;
+    width: 71px;
+}
+.photo-head-bg {
+	background:url(../images/header-bg.png) no-repeat center top;
+}
+.logo-photo {
+width:175px;
+height:116px;
+background:url(../images/logo.png);
+margin:0 auto;
+display:block;
+cursor:pointer;
+position:relative;
+top:8px
+}
+.vibor {
+  background:url(../images/bg-vibor.png) no-repeat left top;
+  float: right;
+  height: 43px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 318px;
+}
+.vibor-day {
+  width: 80px;
+  height: 23px;
+  font-size: 14px;
+  font-family: Arial;
+  color: #536168;
+  background:url(../images/vibor-day.jpg) no-repeat left top;
+  margin-left: 223px;
+  margin-top: 6px;
+  padding: 7px 0 0 9px;
+  position: relative;
+}
+#pager {
+  margin-bottom: 100px;
+}
+#pager a {
+  float: left;
+  display:  block;
+  margin-left: 10px;
+       padding-top: 4px;
+}
+.pager {
+    float: left;
+    padding: 0 15px;
+}
+.pager li {
+    float: left;
+    list-style: none outside none;
+    text-align: center;
+    width: 30px;
+}
+.pager li a {
+    color: #4C4F55;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+.pager li a.active {
+  background:url(../images/pagea-bg.jpg) no-repeat left 0px;
+  width: 21px;
+  height: 21px;
+  color: #fff;
+}
+#vdays {
+  width: 80px;
+  border: none;
+  color: #536168;
+}
+#selectday {
+    position: absolute;
+    right: 6px;
+    top: 13px;
+}
+#title-akc {
+  float: left;
+   margin-bottom: 40px;
+    margin-top: 44px;
+}
+#title-akc h1 {
+  font-size: 48px;
+}
+
+/* Box image    */
+.top-tal {
+  background: url(../images/bg-t.png) repeat-x;
+  height: 5px;
+}
+.top-lbg {
+  background: url(../images/img-tl.png) no-repeat;
+}
+.top-rbg {
+  background: url(../images/img-tr.png) no-repeat;
+  padding-top: 5px;
+}
+
+.bot-tal {
+  background: url(../images/bg-b.png) repeat-x;
+  height: 5px;
+}
+.bot-lbg {
+  background: url(../images/img-bl.png) no-repeat;
+}
+.bot-rbg {
+  background: url(../images/img-br.png) no-repeat;
+  padding-top: 5px;
+}
+
+.con-tal {
+}
+.con-lbg {
+  background: url(../images/bg-l.png) repeat-y left top;
+}
+.con-rbg {
+  background: url(../images/bg-r.png) repeat-y right top;
+}

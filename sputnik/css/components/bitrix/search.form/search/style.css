@@ -1,0 +1,29 @@
+form.search input, form.search select {
+	font-size: 10px;
+}
+
+form.search input.submit { height: 18px; width: 33px; }
+
+form.search select {
+	width: 169px;
+	border: 1px solid #005A9C;
+	height: 17px;
+}
+
+.search p {
+	color: #fff;
+	font-size: 11px;
+	margin: 0;
+}
+
+.search p img {
+	display: inline;
+}
+
+.search input.text {
+	width: 130px;
+	height: 13px;
+	border: 1px solid #005A9C;
+}
+
+.search span.label { color: #95B5DF; text-transform: uppercase; font-weight: bold; }

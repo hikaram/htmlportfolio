@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.rating.css">
+		<script src="js/html5.js"></script>
+		<script src="js/jquery-1.6.2.min.js"></script>
+		<script src="js/jquery.rating-2.0.min.js"></script>
+		<script>
+		$(function(){
+			$('.rating').rating({
+				fx: 'full',
+	        image: 'images/stars.png',
+	        loader: 'images/ajax-loader.gif'
+			});
+		})
+
+		</script>
+    </head>
+    <body>
+	  <div id="wrapper">
+		<header>
+			<form>
+				<span class="inpsearch"><input type="text" value="" class="inptxt" /><input type="submit" class="inpsubmit" value="" /></span>
+			</form>
+      	<a href="#"><img alt="" src="images/logo.png"/></a>
+		</header>
+
+		  <section class="content">
+		  <div class="b-tabs">
+
+			<ul class="tabNavigation">
+				<li><a href="index.html" class="selected">APPs</a></li>
+				<li><a href="index1.html">Categories</a></li>
+			</ul>
+            <figure class="clear"></figure>
+			<div id="first" style="display: block;">
+			  <ul class="list-apps">
+				<li>
+               <span class="list-apps-item cf">
+                   <span class="list-apps-item-l">
+                       <img alt="" src="images/pic1.png"/>
+
+                       <h4>Tetris Blitz EA</h4>
+                       <span class="rating"></span>
+								<span class="numm">(57 600)</span>
+                   </span>
+                   <span class="list-apps-item-r">
+                   	<a href="content.html" class="free">
+                         Free
+                         <img alt="" src="images/but3-r.png"/>
+                   	</a>
+                   </span>
+               </span>
+				</li>
+				<li>
+               <span class="list-apps-item cf">
+                   <span class="list-apps-item-l">
+                       <img alt="" src="images/pic2.png"/>
+
+                       <h4>Bicycle v 2.0</h4>
+                       <span class="rating"></span>
+								<span class="numm">(1 000 000 345)</span>
+                   </span>
+                   <span class="list-apps-item-r">
+                   	<a href="content.html" class="buy">
+                         Buy 50,08$
+                         <img alt="" src="images/but1-r.png"/>
+                   	</a>
+                   </span>
+               </span>
+				</li>
+				<li>
+               <span class="list-apps-item cf">
+                   <span class="list-apps-item-l">
+                       <img alt="" src="images/pic3.png"/>
+
+                       <h4>Epic PIXAR</h4>
+                       <span class="rating"></span>
+								<span class="numm">(126)</span>
+                   </span>
+                   <span class="list-apps-item-r">
+                   	<a href="content.html" class="notbut">
+                         Not avaliable
+                         <img alt="" src="images/but2-r.png"/>
+                   	</a>
+                   </span>
+               </span>
+				</li>
+				<li>
+               <span class="list-apps-item cf">
+                   <span class="list-apps-item-l">
+                       <img alt="" src="images/pic1.png"/>
+
+                       <h4>Shopping</h4>
+                       <span class="rating"></span>
+								<span class="numm">(134 897)</span>
+                   </span>
+                   <span class="list-apps-item-r">
+                   	<a href="content.html" class="free">
+                         Free
+                         <img alt="" src="images/but3-r.png"/>
+                   	</a>
+                   </span>
+               </span>
+				</li>
+			  </ul>
+			</div>
+
+		  </section>
+	  </div>
+    </body>
+</html>

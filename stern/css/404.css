@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+/* reset */
+html, body { margin:0; padding:0; cursor:default; text-align:left;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0 0 2px 0; font-weight:normal;}
+a { outline:none; cursor:pointer;}
+img { margin:0; padding:0; border:0;}
+table, td { border-collapse:collapse; margin:0; padding:0; vertical-align:middle; border-spacing:0;}
+p { margin:0; padding:0 0 10px 0;}
+ul, li { margin:0; padding:0; list-style:none;}
+form { margin:0; padding:0;}
+:focus { outline:none;}
+
+/* general */
+html,body { height:100%; min-height: 800px; font-family: Arial; font-size:14px;}
+body { background:url(../images/background.jpg) no-repeat center top #051a27;}
+
+.main { position:relative; height:100%; overflow:hidden;}
+
+.relative { position:relative;}
+.logo { position:absolute; left:50%; top:71px; margin: 0px 0 0 -538px;}
+.download {
+   left: 8%;
+    margin: 153px 0 0 46px;
+    position: absolute;
+    top: 308px;
+}
+
+
+.login { background:url(../images/login.png); width:485px; height:100px; position:absolute; right:-280px; top:50%; margin:-117px 0 0 0;}
+
+	.login input {font-size:14px; color:#2a2a2a; margin:0; padding:0; border:0; background:none; width:183px;}
+	.login .input_1 { position:absolute; left:224px; top:14px; background: #fff;height: 24px;}
+	.login .input_2 { position:absolute; left:224px; top:49px;background: #fff;height: 24px}
+	.login .input_3 { width:62px; height:62px; cursor:pointer; position:absolute; right:5px; top:9px;}
+  .login p {position: absolute;left:224px; top:5px; color: #fff;}
+	
+#showlogin { cursor:pointer;}
+
+.copyright { position:absolute; left:8%; bottom:25px; font-size:11px; font-family:arial; color:#686767;}
+	.copyright a { font-size:11px; font-family:arial; color:#686767; text-decoration:underline;}
+	.copyright a:hover { text-decoration:none;}
+	.copyright img { margin:0 0 -4px 0;}
+
+.mailto { text-decoration:underline; font-size:12px; color:#1f4f84; position:absolute; left:8%; top:50%; margin:73px 0 0 2px;}
+.mailto:hover { text-decoration:none; }

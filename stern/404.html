@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="hikaram" />
+
+	<title>Stern</title>
+  <link type="text/css" rel="stylesheet" href="css/404.css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+     <!--[if IE 6]>
+<script src="js/pngfix.js"></script>
+<script>
+DD_belatedPNG.fix('img, .login');
+</script>
+<![endif]-->
+  <script type="text/javascript">
+	$(function(){
+	var login = $('body .login');
+	var animate = 0;
+
+		login.click(function(){
+			login.removeAttr('id').stop().animate({right:0},300);
+		}).hover(function(){
+			animate = 0;
+		},function(){
+			animate = 1;
+		});
+
+
+		$('body').click(function(){
+		if(animate == 1)
+			{
+				login.stop().animate({right:-280},300,function(){
+					login.attr('id','showlogin');
+					animate = 0;
+				});
+			}
+		});
+
+
+		$('input[type=text]').each(function(){
+			$(this).attr('defaultvalue',$(this).val());									
+		}).focus(function(){
+			if($(this).val() == $(this).attr('defaultvalue'))
+				$(this).val('');
+		}).blur(function(){
+			if($(this).val() == '')
+				$(this).val($(this).attr('defaultvalue'));
+		});
+	});
+
+$(document).ready(function(){
+});
+</script>
+</head>
+
+<body>
+
+<div class="main">
+	<img width="158" height="31" class="logo" alt="" src="images/logo.png" />
+  <a href="#" class="download"><img width="221" height="197" alt="" src="images/dcatalog.png" /></a>
+    
+   <div class="login">
+     <div class="relative" >
+            <form method="POST" action="">
+                <input type="text" class="input_1" name="name" value="Имя Отчество" defaultvalue="Имя Отчество"/>
+                <input type="text" class="input_2" name="mail" value="E-mail" defaultvalue="E-mail" />
+                <input type="submit" class="input_3" value="" />
+            </form>
+        </div>
+     <div class="relative" style="display: none;">
+       <p>Спасибо USERNAME<br/>
+мы обязательно оповестим<br/>
+вас об открытии сайта</p>
+        </div>
+    </div>
+	<p class="copyright"><a href="http://media5.com">Создание сайта</a>&nbsp;&mdash;&nbsp;&nbsp;<img title="media5" alt="Создание сайта media5" src="images/media5.png"></p><p>
+	
+</p></div>
+
+</body>
+</html>

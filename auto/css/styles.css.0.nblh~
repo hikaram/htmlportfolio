@@ -1,0 +1,235 @@
+/* reset */
+* { outline:none;}
+html, body { margin:0; padding:0; cursor:default; text-align:left;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0; font-weight:bold;}
+img { margin:0; padding:0; border:0;}
+table, td { border-collapse:collapse; margin:0; padding:0; vertical-align:middle; border-spacing:0;  border-spacing:0;}
+a, img, a img, iframe, form, fieldset, abbr, acronym, object, applet { border: none; }
+p { margin:0; padding:0;}
+ul, li { margin:0; padding:0; list-style:none;}
+form { margin:0; padding:0;}
+:focus { outline:none;}
+.clear { clear:both; font-size:0; line-height:0; overflow:hidden; height:0; border:0;}
+a { outline:none; cursor:pointer; text-decoration:underline;}
+a:hover { text-decoration:none;}    
+/* For modern browsers */
+.cf:before,
+.cf:after {
+  content:"";
+  display:table;
+}
+.cf:after {clear:both;}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {zoom:1;} 
+
+.f-l {
+  float: left;
+}
+body {
+  background: #064064;
+  font-family: Arial;
+}  
+#main {width: 992px; margin: 0 auto;}
+#header {    
+  background: url('../images/bgheader.gif') repeat center top;
+  height: 73px;
+  position: relative;
+}
+#header img {
+  position: absolute;
+  left: 42px;
+  top:10px;
+}
+#header span {
+  color: #b7d2df;
+  font-size: 10px;
+  position: absolute;
+  left: 61px;
+  top:45px;
+}
+#menu {
+  margin: 18px 0 5px 0;  
+}
+#menu > a {
+  float: left;
+  font-size: 12px;
+  color: #fff;
+}
+#menu ul, #menutop ul {
+  float: right;
+}
+#menu ul li {
+  display: inline-block;
+  margin-right: 18px;
+}
+#menu ul li a {
+  font-size: 12px;
+  color: #fff;
+}
+
+#menutop {
+  background: #e8e8e9;
+  border-bottom: 1px solid #b7b6b8;
+  border-left: 1px solid #b7b6b8;
+  border-right: 1px solid #b7b6b8;
+  height: 26px;
+}
+#menutop > span {
+  color: #47474B;
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+  margin-left: 15px;
+}
+#menutop ul {
+  background: #cececa;  
+}
+#menutop li {
+  float: left;
+  border-left: 1px solid #939393;
+  border-right: 1px solid #bababa;
+  position: relative;
+}
+#menutop li a {
+  color: #47474B;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 27px;
+  padding: 0 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#menutop li a:hover, #menutop ul li:hover a:hover {
+  background: #042133;
+  color: #fff;
+  text-decoration: underline;
+}
+#menutop li span {
+color: #A67D00;
+    font-size: 12px;
+    position: absolute;
+    right: 13px;
+    top: 6px;
+}
+#content {
+  background: #fff;
+  min-height: 100px;
+}
+#menutop li.add {
+  color: #47474b;
+  background: #909299;
+}
+#menutop li.last {
+  /* Legacy browsers */
+  background: #e5bf71 url('../images/gradient-bg.png') repeat-x top;
+  -o-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  /* Recent browsers */
+  background: -webkit-gradient(
+	linear,
+	left top, left bottom,
+	from(#fde9c0),
+	to(#e5bf71)
+	);
+  background: -webkit-linear-gradient(
+	top,
+	#fde9c0,
+	#e5bf71
+	);
+  background: -moz-linear-gradient(
+	top,
+	#fde9c0,
+	#e5bf71
+	);
+  background: -o-linear-gradient(
+	top,
+	#fde9c0,
+	#e5bf71
+	);
+  background: linear-gradient(
+	top,
+	#fde9c0,
+	#e5bf71
+	);
+}
+#menutop li:last-child {
+  border-right: none !important;
+}
+#menutop li:first-child {
+  border-left: none !important;
+}
+#menutop ul li:hover {
+  background-color: #042133;
+  color: #fff;
+  text-decoration: underline;
+}
+#menutop ul li:hover a {
+  color: #67bbff;
+}
+#menutop ul li:hover > ul { display: block;}
+#menutop ul ul {
+  background: #042133;
+  display: none;
+  position: absolute;
+  top: 27px;
+  right: 0;
+  z-index: 99999;
+  min-width: 100%;
+}
+#menutop ul ul li {
+  border-left: none !important; border-right: none !important;
+  float: none;
+}
+#menutop ul ul li a {
+  color: #fff;
+}
+#menutop li.addmenu {
+  padding-right: 5px;
+}
+#menutop li.addmenu > a {
+  background: url('../images/addmenu.gif') no-repeat right 13px;
+  padding-right: 17px;
+}
+#menutop li.addmenu > a:hover, #menutop li.addmenu:hover > a {
+  background: url('../images/addmenuhover.gif') no-repeat right 13px !important;
+}
+#menutop ul:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+* html #menutop ul { zoom: 1; } /* IE6 */
+*:first-child+html #menutop ul{ zoom: 1; } /* IE7 */
+#searchtop {
+  float: right;
+  margin-top: 14px;
+}
+#searchtop input[type='text'] {
+  color: #838383;
+  font-size: 11px;
+  width: 585px;
+  float: left;
+  padding: 4px;
+  border-bottom: 2px solid #08507f;
+  border-top: 1px solid #b2b2b2;
+  border-left: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+  margin-right: 10px;
+}
+#searchtop input[type='submit'] {
+  background: url('../images/search-button.png') no-repeat;  
+  border: none;
+  width: 79px;
+  height: 22px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#searchtop input[type='submit']:hover {
+  background: url('../images/search-button.png') no-repeat left -22px;
+}

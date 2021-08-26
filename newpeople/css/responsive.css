@@ -1,0 +1,503 @@
+@media only screen and (min-width: 0px) and (max-width: 1220px) {
+    .oneMan {
+        width: 14%;
+    }
+    #footer {width: auto;}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1088px) {
+    /*#imgMain{
+         position: relative;
+         left: -70%;
+     }*/
+    .blockLeft p {
+        color: #FFFFFF;
+        font: bold 24px/27px 'pf_din_text_cond_probold';
+        padding: 0 0 0 9px;
+        text-shadow: 0 1px 1px #7D6B5F;
+    }
+    .blockRight p {
+        color: #FFFFFF;
+        font: 15px/20px 'pf_din_text_cond_proregular';
+        padding: 0 0 0 10%;
+        position: absolute;
+        text-align: center;
+        top: 28%;
+        width: 90%;
+    }
+    .blockRight p span {
+        color: #FFFFFF;
+        display: block;
+        font: 36px/36px 'pf_din_text_cond_probold';
+    }
+
+    .headerTel p {font: 14px/23px 'pf_agora_slab_probold';}
+
+    .mainNav ul li a {
+        font: bold 12px Arial;
+        height: 28px;
+        padding: 12px 10px 0;
+    }
+    .blockInf1 .banner .bannerLeft p {
+        padding: 8px 0 0 62px;
+        font: 16px/17px Arial;
+    }
+    .blockInf1 .banner p span {
+        display: block;
+        font: bold 16px/26px Arial;
+        text-transform: uppercase;
+    }
+    .oneBlockService {
+        float: left;
+        height: 300px;
+        padding: 40px 1% 10px;
+        text-align: center;
+        width: 23%;
+    }
+    .boxImg7 {display: none;}
+    .blockReview {
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 890px) {
+    .oneBlockService {
+        float: left;
+        height: 245px;
+        padding: 40px 1% 10px;
+        text-align: center;
+        width: 23%;
+    }
+    .oneBlockService h2 {
+        color: #FFFFFF;
+        font: 18px/18px 'pf_agora_slab_probold';
+        padding: 15px 0 0;
+    }
+    .oneBlockService p {
+        color: #FFFFFF;
+        font: 12px/16px Arial;
+        padding: 10px 0 0;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 730px) {
+    .headerTel {display: none;}
+    #header {height: auto;}
+    .logo {width: auto; float: none; text-align: center}
+    .headerText {
+        width: auto; float: none;
+    }
+    .lineHeader  {display: none;}
+    .headerText p {
+        color: #666666;
+        float: none;
+        font: 30px 'pf_agora_slab_probold';
+        padding: 15px 10px 0;
+        text-align: center;
+    }
+    #content {
+        padding-bottom: 0;
+    }
+    .footerLogo {
+        float: none;
+        padding: 10px 0 10px;
+        width: auto;
+        text-align: center;
+    }
+    .boxFooterTel {
+        float: none;
+        padding: 46px 0 0;
+        text-align: center;
+        width: auto;
+    }
+    .footerRight {
+        float: none;
+        padding: 10px 0 0;
+        width: auto;
+        text-align: center;
+    }
+    .blockLeft {
+        float: none;
+        width: 100%;
+        padding: 75px 0 0;
+    }
+    .blockLeft p {
+        font: bold 34px/27px 'pf_din_text_cond_probold';
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .buttonOrder {margin: 0 auto 40px;}
+    .imgLeft1, .imgRight1, .imgLeft2, .imgRight2,
+    .imgLeft3, .imgRight3, .imgLeft4, .imgRight4,
+    .imgLeft5, .imgRight5, .imgLeft6, .imgRight6,
+    .imgLeft7, .imgRight7, .imgLeft8, .imgRight8,
+    .imgLeft9, .imgRight9, .imgLeft10, .imgRight10,
+    .imgLeft11, .imgRight11, .imgLeft12, .imgRight12,
+    .imgLeft13, .imgRight13, .imgLeft14, .imgRight14,
+    .imgLeft15, .imgRight15, .imgLeft16, .imgRight16,
+    .imgLeft17, .imgRight17 {display: none;}
+    .boxPeople, .blockRight, .imgRight, .oneBlockService p {display: none;}
+    .boxFooter {
+        position: relative;
+    }
+    .borderFooter {
+        margin: 10px 0 19px;
+    }
+    .iconsFooter {
+        float: none;
+        margin: 0 auto;
+        width: 165px;
+    }
+    #footer p.copy {
+        text-align: center;
+        float: none;
+        margin-bottom: 15px;
+    }
+    .imgLeft {
+        width: auto;
+        float: none;
+    }
+    .iconItem {
+        float: none;
+        height: 70px;
+        margin-bottom: 15px;
+        padding: 25px 0 20px;
+        width: 240px;
+    }
+    .oneBlockService {
+        float: none;
+        height: 145px;
+        padding: 40px 1% 10px;
+        text-align: left;
+        width: 100%;
+    }
+    .oneBlockService img {
+        display: block;
+        float: left;
+        margin: 0 15px 0 0;
+    }
+    .oneBlockService h2 {
+        color: #FFFFFF;
+        font: 20px/18px 'pf_agora_slab_probold';
+        margin-top: 60px;
+        padding: 0;
+    }
+    .banner {
+        background: url("../img/baner-mobi.jpg") no-repeat scroll center top transparent;
+        height: 307px;
+        margin: 14px 0 17px;
+        padding: 0 15px 0 25px;
+        position: relative;
+        width: 190px;
+    }
+    .banner img {display: none;}
+    .bannerLeft {
+        float: none;
+        width: 100%;
+    }
+    .bannerRight {
+        float: none;
+        width: 100%;
+    }
+    .blockInf1 .banner .bannerLeft p {
+        padding: 21px 0 0 0;
+    }
+    .blockInf1 .banner p span {
+        margin: 20px 0 0 0;
+    }
+    .blockInf1 .banner .bannerRight p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .blockInf1 .banner .bannerRight p span {margin: 0; text-transform: none;font: normal 16px/26px Arial;}
+    .iconContact, .iconPrice {
+        font: 20px/28px 'pf_agora_slab_probold';
+        padding: 23px 10px 0 118px;
+    }
+    .mainNav {
+        float: none;
+        width: auto;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#4f4f4f', endColorstr = '#141414');
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#4f4f4f', endColorstr = '#141414')";
+        background-image: -moz-linear-gradient(top, #4f4f4f, #141414);
+        background-image: -ms-linear-gradient(top, #4f4f4f, #141414);
+        background-image: -o-linear-gradient(top, #4f4f4f, #141414);
+        background-image: -webkit-gradient(linear, center top, center bottom, from(#4f4f4f), to(#141414));
+        background-image: -webkit-linear-gradient(top, #4f4f4f, #141414);
+        background-image: linear-gradient(top, #4f4f4f, #141414);
+
+    }
+    .mainNav ul li a{
+        background: url('../img/menumarker.png') no-repeat 10px 10px;
+        padding-left: 35px;
+    }
+    .mainNav ul li a:hover, .mainNav ul li.active a{
+        background: #0b9fc6 url('../img/manumarker-act.png') no-repeat 10px 10px;
+        padding-left: 35px;
+    }
+    .linesCenter {display: none;}
+    .lineService {
+        float: none;
+        width: 100%;
+    }
+    .oneService.second {
+        float: none;
+        margin: 0;
+    }
+    .second .boxImg2 {
+        position: relative;
+        display: none;
+    }
+    .boxOneVacancy {
+        float: none;
+        margin-right: 40px;
+        padding: 48px 0 26px 70px;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+    .boxNavMain {
+        background: #4C4C4C;
+    }
+    .mainNav ul li {
+        float: none;
+        list-style-type: none;
+        margin: 0 1px 0 0;
+    }
+    .mainNav ul li a {
+        text-align: left;
+        margin: 0 10px;
+    }
+    .mainNav ul li a:hover, .mainNav ul li.active a {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        margin: 0 10px;
+    }
+    .blockRight, .boxPeople {display: none;}
+    #navMain {
+        height: auto;
+        margin: 0 auto;
+        text-align: left;
+        width: 100%;
+    }
+    #imgMain {
+        height: 350px;
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: left;
+        width: 100%;
+    }
+    .blockLeft {
+        float: none;
+        padding: 60px 0 0;
+        width: auto;
+    }
+    .boxPriceList table {display: none;}
+    .oneProposition {
+        float: none;
+        padding: 0 0 0 49px;
+        width: 240px;
+    }
+    .boxTitle h1 {font: 34px/34px 'pf_din_text_cond_probold';}
+    .formRight {display: none;}
+    .textServiceInf {
+        display: block;
+        vertical-align: middle;
+        width: auto;
+    }
+    .profitImg {
+        float: none;
+        padding: 16px 60px 0 0;
+        width: auto;
+    }
+    .boxInput input[type="text"] {width: 230px;}
+    .formOrderCont, .boxformOrder {background: none; padding: 0;}
+    .formOrder {padding: 0;}
+    .personalTable {
+        display: none;
+        padding: 6px 0 0;
+        width: 100%;
+    }
+    .boxRightMap {
+        float: none;
+        padding: 0;
+        width: auto;
+    }
+    .blockImgLeft {
+        float: none;
+        margin: -10px 60px 0 0;
+        padding: 1px 0 0;
+        width: auto;
+    }
+    .boxOnePhoto {
+        float: none;
+        padding: 0 4.5%;
+        text-align: center;
+        width: auto;
+    }
+    .blockImgRight2 {
+        float: none;
+        margin: 0;
+        padding: 1px 0 0;
+        width: auto;
+    }
+    .boxServicePrice {
+        margin: 0;
+        padding-top: 0;
+    }
+    .oneServicePrice {
+        float: left;
+        padding: 0;
+        width: auto;
+    }
+    .boxOneList {
+        float: none;
+        padding: 0 10% 0 0;
+        width: auto;
+    }
+    .blockImgService {
+        display: block;}
+    .textServiceInf .boxOneList {
+        float: none;
+        padding: 0 5% 0 0;
+        width: auto;
+    }
+    .boxMapInf .leftInf {
+        float: none;
+        padding: 40px 3.8% 0 0;
+        width: auto;
+    }
+    .boxRightMap {
+        float: none;
+        padding: 0;
+        width: auto;
+    }
+    .boxRightMap a img  {width: 100%;}
+    .oneServicePrice2 .boxImg6 {
+        float: none;
+    }
+    .blockImgRight3 {
+        float: none;
+        margin: 10px 0 0 50px;
+        padding: 1px 0 0;
+        width: auto;
+    }
+    .oneServicePrice2 {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+    }
+    .descriptionPrice {
+        float: none;
+        padding: 22px 0 0 18px;
+        width: auto;
+    }
+    .oneServicePrice3 {
+        margin: 0 auto;
+        padding: 0;
+        width: auto;
+    }
+    .oneServicePrice3 .descriptionPrice {
+        width: auto;
+    }
+    .oneServicePrice3 .boxImg6 {
+        float: none;
+    }
+    .blockImgRight4 {
+        float: none;
+        margin: 10px 0 0 70px;
+        padding: 1px 0 0;
+        width: auto;
+    }
+    .blockImgRight5 {
+        float: none;
+        margin: 10px 0 0 70px;
+        padding: 1px 0 0;
+        width: auto;
+    }
+    .oneServicePrice4 .descriptionPrice {
+        width: auto;
+    }
+    .oneServicePrice4 .boxImg6 {
+        float: none;
+    }
+    .oneServicePrice4 {
+        margin: 60px auto 0;
+        padding: 0;
+        width: auto;
+    }
+    .textServiceInf .boxOneList2 {
+        float: none;
+        padding: 0 8% 0 0;
+        width: auto;
+    }
+    .boxServicePrice2 {
+        margin: 0;
+        padding-top: 0;
+    }
+    .oneServicePrice5 {
+        margin: 60px 0 0;
+        padding: 0;
+        width: auto;
+    }
+    .oneServicePrice5 .boxImg6 {
+        float: none;
+    }
+    .oneServicePrice5 .descriptionPrice {
+        width: auto;
+    }
+    .blockImgRight6 {
+        float: none;
+        margin: 0 0 0 60px;
+        padding: 1px 0 0;
+        width: auto;
+    }
+    .oneServicePrice6 .boxImg6 {
+        float: none;
+    }
+    .oneServicePrice6 {
+        margin: 60px auto 0;
+        padding: 0;
+        width: auto;
+    }
+    img.fL {
+        float: none;
+        margin: 18px 0 25px 0;
+        width: auto;
+    }
+    img.fR {
+        float: none;
+        margin: 18px 0 25px 0;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+    .oneImgAbout {
+        float: none;
+        width: auto;
+    }
+    .oneImgAbout + .oneImgAbout {
+        width: auto;
+    }
+    .oneImgAbout + .oneImgAbout + .oneImgAbout {
+        width: auto;
+    }
+    .boxOnePrincipe {
+        float: none;
+        padding: 39px 0 25px 35px;
+        width: 255px;
+    }
+    .oneItemInf1 {
+        float: none;
+        padding: 0 0 0 78px;
+        width: 240px;
+    }
+    .oneItemInf1 a.title {
+        font: 18px/18px 'pf_din_text_cond_probold';
+    }
+    .formCalculator .orderComment label {float: none;}
+}
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    .vacancy ul {
+        padding: 22px 0 8px 5px;
+    }
+}

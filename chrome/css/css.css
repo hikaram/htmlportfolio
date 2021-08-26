@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'genevaregular';
+    src: url('../fonts/geneva-webfont.eot');
+    src: url('../fonts/geneva-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/geneva-webfont.woff') format('woff'),
+    url('../fonts/geneva-webfont.ttf') format('truetype'),
+    url('../fonts/geneva-webfont.svg#genevaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

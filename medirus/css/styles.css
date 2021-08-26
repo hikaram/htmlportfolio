@@ -1,0 +1,1275 @@
+@import url('../fonts/stylesheet.css');
+/*	Reset */
+body,  div,  dl, 
+dt,  dd,  ul,
+ol,  li,   pre,
+form,  fieldset,  input, 
+blockquote,  table,  th, 
+td,  embed,  object,
+article,  section, 
+figure,  figcaption,
+h1,  h2,  h3, 
+h4,  h5, 
+h6,  p {padding: 0;	margin: 0;}
+h1,  h2, 
+h3, 
+h4, 
+h5,  h6, 
+caption, 
+th {font-weight: normal; font-style: normal;}
+table {border-collapse: collapse; border-spacing: 0;}
+fieldset,  img,  abbr {border: 0;}
+caption,  th {text-align: left;}
+ul {list-style: none;}
+p {margin-bottom: 5px; font-size: 12px; color: #000; font-family: arial,sans-serif;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+*/
+.cf{
+  *zoom: 1;
+}
+
+.clear {
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.f-l {float: left;}
+.f-r {float: right;}
+body {
+  background: #ececec;
+}
+.content {
+  border-top: 1px solid #d7d7d7;
+  padding-top: 20px;
+}
+.home {
+  border-top: 0;
+  padding-top: 0px;
+}
+#main {
+  width: 975px;
+  margin: 0 auto;
+}
+header {
+  border-bottom: 1px solid #d5d5d5;
+  padding: 30px 0;
+}
+.topcity {
+  float: left;
+  font-family: Tahoma;
+  font-size: 11px;
+  width: 273px;
+  margin-top: 15px;
+}
+.topcity a, .topwhat a {
+  color: #009dca;
+  font-family: Arial;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: bold;
+}
+.logo {
+  float: left;
+  margin-right: 40px;
+}
+.topwhat {
+  float: left;  
+  font-family: Tahoma;
+  font-size: 11px;
+  margin-top: 10px;
+}
+.topwhat p {
+  font-family: Tahoma;
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 0px; 
+  margin-left: 10px;
+}
+.topwhat p, .topwhat img {
+  float: left;
+  display: block;
+}
+.topwhat p i {font-style: normal;font-family: Tahoma; font-weight: normal;}
+.topwhat p:first-child {text-align: right; margin-right: 10px; margin-left: 0;}
+.topwhat p a {font-style: normal;font-family: Tahoma; font-weight: normal;}
+.topfone {float: right;}
+.topfone i {font-style: normal; float: left; color: #a0a0a0; font-size: 20px; font-family: Arial; margin-right: 5px;}
+.topfone p {float: right; font-size: 20px; font-family: Arial;}
+.topmenu {
+  padding: 22px 0;
+}
+.topmenu ul {float: left;}
+.topmenu ul li {
+  float: left;
+  background: url('../images/mark2.jpg') no-repeat right 10px;
+  padding-right: 27px;
+  padding-left: 20px;
+}
+.topmenu ul li a {
+  font-family: 'PFDinDisplayPro-Bold';
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+.topmenu ul li:first-child {padding-left: 0;}
+.topmenu ul li:last-child {padding-right: 0; background: none;}
+.topmenu ul li a:hover {
+  color: #009dca;
+  text-decoration: none;
+}
+.searchbox {float: right;}
+.searchbox span {float: left;}
+.searchbox-l {
+  background: url('../images/search-l.png') no-repeat left top;
+  width: 8px;
+  height: 29px
+}
+.searchbox-bg {
+  background: url('../images/search-bg.png') repeat-x left top;
+  width: 193px;
+  height: 29px
+}
+.searchbox-bg input {
+  border: 0;
+  width: 172px;
+  color: #838383;
+  font-family: Arial;
+  font-size: 11px;
+  font-style: italic;
+}
+.searchbox-bg img {
+  cursor: pointer;
+  margin-top: 8px;
+}
+.searchbox-r {
+  background: url('../images/search-r.png') no-repeat left top;
+  width: 8px;
+  height: 29px
+}
+.slider {
+  margin-bottom: 20px;
+  width: 734px;
+  
+}
+.sidebar-home__title {
+  background: #262c32;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'PFDinDisplayPro-Regular';
+  font-size: 16px;
+  padding: 10px 10px 10px 17px;
+}
+.sidebar-home {
+  float: left;
+  margin-right: 30px;
+  width: 205px;
+}
+.cat-home {
+  float: left;
+  width: 465px;
+  background: #fff;
+  padding-left: 35px;
+  padding-bottom: 40px;
+}
+.sidebar-right {
+  float: right;
+  width: 202px;
+}
+.wbuy{
+  background: #fff;
+  -webkit-box-shadow: inset 1px 1px 10px 1px #fafafa;        
+  box-shadow: inset 1px 1px 10px 1px #fafafa;
+  padding: 18px;
+  margin-bottom: 5px;
+}
+.spec {margin-bottom: 15px;}
+.wbuy h4 {
+  font-family: 'PFDinDisplayPro-Regular';
+  font-size: 20px;
+  margin: 0 0 6px 0;
+}
+.wbuy ul li {
+  border-bottom: 1px dotted #000;
+  padding: 5px 0;
+}
+.wbuy ul li:last-child {border-bottom:0;}
+.wbuy ul li a {
+  background: url('../images/mark2.gif') no-repeat right 2px;
+  display: block;
+  font-family: Tahoma;
+  font-size: 10px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none !important;
+}
+.contentbox {
+  float: left;
+  width: 742px;
+}
+.sidebar-home h4 {
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 16px 0 18px;
+}
+.sidebar-home__p {
+  background: url('../images/line1.jpg') no-repeat left 6px;
+  font-family: Arial;
+  font-size: 12px;
+  padding-left: 18px;
+  margin-bottom: 23px;
+}
+
+.cat-home__item {
+  float: left;
+  width: 197px;
+  margin-right: 35px;
+  padding-top: 10px;
+}
+.cat-home__item h3 {
+  border-bottom: 4px solid #262c32;
+  padding: 10px 0;
+  margin-bottom: 25px;
+  font-family: 'PFDinDisplayPro-Bold';
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.cat-home__item ul li {
+  background: url('../images/line1.jpg') no-repeat left 8px;
+  line-height: 13px;
+  padding-left: 18px;
+  padding-bottom: 12px;
+}
+.cat-home__item ul li a {
+  color: #1c1d1f;
+  font-family: Tahoma;
+  font-size: 11px;
+}
+.b-sidebox, .partnbox {
+  background: #fff;
+  -webkit-box-shadow: inset 1px 1px 10px 1px #fafafa;        
+  box-shadow: inset 1px 1px 10px 1px #fafafa;
+  margin-bottom: 25px;
+}
+.b-sidebox {
+  padding-bottom: 10px;
+}
+.partnbox {margin-bottom: 30px;}
+.b-sidebox h3 {
+  font-family: 'PFDinDisplayPro-Regular';
+  font-size: 17px;
+  background: #262c32;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 10px 10px 17px;
+}
+.b-sidebox ul {
+  margin: 20px 0 0 20px;
+}
+.b-sidebox ul li {
+  background: url('../images/mark2.jpg') no-repeat left 6px;
+  padding-left: 11px;
+  line-height: 12px;
+  margin-bottom: 10px;
+}
+.b-sidebox ul li a {
+  color: #1c1d1f;
+  font-family: Tahoma;
+  font-size: 11px;
+}
+.partnbox {
+  padding: 8px 11px;
+}
+.partnbox img {
+  display: block;
+  float: left;
+  margin-right: 11px;
+}
+.partnbox p {
+  float: left;
+  font-family: Tahoma;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  width: 92px;
+  margin-top: 12px;
+}
+.interdoc {margin-bottom: 5px;}
+.b-sidebox2 {
+  background: none repeat scroll 0 0 #FFFFFF;
+  box-shadow: 1px 1px 10px 1px #FAFAFA inset;
+  margin-bottom: 20px;
+}
+.b-sidebox2 h3 {
+  background: none repeat scroll 0 0 #262C32;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-family: 'PFDinDisplayPro-Regular';
+  font-size: 17px;
+  padding: 10px 10px 10px 17px;
+}
+.b-sidebox2 a {
+  background: #00adcc;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: -1px 1px 1px;
+  font-family: Arial;
+  font-size: 11px;
+  font-style: italic;
+  padding: 8px 8px 8px 17px;
+}
+.b-sidebox3 {margin-bottom: 10px;}
+.b-sidebox3 h3 {
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+.b-sidebox3 img {
+  margin-bottom: 5px;
+}
+.b-sidebox3 a img {margin-bottom: 0;}
+.b-sidebox3 p {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 14px;
+}
+.sidebar-left {
+  float: left;
+  width: 202px;
+  margin-right: 30px;;
+}
+.cart-table{
+  padding: 1px;
+}
+.cart-table tr td {
+  margin-bottom: 3px;
+  background: #fff;
+}
+
+footer {
+  background: #fff;
+}
+footer > div {
+  width: 975px;
+  margin: 0 auto;
+}
+.footmenu {
+  width: 735px;
+  float: right;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 20px 0;
+}
+.footmenu ul li {
+  float: left;
+  background: url('../images/mark2.jpg') no-repeat right 5px;
+  padding-right: 16px;
+  padding-left: 12px;
+  line-height: 14px;
+}
+.footmenu ul li:first-child {padding-left: 0;}
+.footmenu ul li:last-child {padding-right: 0; background: none;}
+.footmenu ul li a {
+  color: #000;
+  font-family: Tahoma;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.footmenu ul li a:hover {color: #009dca;}
+.b-line1 {
+  float: left;
+  display: block;
+  border-bottom: 4px solid #262c32;
+  width: 202px;
+  height: 53px;
+}
+.copy {
+  float: left;
+  font-family: Tahoma;
+  font-size: 11px;
+  margin: 25px 0;
+  color: #848484;
+}
+.copy strong {color: #000;}
+.studio {
+  background: url('../images/logostudio.png') no-repeat left 2px;
+  float: right;
+  font-family: Tahoma;
+  font-size: 11px;
+  line-height: 16px;
+  margin: 25px 0;
+  padding-left: 19px;
+}
+.studio a {color: #009dca;}
+.footcontent {
+  margin: 40px 0 50px;
+}
+.footcontent-video {
+  float: left;
+  margin-right: 33px;
+  width: 202px;
+}
+.footcontent-newpay {
+  float: left;
+  width: 502px;
+}
+.footcontent-discount {
+  float: right;
+  width: 201px;
+}
+.footcontent-newpay h3, .footcontent-discount h3 {
+  font-family: 'PFDinDisplayPro-Bold';
+  font-size: 21px;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-bottom: 18px;
+}
+.footcontent-newpay h3 span, .footcontent-discount h3 span {
+  font-family: 'PFDinDisplayPro-Bold';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.footcontent-newpay p, .footcontent-discount p {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 20px;
+}
+
+.link-line {
+  display: block;
+  width: 158px;
+}
+.link-line-bg {
+  background: #00adcc;
+  float: left;
+  display: block;
+  height: 29px;
+  font-family: Arial;
+  font-size: 11px;
+  font-style: italic;
+  width: 120px;
+  padding-left: 13px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 28px;
+}
+.link-line-l {
+  background: url('../images/more-l.png') no-repeat left top;
+  padding-right: 2px;
+  height: 29px;
+  width: 8px;
+  display: block;
+  float: left;
+}
+.link-line-r {
+  background: url('../images/more-r.png') no-repeat left top;
+  height: 29px;
+  width: 15px;
+  display: block;
+  float: right;
+}
+.breadcrumbs {
+  background: url('../images/house.gif') no-repeat left 1px;
+  border-bottom: 1px dotted #696969;
+  padding-left: 16px;
+  padding-bottom: 6px;
+  font-family: Tahoma;
+  font-size: 11px;
+}
+.breadcrumbs a {
+  color: #0388b4;
+}
+.subtitle {
+  font-family: 'PFDinDisplayPro-Regular';
+  font-size: 20px;
+  padding: 19px 0 28px;
+  line-height: 20px;
+}
+.cart-table-col1 {
+  width: 235px;
+  padding-left: 20px;
+}
+th.cart-table-col1 {
+  width: 254px;
+  padding-left: 0px;
+}
+.cart-table-col2 {
+  width: 120px;
+  text-align: center;
+}
+td.cart-table-col2 {
+  width: 120px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+}
+.cart-table-col3 {
+  width: 165px;
+  text-align: center;
+}
+.cart-table-col4 {
+  width: 115px;
+  text-align: center;
+}
+td.cart-table-col4 {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  width: 115px;
+  text-align: center;
+  color: #009dca;
+}
+.cart-table-col5 {
+  width: 85px;
+  text-align: center;
+}
+.cart-table-col1 a {
+  
+}
+.cart-table td span {
+  border-left: 1px dotted #a2a2a2;
+  border-right: 1px dotted #a2a2a2;
+  display: block;
+}
+.cart-table {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+.cart-table td {
+  height: 47px;
+}
+.cart-table-th {
+  font-family: Tahoma;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.cart-table a {
+  font-family: Tahoma;
+  font-size: 11px;
+  color: #0388b4;
+}
+.cart-table-col3 div {
+  display: inline-block;
+  text-align: center;
+}
+.cart-table-col3 a {float: left; margin-top: 5px;}
+.cart-table-col3 input {
+  float: left;
+  width: 76px;
+  height: 24px;
+  border: 1px solid #dedede;
+  margin: 0 5px;
+  text-align: right;
+}
+.prod-item {
+  background: #fff;
+  padding-bottom: 17px;
+  margin-bottom: 25px;
+}
+.prod-item__pic {
+  float: left;
+  margin: 20px 20px 0 18px;
+}
+.prod-item__txt {
+  float: left;
+  width: 523px;
+  margin-top: 30px;
+}
+.prod-item__txt > a {
+  display: inline-block;
+  font-family: Tahoma;
+  font-size: 19px;
+  color: #009dca;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.prod-item__txt p {
+  margin-bottom: 23px;
+}
+.prod-item__price {
+  float: left;
+  font-family: Arial;
+  font-size: 12px;
+  width: 300px;
+}
+.prod-item__price i {
+  font-size: 11px;
+  font-family: Arial;
+  color: #778085;
+  display: inline-block;
+  margin-top: 7px;
+}
+.prod-item__price strong {
+  color: #0096c1;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: Arial;
+}
+.prod-item__zak {
+  background: url('../images/zak.png') no-repeat left top;
+  display: block;
+  width: 150px;
+  height: 53px;
+}
+.prod-item__zak:hover {
+  background: url('../images/zak.png') no-repeat left -53px;
+}
+
+/*	  Pager	  */
+.b-pager {margin: 15px 0 50px; height: 20px;}
+.b-pager ul {
+  float: left;
+  margin-right: 1px;
+}
+.b-pager ul li {
+  float: left;
+  margin-right: 1px;
+  line-height: 18px;
+}
+.b-pager ul li a{
+  background: #009cb8;
+  font-size: 11px;
+  font-family: Tahoma;
+  display: block;
+  height: 20px;
+  width: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00adcc', endColorstr = '#008fa9');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00adcc', endColorstr = '#008fa9')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #00adcc, #008fa9);
+  background-image: -ms-linear-gradient(top, #00adcc, #008fa9);
+  background-image: -o-linear-gradient(top, #00adcc, #008fa9);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#00adcc), to(#008fa9));
+  background-image: -webkit-linear-gradient(top, #00adcc, #008fa9);
+  background-image: linear-gradient(top, #00adcc, #008fa9);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+  /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+.b-pager ul li span{
+  background: #00789f;
+  font-size: 11px;
+  font-family: Tahoma;
+  color: #fff;
+  display: block;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#0090bb', endColorstr = '#00668a');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#0090bb', endColorstr = '#00668a')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #0090bb, #00668a);
+  background-image: -ms-linear-gradient(top, #0090bb, #00668a);
+  background-image: -o-linear-gradient(top, #0090bb, #00668a);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#0090bb), to(#00668a));
+  background-image: -webkit-linear-gradient(top, #0090bb, #00668a);
+  background-image: linear-gradient(top, #0090bb, #00668a);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+  /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+.b-pager__first {
+  float: left;
+  margin-right: 1px;
+  display: block;
+}
+a.b-pager__prev {
+  background: #009cb8;
+  display: inline-block;
+  font-size: 11px;
+  font-family: Tahoma;
+  color: #fff;
+  float: left;
+  margin-right: 1px;
+  padding: 0 7px 0 15px;
+  height: 20px;
+  line-height: 18px;
+  text-decoration: none;
+
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00adcc', endColorstr = '#008fa9');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00adcc', endColorstr = '#008fa9')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #00adcc, #008fa9);
+  background-image: -ms-linear-gradient(top, #00adcc, #008fa9);
+  background-image: -o-linear-gradient(top, #00adcc, #008fa9);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#00adcc), to(#008fa9));
+  background-image: -webkit-linear-gradient(top, #00adcc, #008fa9);
+  background-image: linear-gradient(top, #00adcc, #008fa9);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+  /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+}
+a.b-pager__next {
+  background: #009cb8;
+  display: inline-block;
+  font-size: 11px;
+  font-family: Tahoma;
+  color: #fff;
+  float: left;
+  margin-right: 1px;
+  padding: 0 15px 0 7px;
+  height: 20px;
+  line-height: 18px;
+  text-decoration: none;
+
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00adcc', endColorstr = '#008fa9');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00adcc', endColorstr = '#008fa9')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #00adcc, #008fa9);
+  background-image: -ms-linear-gradient(top, #00adcc, #008fa9);
+  background-image: -o-linear-gradient(top, #00adcc, #008fa9);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#00adcc), to(#008fa9));
+  background-image: -webkit-linear-gradient(top, #00adcc, #008fa9);
+  background-image: linear-gradient(top, #00adcc, #008fa9);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+  /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+}
+.b-pager__last {
+  float: left;
+  margin-right: 1px;
+  display: block;
+}
+/*	  end Pager	  */
+
+/*	  Form	  */
+.b-send {
+  background: #fff;
+  padding: 20px 30px 20px 33px;
+}
+.b-send div:first-child {
+  width: 235px;
+}
+.b-send div:last-child {
+  width: 420px;
+}
+.b-send div label {
+  display: block;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 100%;
+  margin-bottom: 5px;
+}
+.b-send div input[type="text"] {
+  width: 223px;
+  height: 26px;
+  border: 1px solid #dedede;
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+.b-send div input[type="text"]:hover, .b-send textarea:hover {
+  border: 1px solid #74cbdc;
+  cursor: pointer;
+}
+.b-send textarea {
+  border: 1px solid #dedede;
+  height: 184px;
+  width: 408px;
+  padding-left: 5px;
+}
+.form-txt {
+  margin-top: 15px;
+}
+.form-txt__title {
+  font-family: Arial;
+  font-size: 12px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.form-txt p {font-size: 11px; margin-bottom: 12px;display: inline-block;line-height: 100%;}
+.form-txt i {
+  color: #778285;
+  font-family: Arial;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 15px;
+  margin-bottom: 12px;
+}
+.form-txt strong {
+  font-family: Arial;
+  font-size: 11px;
+  color: #000;
+  display: inline-block;
+  line-height: 100%;
+  margin-bottom: 12px;
+}
+.submitform {
+  background: url('../images/formbut.png') no-repeat left top;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 46px;
+  margin-left: 264px;
+}
+/*	  end Form	  */
+
+
+/*	  Product page	  */
+.product-pic {
+  width: 230px;
+}
+.product-txt {
+  width: 465px;
+}
+.product-txt h5 {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.product-txt p {
+  margin-bottom: 20px;
+  font-family: Arial;
+  font-size: 12px;
+}
+.product-txt__list {
+  font-style: italic;
+  font-family: Arial;
+  font-size: 12px;
+  color: #8a8d8e;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.product-txt__list li {
+  background: url('../images/line3.gif') no-repeat left 7px;
+  padding-left: 30px;
+  margin-bottom: 12px;
+}
+.b-related h3 {
+ font-family: 'PFDinDisplayPro-Regular';
+ font-size: 25px;
+ margin-bottom: 20px;
+}
+.b-color {
+  background: #fff;
+  padding: 12px;
+  width: 190px;
+}
+.b-color a {
+  width: 61px;
+  height: 14px;
+  display: block;
+  float: left;
+  margin-right: 7px;
+  margin-bottom: 4px;
+}
+.b-color span {
+  font-family: Arial;
+  font-size: 12px;
+  display: block;
+  float: left;
+}
+.b-color1 {
+  background: #9e0034;
+}
+.b-color2 {
+  background: #182f43;
+}
+.b-color3 {
+  background: #000;
+}
+.b-color4 {
+  background: #ad7a56;
+}
+.product-pic__img {
+  margin-bottom: 15px;
+}
+.product-pic__img img {
+  border: 1px solid #fff;
+}
+.product-pic__txt {
+  font-family: Arial;
+  font-size: 12px;
+}
+.product-pic__txt strong {
+  font-size: 18px;
+  color: #0096c1
+}
+.product-pic__txt i {
+  font-size: 11px;
+  font-style: italic;
+  color: #778085;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.colorbox {margin-bottom: 35px;}
+.b-instlist {
+  margin-right: 25px;
+}
+.b-instlist li {
+  background: url('../images/mark4.gif') no-repeat left 7px;
+  padding-left: 10px;
+  line-height: 12px;
+  margin-bottom: 10px;
+}
+.b-instlist li a {
+  font-family: Tahoma;
+  font-size: 11px;
+  text-decoration: underline;
+  color: #0388b4;
+}
+.b-instlist li a:hover {
+  text-decoration: none;
+  color: #0388b4;
+}
+.b-instbox {margin-bottom: 20px;}
+
+/*	  Left menu	  */
+
+.leftmenu li a:hover {
+  color: #0388b4;
+  background: url("../images/mark3.gif") no-repeat scroll right 2px transparent;
+}
+.leftmenu li.active {
+  border-bottom: 0 none;
+}
+.leftmenu li.active a {
+  background: url("../images/mark6.png") no-repeat scroll right 4px transparent;
+  color: #0388b4;
+}
+.leftmenu li ul {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.leftmenu li ul li {
+  background: url('../images/mark4.gif') no-repeat left 10px;
+  padding-left: 15px;
+  line-height: 12px;
+  margin-bottom: 2px;
+  border-bottom: 0 none;
+  text-transform: none;
+}
+.leftmenu li ul li a {
+  background: none !important;
+  font-family: Tahoma;
+  font-size: 11px;
+  color: #0388b4;
+  text-transform: none;
+}
+.leftmenu li ul li:hover {
+  background: url('../images/mark7.png') no-repeat left 10px;
+}
+.leftmenu li ul li:hover a {
+  color: #1ebbef;
+}
+
+/*	 end Left menu	  */
+
+/*	  Table	  */
+.b-tabel {
+  border: 1px solid #fff;
+  font-family: Tahoma;
+  font-size: 11px;
+}
+.b-tabel th {
+  border: 1px solid #d8d8d8;
+}
+.b-tabel th span {
+  display: block;
+  background: #262c32;
+  padding: 15px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.b-tabel td {
+  border: 1px solid #d8d8d8;
+  padding: 15px;
+  background: #fff;
+}
+/*	  end Table	  */
+
+/*	  Search page	*/
+.searchbox1 {width: 100%;}
+.searchbox1 span {float: left;}
+.searchbox-l {
+  background: url('../images/search-l.png') no-repeat left top;
+  width: 8px;
+  height: 29px
+}
+.searchbox1 .searchbox-bg {
+  background: url('../images/search-bg.png') repeat-x left top;
+  width: 725px;
+  height: 29px
+}
+.searchbox1 .searchbox-bg input {
+  border: 0;
+  width: 700px;
+  color: #838383;
+  font-family: Arial;
+  font-size: 11px;
+  font-style: italic;
+}
+.searchbox-bg img {
+  cursor: pointer;
+  margin-top: 8px;
+}
+.searchbox-r {
+  background: url('../images/search-r.png') no-repeat left top;
+  width: 8px;
+  height: 29px
+}
+.searchbox-bottom {margin-top: 10px; margin-bottom: 30px;}
+.searchbox-bottom span:first-child {
+  margin-right: 20px;
+}
+.searchbox-bottom span label {
+  font-family: Tahoma;
+  font-size: 11px;
+}
+.searchbox-bottom span i {
+  font-style: normal;
+  font-family: Tahoma;
+  font-size: 11px;
+}
+.searchbox-bottom span strong {
+  font-family: Tahoma;
+  font-size: 11px;
+}
+.searchbox-bottom span input {vertical-align: sub;}
+.b-search__item {
+  padding-bottom: 30px;
+  padding-right: 30px;
+  margin-bottom: 25px;
+  border-bottom: 1px dotted #989898;
+}
+.b-search__item:last-child {
+  border-bottom: 0;
+}
+.b-search__title {
+  font-family: Arial;
+  font-size: 12px;
+  color: #008fbc;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 13px;
+  line-height: 18px;
+}
+.b-search__txt {
+  font-family: Arial;
+  font-size: 12px;
+  color: #6e8490;
+  display: block;
+  margin-bottom: 13px;
+  line-height: 18px;
+}
+.b-search__txt span {
+  font-family: Arial;
+  font-size: 12px;
+  background: #ffe3b8;
+  color: #000;
+}
+.b-search__bottom {
+  font-family: Tahoma;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 0;
+}
+.b-search__bottom a {
+  text-decoration: underline;
+  color: #0394b4;
+}
+/*	  end Search page	*/
+
+.leftpic {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.one-content p {
+  margin-bottom: 15px;
+  line-height: 16px;
+}
+.cit {
+    background: url("../images/cit.jpg") no-repeat scroll 10px 10px #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px 8px 8px 8px;
+    color: #929697;
+    display: block;
+	font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 25px;
+    padding: 20px 40px 25px 50px;
+}
+.listbox1 {
+  list-style: none;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+.listbox1 li {
+  margin-bottom: 14px;
+}
+.listbox1 li span {
+  background: url('../images/numbg.png') no-repeat left top;
+  color: #fff;
+  display: block;
+  float: left;
+  font-family: Arial;
+  font-size: 13px;
+  height: 40px;
+  line-height: 39px;
+  text-align: center;
+  width: 40px;
+  margin-right: 10px;
+}
+.listbox1 li i {
+  color: #84898a;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 14px;
+  float: left;
+  width: 655px;
+}
+.listbox1 li i strong {
+  font-style: normal;
+  font-size: 14px;
+  display: block;
+  color: #000;
+  margin-bottom: 5px;
+}
+.listbox1 li:before,
+.listbox1 li:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.listbox1 li:after {clear: both;}
+.listbox1 li{*zoom: 1;}
+h4 {
+  margin-bottom: 25px;
+  font-family: 'PFDinDisplayPro-Regular';
+  font-size: 20px;
+}
+.flex-prev {
+  background: url('../images/slide-l.png') no-repeat left top !important;
+}
+.flex-direction-nav .flex-next {
+  background: url('../images/slide-r.png') no-repeat left top !important;
+}
+.flex-control-nav {
+  background: url('../images/slidebot.png') no-repeat center top !important;
+}
+.buy {
+  background: url('../images/buy.png') no-repeat left top !important;
+  width: 117px;
+  height: 41px;
+  display: block;
+  position: absolute;
+  top:203px;
+  left: 160px;
+}
+.slideprice {
+  background: #004055;
+  font-weight: normal;
+  color: #fff;
+  text-align: right;
+  padding-right: 30px;
+  width: 140px;
+  height: 41px;
+  display: block;
+  position: absolute;
+  top:203px;
+  line-height: 39px;
+  font-family: 'PFDinDisplayPro-Regular';
+}
+.slidetxt {
+  display: block;
+  position: absolute;
+  width: 290px;
+  height: 154px;
+  left: 60px;
+  top:50px;
+}
+.slidetxt h1 {
+  font-family: 'PFDinDisplayPro-Light';
+  font-size: 31px;
+  line-height: 32px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.slidetxt h2 {
+  font-family: 'PFDinDisplayPro-Light';
+  font-size: 20px;
+  line-height: 20px;
+  color: #00f0ff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.slidetxt p {
+  font-family: 'PFDinDisplayPro-Regular';
+  font-size: 14px;
+  color: #fff;
+}

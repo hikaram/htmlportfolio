@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>Panacea — Piano works by Dmitriy Malikov</title>
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+<link href="anythingslider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/html5.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="scripts/jquery.anythingslider.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="scripts/jquery.color.js"></script>
+<script type="text/javascript" src="scripts/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="scripts/scripts.js"></script>
+<!-- Cлучайное изображение при обновлении страницы -->
+<script type="text/javascript">
+var images=[ //регистр всех картинок, здесь думаю ясно
+ {p:"images/bann1.jpg", w:309, h:159},
+ {p:"images/bann2.jpg", w:309, h:159}
+];
+//установка куки, за разьяснениями в поиск, код много раз обсуждался
+function setCookie (name, value, expires, path, domain, secure) {
+  var curCookie = name + "=" + escape(value) +
+      ((expires) ? ";expires=" + expires : "") +
+      ((path) ? ";path=" + path : "") +
+      ((domain) ? ";domain=" + domain : "") +
+      ((secure) ? ";secure" : "");
+  if ((escape(value)).length <= 4000) document.cookie = curCookie+";";
+}
+//удалить куку
+function getCookie (name) {
+  var prefix = name + "=";
+  var cookieStartIndex = document.cookie.indexOf(prefix);
+  if (cookieStartIndex == -1) return null;
+  var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length);
+  if (cookieEndIndex == -1) cookieEndIndex = document.cookie.length;
+  return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex));
+}
+//достаём HTML код рандомной картинки
+function getRandomImage() {
+   var im=images[0];
+   if(images.length>1) { //если есть из чего выбирать
+      var vim=parseInt(getCookie("rimg")); //если есть чего в куках
+      vim=isNaN(vim)? -1: vim;
+   
+      var nim=vim;
+ //достаём рандомный номер не равный предыдущему
+      while(nim == vim) nim=Math.round(Math.random()*(images.length-1));
+      im=images[nim];
+      setCookie("rimg", nim);
+//    alert("next: "+nim+", prev: "+vim); //отлов ошибок
+   }
+//если база не пуста
+   if(im) return "<img src='"+im.p+"' height='"+im.h+"' width='"+im.w+"' border='0' />";
+   else return "<span style='color: red; font-family:Verdana; font-size:14px'>No images in DB</span>";
+}
+//ну и собстна пишем картинку в поток документа.
+//document.write(getRandomImage());
+
+$(document).ready(function(){
+$('.banner_01').html(getRandomImage());
+});
+</script>
+</head>
+<body>
+<div id="main">
+	<div id="header">
+		<span class="left">Фортепианный альбом Дмитрия Маликова</span>
+		<img src="images/logo.png" alt="" />
+		<span class="right">Музыка, которая исцеляет</span>
+	</div>
+	<div id="menu">
+		<div class="soc">
+			<a href="http://www.facebook.com/MalikovDmitry/" target="_blank"><img src="images/soc_icon_01.png" alt="facebook" /></a>
+			<img class="separator" src="images/soc_icon_separator.gif" alt="" />
+			<a href="https://twitter.com/DmitryMalikov/" target="_blank"><img src="images/soc_icon_02.png" alt="twitter" /></a>
+			<img class="separator" src="images/soc_icon_separator.gif" alt="" />
+			<a href="http://vk.com/malikovdmitry" target="_blank"><img src="images/soc_icon_03.png" alt="vkontakte" /></a>
+		</div>
+		<div class="nav"><a href="#music_block">музыка</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#video_block">видео</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#album_block">альбом</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#info_block">Информация</a></div>
+		<a class="language" href="#">English</a>
+	</div>
+	<ul id="slider">
+		<li>
+			<div>
+				<h1>Музыка, которая исцеляет</h1>
+				<p>В суете нашего мира нужны большие усилия, чтобы остановиться, прислушаться к неспешному течению музыки и к своему внутреннему голосу... Но попробуйте сделать это, и вы почувствуете, как эта музыка вам ответит и, может, принесет ту эмоцию, которой так не хватает в данный момент. Вы поймете, что в мире все-таки есть гармония, добро и любовь.</p>
+				<a href="#">Купить альбом</a>
+				<a href="http://www.ccfdm.ru/" target="_blank">Узнать больше</a>
+			</div>
+			<img src="images/img.jpg" alt="" />
+		</li>
+		<li>
+			<div>
+				<h1>Музыка, которая исцеляет</h1>
+				<p>В суете нашего мира нужны большие усилия, чтобы остановиться, прислушаться к неспешному течению музыки и к своему внутреннему голосу... Но попробуйте сделать это, и вы почувствуете, как эта музыка вам ответит и, может, принесет ту эмоцию, которой так не хватает в данный момент. Вы поймете, что в мире все-таки есть гармония, добро и любовь.</p>
+				<a href="#">Купить альбом</a>
+				<a href="http://www.ccfdm.ru/" target="_blank">Узнать больше</a>
+			</div>
+			<img src="images/img.jpg" alt="" />
+		</li>
+		<li>
+			<div>
+				<h1>Музыка, которая исцеляет</h1>
+				<p>В суете нашего мира нужны большие усилия, чтобы остановиться, прислушаться к неспешному течению музыки и к своему внутреннему голосу... Но попробуйте сделать это, и вы почувствуете, как эта музыка вам ответит и, может, принесет ту эмоцию, которой так не хватает в данный момент. Вы поймете, что в мире все-таки есть гармония, добро и любовь.</p>
+				<a href="#">Купить альбом</a>
+				<a href="#">Узнать больше</a>
+			</div>
+			<img src="images/img.jpg" alt="" />
+		</li>
+	</ul>
+	<div id="banners">
+		<div class="banner_01">
+			<!--<span><sup>«</sup>Приятная,<br />&nbsp; &nbsp; &nbsp; светлая музыка<sub> »</sub><em>Петр Подгородецкий</em></span>-->
+		</div>
+		<div class="banner_02"><a class="on" href="#video_block"><img src="images/banner_img_02.png" alt="" /><img class="play" src="images/banner_play.png" alt="" /></a></div>
+		<div class="banner_03">
+			<img src="images/banner_img_03.png" alt="" />
+			<strong>Проникая в сердце</strong>
+			<p>Средства с продажи альбома пойдут в помощь благотворительного фонда Дмитрия Маликова</p>
+			<a href="http://www.ccfdm.ru/" target="_blank">Подробнее о фонде</a>
+		</div>
+	</div>
+	<div id="music_block">
+		<div class="head">
+			<em>Panacea</em>
+			<h1>Звукотерапия</h1>
+			<div class="nav"><a class="on" href="#music_block">музыка</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#video_block">видео</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#album_block">альбом</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#info_block">Информация</a></div>
+			<a class="up" href="#">&nbsp;</a>
+		</div>
+		<div id="music">
+			<div class="top">
+				<span>Композиции альбома Panacea</span>
+				<a href="#">Скачать</a>
+			</div>
+			<div class="mp3">
+				<p>1</p>
+				<strong>Задумавшись</strong>
+				<span>Перед применением посоветуйте окружающим вас не беспокоить</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Перед прослушиванием необходимо<br />закрыть глаза</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 01</em>Задумавшись</h1>
+					<div>
+						<p style="top:-10px; left:4px;">Планомерное,<br />К счастью,<br />Начинается<br />С остановки...</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>2</p>
+				<strong>О суете</strong>
+				<span>Применять в спешке, не запивая водой</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Применять в спешке,<br />не запивая водой</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 02</em>О суете</h1>
+					<div>
+						<p style="top:-15px; left:7px;">Мелькают дороги, здания,<br />Дома, магазины, службы.<br />И я занимаюсь мельканием<br />В глубоких и мелких лужах.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>3</p>
+				<strong>О прошлом</strong>
+				<span>Перед прослушиванием необходимо закрыть глаза</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/01.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Перед прослушиванием необходимо<br />закрыть глаза</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 03</em>О прошлом</h1>
+					<div>
+						<p class="center" style="top:-7px;">Я мысленно ищу в себе застрявших,<br />Простить которых просто невозможно.<br />Да разве так со мною было можно?<br />Я плачу, тихо капают и тают,<br />Поэтому они из дней вчерашних<br />В сегодняшние не перетекают.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>4</p>
+				<strong>О невыполнимом</strong>
+				<span>Начинать прослушивание после очередной неудачной попытки сделать что-то другое</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Начинать прослушиваени после очередной неудачной<br />попытки сделать что-то другое</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 04</em>О невыполнимом</h1>
+					<div>
+						<p style="top:-13px; left:10px;">В нашем мире сильных людей,<br />Отрекаясь от всемогущества,<br />Я прощаюсь с силой игрушечной<br />И встречаюсь тогда со своей.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>5</p>
+				<strong>С дыханьем музыки</strong>
+				<span>Принимать перед сном, делая глубокий вдох</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Принимать перед сном, делая глубокий вдох</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 05</em>С дыханьем музыки</h1>
+					<div>
+						<p style="top:-14px; left:16px;">Вдруг показалось, не было и нет<br />Того, что раньше грело и спасало.<br />Винил себя, искоренял свой след,<br />Не надо, — тихо музыка дышала...</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>6</p>
+				<strong>Счастливым</strong>
+				<span>Рекомендуется слушать с улыбкой на лице</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Рекомендуется слушать<br />с улыбкой на лице</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 06</em>Счастливым</h1>
+					<div>
+						<p class="center" style="top:-11px;">Счастливыми глазами видеть мир –<br />Не то, что светом фар слепить прохожих:<br />Сияние уменьшить ты не можешь,<br />Но рады те, кого ты озарил.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>7</p>
+				<strong>Я становлюсь</strong>
+				<span>Включать сразу после будильника перед подъемом с кровати</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Перед прослушиванием необходимо<br />закрыть глаза</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 07</em>Я становлюсь</h1>
+					<div>
+						<p style="top:-14px; left:9px;">Отшелушивая от кожи<br />Свои роли, титулы, звания,<br />Становлюсь я совсем похожим<br />На себя<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;До побед и признания.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>8</p>
+				<strong>Уходит тень</strong>
+				<span>Внимание! Наличие головного убора обязательно</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Внимание! Наличие головного убора обязательно</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 08</em>Уходит тень</h1>
+					<div>
+						<p style="top:2px; left:-6px; padding-bottom:47px;">Когда во мне живет покой,<br />То над моею головой<br />В зените день.<br /><br />Хоть это странно, но порой<br />От безмятежности такой<br />Уходит тень.<br /><br />Так происходит каждый раз,<br />Не так уж важен день и час...<br />Я замечтался –<br /><br />И тень ушла под шелест фраз,<br />Под клавиш медленный рассказ,<br />А я остался.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>9</p>
+				<strong>Душа наполнена</strong>
+				<span>Общее время наполнения души: 2 мин 54 сек</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Общее время наполнения души: 2 мин 54 сек</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 09</em>Душа наполнена</h1>
+					<div>
+						<p style="top:2px; left:-10px; padding-bottom:47px;">Когда ты делишься со мной<br />Своим теплом и добротой,<br />Я замечаю,<br /><br />Что радость нежится во мне<br />И, мою душу обогрев,<br />Переполняет.<br /><br />Наверно, мог подумать ты<br />В круговороте теплоты<br />Когда летаешь,<br /><br />Законы физики поправ,<br />Что лишь кому-нибудь отдав,<br />Приобретаешь.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>10</p>
+				<strong>Свежо</strong>
+				<span>Максимальный эффект достигается при прослушивании в лесу или садово-паркой зоне</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Перед прослушиванием необходимо<br />закрыть глаза</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 10</em>Свежо</h1>
+					<div>
+						<p style="top:-11px; left:11px;">Мир вдыхаю в себя через легкие,<br />И от свежести во мне кружится,<br />Что теперь мои мысли глубокие<br />С легкомысленными подружатся.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>11</p>
+				<strong>Я жив</strong>
+				<span>Композиция разработана для уставших людей, обладает восстанавливающим эффектом</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Композиция разработана для уставших людей,<br />обладает восстанавливающим эффектом</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 11</em>Я жив</h1>
+					<div>
+						<p class="center" style="top:-10px;">Я лишь недавно начал замечать,<br />Что жизнь во мне идет без перерыва,<br />И что когда мне плохо и тоскливо,<br />Я так же жив, как пять<br />Минут назад,<br />Когда был счастлив и чему-то рад.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>12</p>
+				<strong>Я рад</strong>
+				<span>В случае передозировки возможна эйфория</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/path.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>В случае передозировки возможна эйфория</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 12</em>Я рад</h1>
+					<div>
+						<p style="top:-1px; left:9px;">Я верю силе, дышащей во мне,<br />Поэтому иду я наугад.<br />Все делается так,<br />Чтоб я был рад.<br />Желанное меня само находит.<br />И происходит то,<br />Что происходит!</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="mp3">
+				<p>13</p>
+				<strong>Мне хорошо</strong>
+				<span>Обладает гармонизирующим эффектом, действует в течении 10-12 часов</span>
+				<img class="arrow_open" src="images/arrow_open.png" alt="" />
+				<a class="close" href="#">&nbsp;</a>
+				<div class="small_player_icon">
+					<div class="small_player">
+						<audio preload="metadata">
+								<source src="mp3/path.mp3" />
+								<source src="ogg/system.ogg" />
+						</audio>
+						<div class="volume"></div>
+						<div class="body">
+							<span><a href="#">Скачать mp3</a></span>
+						</div>
+						<div class="play"></div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="left">
+					<p>Способ применения: <em>Обладает гармонизирующим эффектом,<br />действует в течение 10—12 часов</em></p>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="player">
+						<audio preload="metadata">
+								<source src="mp3/file.mp3" />
+								<source src="ogg/file.ogg" />
+						</audio>
+						<span class="button left"><a class="play" href="#">&nbsp;</a></span>
+						<span class="button right"><a class="volume" href="#">&nbsp;</a></span>
+					</div>
+					<img class="dinamic" src="images/dinamic.png" alt="" />
+					<div class="buttons"><span><a class="download_mp3" href="#">Скачать mp3</a><a class="download_disk" href="#">Диск</a><a class="download_note" href="#">Ноты</a></span></div>
+				</div>
+				<div class="right">
+					<h1><em>Panacea 13</em>Мне хорошо</h1>
+					<div>
+						<p style="left:13px;">Торжественно встречая день,<br />Я плавно покидаю утро.<br />Неповторимостью своей<br />Ценна мне каждая минута.<br /><br />Невозмутим и так хорош<br />Уже вдали зажегся вечер<br />И завершается... Ну что ж?<br />До завтра, до утра, до встречи.</p>
+					</div>
+					<img src="images/shtamp.png" alt="" />
+					<center><a href="#">Отправить рецепт другу</a>
+					<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc01"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc03"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc02"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc06"></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov" class="icon_soc07"></a>
+					</span>
+					</center>
+				</div>
+			</div>
+			<div class="bottom">
+				<a class="left" href="#">Заказать CD</a>
+				<a class="right" href="#">Скачать весь альбом</a>
+			</div>
+		</div>
+	</div>
+	<div id="video_block">
+		<div class="head">
+			<em>Panacea</em>
+			<h1>Видеосеанс</h1>
+			<div class="nav"><a href="#music_block">музыка</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a class="on" href="#video_block">видео</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#album_block">альбом</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#info_block">Информация</a></div>
+			<a class="up" href="#">&nbsp;</a>
+		</div>
+		<div class="video">
+			<div class="player">
+			<object width="642" height="380"><param name="movie" value="http://www.youtube.com/v/4eg8nHPlcLU?version=3&amp;hl=ru_RU"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/4eg8nHPlcLU?version=3&amp;hl=ru_RU" type="application/x-shockwave-flash" width="642" height="380" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+			</div>
+			<div class="text">
+				<h2>Panacea new video</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque rhoncus lacus nec luctus. Phasellus a diam non leo placerat tincidunt interdum eu libero. Nulla sodales mi et massa sollicitudin et porta libero consectetur.</p>
+				<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov"><img src="images/video_soc_01.png" alt="" /></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov"><img src="images/video_soc_02.png" alt="" /></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov"><img src="images/video_soc_03.png" alt="" /></a>
+					<a target="_blank" href="http://www.youtube.com/watch?v=4eg8nHPlcLU"><img src="images/video_soc_04.png" alt="" /></a>
+				</span>
+			</div>
+		</div>
+		<div class="video">
+			<div class="player">
+			<object width="642" height="380"><param name="movie" value="http://www.youtube.com/v/GTPQzPYjafw?version=3&amp;hl=ru_RU"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GTPQzPYjafw?version=3&amp;hl=ru_RU" type="application/x-shockwave-flash" width="642" height="380" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+			</div>
+			<div class="text">
+				<h2>Inside the universe</h2>
+				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur felis magna, ullamcorper id tincidunt ac, fringilla sit amet tortor. Sed in dolor erat.</p>
+				<span>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov"><img src="images/video_soc_01.png" alt="" /></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov"><img src="images/video_soc_02.png" alt="" /></a>
+					<a target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&url=http%3A%2F%2Fpanacea-music.ru%2F&title=Panacea — Piano works by Dmitriy Malikov"><img src="images/video_soc_03.png" alt="" /></a>
+					<a target="_blank" href="http://www.youtube.com/watch?v=GTPQzPYjafw"><img src="images/video_soc_04.png" alt="" /></a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div id="album_block">
+		<div class="head">
+			<em>Panacea</em>
+			<h1>Квинтэссенция гармонии</h1>
+			<div class="nav"><a href="#music_block">музыка</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#video_block">видео</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a class="on" href="#album_block">альбом</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#info_block">Информация</a></div>
+			<a class="up" href="#">&nbsp;</a>
+		</div>
+		<div class="left">
+			<p class="first">Я хотел, чтобы в этом альбоме было как можно больше воздуха. Поэтому я не стал перенасыщать пьесы обилием инструментов, оставив только рояль — главный инструмент моей жизни! Чтобы через его струны вы почувствовали тончайшие струны моей души, а удары молоточков передавали стук моего сердца.</p>
+			<p>«Панацея» — новый альбом фортепианной музыки Дмитрия Маликова, выпущенный в рамках проекта Pianomania. Фортепиано является одним из самых благородных музыкальных инструментов, и альбом «Панацея» лишний раз это подтверждает. Каждая композиция — это квинтэссенция гармонии и смысла, заключенного в абстрактные образы и раскрывающегося во время прослушивания. Альбом интересен и с другой точки зрения. «Панацея» представляет собой новый подход к созданию фортепианной музыки. Каждый трек пластинки, помимо художественного смысла, заключает в себе терапевтический эффект, благотворно влияя на тело и душу человека. Не даром слово «панацея» просиходит от имени древнегреческой богини Панакеи — все исцеляющей.</p>
+			<p>Тот факт, что при прослушивании музыка создает определенное настроение и что она способна гармонизировать душевное состояние, было известно еще в древней Греции. теперь же это подтверждено рядом научных опытов, и широко известно, что музыку можно использовать как источник исцеления. Она затрагивает душу и заставляет наше ДНК петь, воздействуя на каждого независимо от культуры и возраста. Определенные мелодии и созвучия уравновешивают человеческое тело и способны создать возможность глубокого исцеления. Часть этого явления объясняется вибрационной физикой, часть — необъяснимое воздействие, которое на нас производит природа звука.</p>
+			<em>Дополнительно:</em>
+			<a href="http://panacea-music.ru/" target="_blank">сайт дмитрия маликова</a>
+			<a href="http://panacea-music.ru/pianomania" target="_blank">сайт Pianomania</a>
+		</div>
+		<div class="right">
+			<img class="img" src="images/panacea.png" alt="" />
+			<em>Альбом «Панацея» —<br />третий альбом выпущенный<br />в серии Pianomania</em>
+			<div>
+				<a href="downloads/panacea_press_release.doc"><img class="off" src="images/icon_01_off.png" alt="" /><img class="on" src="images/icon_01_on.png" alt="" />Скачать пресс-релиз</a>
+				<a href="downloads/iPad/panacea_ipad.jpg"><img class="off" src="images/icon_02_off.png" alt="" /><img class="on" src="images/icon_02_on.png" alt="" />Скачать Обои для IPad</a>
+				<a class="last" href="downloads/iPhone/panacea_iphone.jpg"><img class="off" src="images/icon_03_off.png" alt="" /><img class="on" src="images/icon_03_on.png" alt="" />Скачать Обои для IPhone</a>
+			</div>
+		</div>
+	</div>
+	<div id="info_block">
+		<div class="head">
+			<em>Panacea</em>
+			<h1>Создатели Panacea</h1>
+			<div class="nav"><a href="#music_block">музыка</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#video_block">видео</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a href="#album_block">альбом</a> &nbsp; &nbsp;•&nbsp; &nbsp; <a class="on" href="#info_block">Информация</a></div>
+			<a class="up" href="#">&nbsp;</a>
+		</div>
+		<div class="left">
+			<p class="first">Кто или что побудило меня к написанию этой пластинки? Две, точнее три вещи... Во-первых, новый рояль, во-вторых, неуемное желание сочинять, и в-третьих, — это ваше настойчивое требование от меня новой музыки. Спасибо Вам за это!</p>
+			<div class="left">
+				<h3>Команда проекта panacea</h3>
+				<p><strong>Музыка:</strong> Дмитрий Маликов<br /><a href="mailto:dima@malikov.ru">dima@malikov.ru</a><br /><span>__</span></p>
+				<p><strong>Мастеринг:</strong> Владимир Мухин<br /><span>__</span></p>
+				<p><strong>Автор стихов:</strong> Юлия Донская<br /><a href="http://youcanlive.ru/" target="_blank">www.youcanlive.ru</a><br /><span>__</span></p>
+				<p><strong>Дизайн:</strong> Алексей Малина<br /><a href="mailto:hello@makearea.com">hello@makearea.com</a></p>
+			</div>
+			<div class="right">
+				<div id="gallery">
+					<!--<img src="images/contact_img.png" alt="" />
+					<img src="images/contact_img_2.png" alt="" />-->
+					<a rel="group" href="images/gallery/image1.jpg"><img src="images/contact_img.png" alt=""/></a>
+					<a rel="group" href="images/gallery/image2.jpg"><img src="images/contact_img.png" alt=""/></a>
+					<a rel="group" href="images/gallery/image3.jpg"><img src="images/contact_img.png" alt=""/></a>
+					<a rel="group" href="images/gallery/image4.jpg"><img src="images/contact_img.png" alt=""/></a>
+					<a rel="group" href="images/gallery/image5.jpg"><img src="images/contact_img.png" alt=""/></a>
+					<a rel="group" href="images/gallery/image6.jpg"><img src="images/contact_img.png" alt=""/></a>
+					<a rel="group" href="images/gallery/image7.jpg"><img src="images/contact_img.png" alt=""/></a>
+				</div>
+				<em>Альбом «Панацея» записан<br />на концертном рояле STEINWAY &amp; SONS<br />Модель D274, № 587178</em>
+			</div>
+		</div>
+		<div class="right">
+			<h3>Контакты</h3>
+			<p>Продюсерский Центр Дмитрия Маликова<br /><strong>Телефон: (499) 248 11 41</strong><br /><strong>E-mail: <a class="mail" href="mailto:dima@malikov.ru">dima@malikov.ru</a></strong><br /><span>__</span></p>
+			<p>По вопросам организации концертов<br />обращайтесь по телефонам:<br /><strong>8 916 691 20 21</strong><br /><strong>(495) 734 99 63</strong><br /><span>__</span></p>
+			<a class="soc_01" href="http://www.facebook.com/MalikovDmitry/" target="_blank">Facebook</a>
+			<a class="soc_02" href="https://twitter.com/DmitryMalikov/" target="_blank">Twitter</a>
+			<a class="soc_03" href="http://vk.com/malikovdmitry" target="_blank">Вконтакте</a>
+			<a class="soc_04" href="https://www.youtube.com/user/PIANOMANIAofficial" target="_blank">Youtube</a>
+			<a class="soc_06" href="http://my.mail.ru/mail/pianomania/" target="_blank">МАЙЛ.РУ</a>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="soc_01"><img src="images/footer_soc_01.gif" alt="" />
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/ru_RU/all.js#xfbml=1&appId=187646177947041";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="http://panacea-music.ru/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+		</div>
+		<div class="soc_02"><!--<img src="images/footer_soc_02.gif" alt="" />-->
+		<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1343902586244&amp;count=horizontal&amp;id=twitter-widget-28&amp;lang=ru&amp;original_referer=https%3A%2F%2Ftwitter.com%2Fabout%2Fresources%2Fbuttons%23tweet&amp;size=m&amp;text=Twitter%20%2F%20%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B8%20%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80%D0%B0&amp;url=http%3A%2F%2Fpanacea-music.ru%2F" class="twitter-share-button twitter-count-horizontal" style="width: 138px; height: 20px;" title="Twitter Tweet Button"></iframe>
+		</div>
+		<div class="right">Copyright &copy; 2011 Dmitriy Malikov. All rights reserved.<br />Site by <a href="http://www.makearea.com/" target="_blank">Alexey Malina</a></div>
+	</div>
+</div>
+</body>
+</html>

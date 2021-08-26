@@ -1,0 +1,29 @@
+.pikachoose{width:300px;}
+/* This is the ul you have all your images in */
+.pikachoose ul{padding-left:0;width:300px;height:54px;margin:0;overflow:hidden;position:relative;}
+.pikachoose ul li{float: left;padding:2px;margin:0 6px 0 0;overflow:hidden;}
+.pikachoose ul li div img{position:relative;cursor:pointer;}
+
+/* this is the surroundner for all your elements. This is also the fake border around the main img and room for caption */
+.pika_main{width:auto;height:300px;position:relative;overflow:hidden;margin-bottom:20px;margin:0 auto;}
+/*sine we give it the fake border, you need to position the image a little. */
+.pika_main_img{position:absolute;top:2px;left:2px; width: 300px; height: 300px; text-align: center; vertical-align: center; background: white;}
+.pika_back_img{position:relative;top:0px; width: 300px; height: 300px; text-align: center; vertical-align: center; background: white;}
+.pika_subdiv{position:relative;padding:2px;}
+.pika_compare{position:relative;padding:2px; text-align: center;}
+.pika_compare a {background: url(/img/compare_e.jpg) no-repeat; padding-left: 20px;}
+.pika_subdiv img, .pika_subdiv a img{border:none;}
+.pika_caption{/*width:500px;height:16px;padding-top:4px;text-align:center;position:absolute;bottom:7px;left:3px;background:url('black.png') top left;*/}
+.pika_caption a{color:white;}
+
+.pika_play{position:absolute;z-index:1;left:50%;margin-left:-25px;width:50px;top:5px;}
+.pika_play a{position:relative;margin-left:auto;cursor:pointer;display: block;width:50px;height:50px;background:url('play.png') top center no-repeat;}
+.pika_play a{position:relative;margin-left:auto;cursor:pointer;display: block;width:50px;height:50px;background:url('pause.png') top center no-repeat;}
+
+.pika_navigation a{font-size: 12px; text-decoration: none;}
+.pika_navigation a:hover{text-decoration: underline;}
+.pika_navigation{padding-top:10px;clear:both;text-align:center;}
+
+/* if you want to 'hide' these jus make their height and width 1px */
+.pika_prev_hover{position:absolute;top:5px;left:5px;height:1px;width:1px;background:url('rewind.png') top left no-repeat;}
+.pika_next_hover{position:absolute;top:5px;right:5px;height:1px;width:1px;background:url('fastf.png') top right no-repeat;}

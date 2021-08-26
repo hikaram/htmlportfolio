@@ -1,0 +1,384 @@
+html, body, form { margin: 0; padding: 0; }
+html, body { width: 100%;}
+
+p, div, table { margin: 0; padding: 0; }
+ul { margin-top: 0; }
+
+.button-buy {
+	background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/button_buy.gif) left top no-repeat;
+	width: 110px; height: 25px;
+	padding: 0; margin: 0; border: 0;
+	cursor: pointer;
+}
+.element-rest {
+	background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/rest_button.gif) left top no-repeat;
+	display: block;
+	padding: 0; margin: 0; border: 0;
+	cursor: pointer;
+	width: 110px; height: 25px;
+}
+
+#container {
+	width: 100%; height: 100%;
+	overflow: hidden;
+}
+
+#container2 {
+	width: 100%;
+}
+
+#container td.bg-logo {
+	background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/bg_logo.gif) 0 4px repeat-x;
+	padding: 4px 0;
+}
+
+#container .banners-search {
+	background-color: #006BB7;
+	height: 71px;
+	vertical-align: middle;
+}
+
+div.banners {
+	height: 40px; width: 360px;
+	margin: 0; padding: 0;
+	position: relative;
+	left: 30px;
+}
+
+div.search {
+	width: 340px;
+}
+
+#container td.work-area {
+	height: 100%;
+	vertical-align: top;
+	padding: 10px;
+}
+
+#container td.work-area2 {
+	width: 100%;
+}
+
+#container td.work-area2 p {
+	margin-bottom: 12px;
+}
+
+#container td.work-area2 table {
+	margin-bottom: 12px;
+}
+
+#logo {
+	background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/logo.jpg) top center no-repeat;
+	width: 100%; height: 132px;
+	overflow: auto;
+}
+
+div.footer-line {
+	width: 100%; height: 2px;
+	background-color: #808285;
+	font-size: 1px; /* IE 6.0 Hack */
+}
+
+#footer {
+	width: 100%;
+}
+
+#footer td {
+	padding: 8px;
+	vertical-align: top;
+	text-align: left;
+}
+
+#footer p {
+	color: #808285;
+	font-size: 10px;
+	margin: 0;
+}
+
+#footer a { color: #808285; font-size: 10px; text-decoration: none; }
+#footer a:hover { text-decoration: underline; }
+
+#footer td.banners {
+	white-space: nowrap;
+	padding-top: 18px;
+}
+
+img#pagemaster {
+	margin-top: 2px;
+}
+
+/* Links */
+#logo-link {
+	display: block;
+	width: 490px; height: 50px;
+	margin: 0 auto;
+	position: relative;
+	top: 41px; left: -8px;
+}
+
+/* Title-Box */
+div.title-right, div.title-body {
+	width: 100%; height: 24px;
+	margin: 0;
+}
+div.title-body { margin-bottom: 10px; }
+div.title-left {
+	width: auto; height: 10px;
+	margin: 0;
+}
+
+div.center {
+	text-align: center;
+}
+
+div.title-left {
+	background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/bg_title_left.gif) top left no-repeat;
+	padding: 7px 10px;
+}
+div.title-left-shop { background-image: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/bg_title_left_shop.gif); }
+div.title-right {
+	background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/bg_title_right.gif) top right no-repeat;
+}
+div.title-right-shop { background-image: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/bg_title_right_shop.gif); }
+div.title-body {
+	background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/bg_title.gif) top left repeat-x;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 11px; line-height: 11px;
+}
+
+/* Work Area */
+div.left-col {
+	width: 160px; height: auto;
+	margin: 0;
+	padding-right: 20px;
+}
+div.left-col2 {
+	width: 162px; height: auto;
+	margin: 0;
+	padding-right: 18px;
+}
+
+/* Left Col */
+div.left-col-title {
+	background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/arrow.gif) 0 3px no-repeat;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #818285;
+	margin-bottom: 3px;
+	padding-left: 19px;
+}
+
+.menu-left li {
+	background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/bullet.gif) 0 6px no-repeat;
+	padding-left: 10px;
+	line-height: 12px;
+}
+
+select.city {
+	font-size: 10px;
+	width: 141px;
+	margin: 7px 0 17px 19px;
+	display: block;
+}
+
+
+/*Data table*/
+table.data-table
+{
+	border:1px solid #99BAD7;
+	border-collapse:collapse;
+}
+
+/*Any cell*/
+table.data-table td
+{
+	border:1px solid #99BAD7;
+	background-color:#FFFFFF;
+	color:#333;
+	padding:3px 5px;
+}
+
+/*Head cell*/
+table.data-table thead td, table.data-table th
+{
+	background-color:#F1F5FA;
+	text-align:left;
+	font-weight:normal;
+	background-image:none;
+	border:1px solid #99BAD7;
+	padding:4px;
+	color:#333;
+	vertical-align:top;
+}
+
+/*Body cell*/
+table.data-table tbody td
+{
+	background-color:#FFF;
+	background-image:none;
+	color:#333;
+}
+
+/*Foot cell*/
+table.data-table tfoot td
+{
+	background-color:#F1F5FA;
+	padding:4px;
+	color:#333;
+}
+
+/*Error & OK messages*/
+.errortext
+{
+	color:red;
+}
+
+.notetext
+{
+	color:green;
+}
+
+/* Used to draw a "star" near reqired field */
+.starrequired
+{
+	color:red;
+}
+
+table.feedback-table {
+	width: 470px;
+	border-width: 0;
+}
+
+table.feedback-table td {
+	border-width: 0;
+	vertical-align: middle;
+}
+
+table.feedback-table td.input input,
+table.feedback-table td.input textarea {
+	width: 260px;
+}
+
+table.vacancy-form {
+	width: 400px;
+}
+
+table.vacancy-form table,
+table.vacancy-form p {
+	margin: 0 !important;
+}
+
+table.vacancy-form td {
+	white-space: nowrap;
+}
+
+table.vacancy-form th,
+table.vacancy-form2 th {
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table.vacancy-form td.input textarea,
+table.vacancy-form td.input input {
+	width: 350px;
+}
+
+table.vacancy-form td.input textarea {
+	height: 50px;
+}
+
+table.vacancy-form td.input select {
+	width: 356px;
+}
+
+table.tel-table {
+	border-width: 0;
+}
+
+table.tel-table input {
+	width: 269px;
+}
+
+/* Catalog */
+.catalog-price {
+	color: #006BB6;
+	font-size: 17px; /*24px;*/
+	font-weight: bold;
+}
+
+.discount-price {
+	color: #808285;
+	font-size: 14px; /*18px;*/
+	font-weight: bold;
+	text-decoration: line-through;
+}
+
+.catalog-element span.catalog-price {
+	/*font-size: 28px !important;*/
+}
+
+
+/* Print */
+div#print {
+	font-size: 10px;
+	color: #818285;
+	float: right;
+	display: none;
+}
+
+div#print a { font-size: 10px; color: #818285; text-decoration: none; }
+div#print a:hover { text-decoration: underline; }
+
+/* Sort */
+table.sort th {
+	vertical-align: top;
+	color: #006BB6;
+	font-size: 11px;
+	padding: 0 8px 0 0;
+	text-transform: uppercase;
+}
+
+table.sort td {
+	padding: 0;
+}
+
+table.sort td select {
+	font-size: 11px;
+	vertical-align: top;
+	background-color: #E6E6E6;
+	color: #006BB6;
+	border: 1px solid #005A9C !important;
+}
+
+/* Catalog */
+/*div.main-catalog-section p.feedback,
+div.catalog-section p.feedback {
+	margin-bottom: 0 !important;
+}*/
+
+/* preview-image hack */
+div.element-header table.elem img,
+table.preview-image td a img {
+	vertical-align: top;
+	-ms-interpolation-mode: bicubic;
+}
+
+ul.more_photo li img { -ms-interpolation-mode: bicubic; }
+
+.icon-container { width: 110px; height: 70px; overflow: hidden; }
+.icon-container2 { width: 120px; height: 70px; }
+
+/* Bonus */
+.check-bonus { width: 162px; height: 168px; background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/bonus_bg2.gif) left top no-repeat; padding-top: 118px; }
+.check-bonus form { width: 144px; margin: 0 auto; }
+.check-bonus select { width: 144px; margin-bottom: 6px; }
+.check-bonus input.text { width: 132px; padding-left: 4px; padding-right: 4px; margin-bottom: 6px; }
+.check-bonus input.submit { width: 144px; height: 25px; border: none; padding: 0; background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/bonus_button.gif) left top no-repeat; cursor: pointer; }
+
+/* Show Shop */
+a.show-shop { background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/show_shop.gif) left top no-repeat; width: 110px; height: 25px; display: block; } 
+
+a.feedback { background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/feedback.gif) left top no-repeat; width: 162px; height: 51px; display: block; margin-bottom: 12px; }
+a.callback { background: url(http://www.sportmaster.ru/bitrix/templates/pagemaster_01.2009_lite/images/callback.gif) left top no-repeat; width: 162px; height: 51px; display: block; margin-bottom: 12px; }

@@ -1,0 +1,99 @@
+/* reset */
+* { outline:none;}
+html, body { margin:0; padding:0; cursor:default; text-align:left; color:#000;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0; font-weight:bold;}
+img { margin:0; padding:0; border:0;}
+table, td { border-collapse:collapse; margin:0; padding:0; vertical-align:middle; border-spacing:0;  border-spacing:0;}
+a, img, a img, iframe, form, fieldset, abbr, acronym, object, applet { border: none; }
+p { margin:0; padding:0;}
+ul, li { margin:0; padding:0; list-style:none;}
+form { margin:0; padding:0;}
+:focus { outline:none;}
+.clear { clear:both; font-size:0; line-height:0; overflow:hidden; height:0; border:0;}
+a { outline:none; cursor:pointer; color:#58585A; text-decoration:none;}
+a:hover { text-decoration:underline;}
+
+
+body {
+    font-family: Arial;
+}
+
+#main {
+    margin: 0 auto;
+    width: 961px;
+    background: url('../images/bg.jpg') no-repeat left 205px;
+}
+#menu {
+    background: url('../images/menu_bg.jpg') no-repeat;
+    height: 24px;
+    color: #58585A;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 7px;
+    padding-left: 48px;
+}
+.active {
+    color: #FF985F;
+}
+#menubottom {
+    background: url('../images/line2.jpg') no-repeat;
+    height: 24px;
+    color: #58585A;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 7px;
+    padding-left: 48px;
+}
+#sidebar-l {
+    float: left;
+}
+#sidebar-l ul {
+    margin-top: 15px;
+}
+#sidebar-l ul li {
+    color: #46B3AA;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 48px;
+    background: url('../images/pimpa1.jpg') no-repeat;
+    padding-bottom: 15px;
+}
+#content {
+    float: right;
+    width: 590px;
+    min-height: 445px;
+}
+#footer {
+    background: #00B3AA;
+    color: #fff;
+}
+#content p {
+    color: #58585A;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.tel {
+    float: right;
+    color: #46B3AA !important;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 7px;
+    padding-bottom: 0px !important;
+}
+.copy {
+    font-size: 9px;
+    padding-left: 50px;
+    
+}
+.footer-l {
+    float: left;
+}
+.footer-r {
+    float: right;
+}
+.footer-r p {
+    font-size: 12px;
+    padding-top: 14px;
+    padding-right: 50px;
+}

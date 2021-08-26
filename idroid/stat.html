@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/radio.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="css/coda-slider-2.0.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/vendor/jquery.1.6.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.coda-slider-2.0.js"></script>
+    <script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/vendor/jquery.ui.datepicker.js"></script>
+    <script src="js/vendor/jquery.radio.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body class="subpage">
+<header class="hd">
+
+    <hgroup class="clearfix">
+        <a href="#" class="logo"><img src="images/logo.png" alt=""/></a>
+        <div class="headright-login">
+            <img src="images/avatar.png" class="avatar" alt=""/>
+            <div>
+                <span class="name">Марина Васильевна Ишакова</span>
+                <a class="email" href="mailto:dashapechkina2gmail.com">dashapechkina2gmail.com</a>
+                <a href="profile.html" class="edit">Ред</a>
+            </div>
+            <div class="menu-login">
+                <ul>
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Выйти</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="myprice">Ваша цена: 70р</div>
+
+        <div class="regpopup">
+            <img src="images/regpopupimg.png" class="regpopupimg" alt=""/>
+            <a href="#" class="close"><img src="images/close.png" alt=""/></a>
+            <h3>Регистрация</h3>
+            <form action="/">
+                <div>
+                    <label for="mail">E-mail</label>
+                    <input type="text" value="" class="inptxt" name="mail" />
+                </div>
+                <div>
+                    <label for="password">Пароль</label>
+                    <input type="password" value="" class="inptxt" name="password" />
+                </div>
+                <div>
+                    <label for="wmr" style="line-height: 13px;">WMR<br /> <b>кошелёк</b></label>
+                    <input type="text" value="" class="inptxt" name="wmr" />
+                </div>
+                <span>Отчисления рассчитываются индивидуально и зависят от конкретного объемов трафика и других факторов</span>
+                <input type="submit" value="Зарегистрироваться" class="inpsubmit"/>
+            </form>
+        </div>
+
+
+
+        <div class="enterpopup">
+            <img src="images/regpopupimg.png" class="enterpopupimg" alt=""/>
+            <a href="#" class="close"><img src="images/close.png" alt=""/></a>
+            <h3>Авторизация</h3>
+            <form action="/">
+                <div>
+                    <label for="mail">E-mail</label>
+                    <input type="text" value="" class="inptxt" name="mail" />
+                </div>
+                <div>
+                    <label for="password">Пароль</label>
+                    <input type="password" value="" class="inptxt" name="password" />
+                </div>
+                <span></span>
+                <input type="submit" value="Войти в систему" class="inpsubmit"/>
+            </form>
+        </div>
+
+    </hgroup>
+
+    <nav>
+        <ul class="mainmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="stat.html">Статистика</a></li>
+            <li><a href="promo.html">Промо</a></li>
+            <li><a href="potoki.html">Потоки и Парковка</a></li>
+            <li><a href="viplaty.html">Выплаты</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- .hd -->
+<div id="main">
+    <section class="hs clearfix" style="margin-top: 40px;">
+         <h3 class="titlestat">Обзор доходов</h3>
+
+        <div class="addpotok graf-menu clearfix" style="width:940px; margin-bottom: 50px; position: relative;">
+             <nav class="graf1-menu">
+                <ul class="tabNavigation">
+                    <li><a href="#first1">Общая</a></li>
+                    <li><a href="#second2">МТ</a></li>
+                    <li><a href="#third3">Список СМС</a></li>
+                </ul>
+             </nav>
+            <div id="first1" class="graf1">
+                <img src="images/graf1.png" alt="" />
+            </div>
+            <div id="second2" class="graf1">
+                <img src="images/graf1.png" alt="" />
+            </div>
+            <div id="third3" class="graf1">
+                <img src="images/graf1.png" alt="" />
+            </div>
+            <span class="clear grafshadow"></span>
+        </div>
+        <div class="clear"></div>
+        <div class="statistics clearfix">
+
+
+            <ul class="tabNavigation">
+                <li><a href="#first">Общая статистика</a></li>
+                <li><a href="#second">По потокам</a></li>
+                <li><a href="#third">МТ-подписки</a></li>
+                <li><a href="#fourth">МО</a></li>
+                <li><a href="#fiveth">По рефералам</a></li>
+            </ul>
+            <div class="clear"></div>
+        <div id="first">
+            <div class="paybox-title clearfix">
+                <div class="changedate">
+                    <table class="b-radiobox__table">
+                        <tr>
+                            <td style="width:85px;">Сегодня</td>
+                            <td style="width: 70px;">Вчера</td>
+                            <td style="width: 85px;">Неделя</td>
+                            <td style="width: 90px;">Месяц</td>
+                            <td style="width: 75px;">Год</td>
+                        </tr>
+                    </table>
+                    <div class="b-radiobox clearfix">
+                        <form>
+                        <div class="b-radiobox__item">
+                            <input type="radio" class="b-radio" name="radio" value="1" checked="checked" />
+                        </div>
+                        <div class="b-radiobox__item2"></div>
+                        <div class="b-radiobox__item">
+                            <input type="radio" class="b-radio" name="radio" value="2" />
+                        </div>
+                        <div class="b-radiobox__item2"></div>
+                        <div class="b-radiobox__item">
+                            <input type="radio" class="b-radio" name="radio" value="3" />
+                        </div>
+                        <div class="b-radiobox__item2"></div>
+                        <div class="b-radiobox__item">
+
+                            <input type="radio" class="b-radio" name="radio" value="4" />
+                        </div>
+                        <div class="b-radiobox__item2"></div>
+                        <div class="b-radiobox__item">
+                            <input type="radio" class="b-radio" name="radio" value="5" />
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="datebox-right">
+                    <input type="text" id="from" name="from" />
+                    <label>-</label>
+                    <input type="text" id="to" name="to" />
+                    <input class="sendbut" value="Выбрать" type="button" />
+                </div>
+            </div>
+            <table class="paytable">
+                <thead>
+                <tr>
+                    <th rowspan="2">Дата</th>
+                    <th colspan="3">Траффик</th>
+                    <th rowspan="2">Загрузки</th>
+                    <th rowspan="2">Установки</th>
+                    <th colspan="2">СМС</th>
+                    <th colspan="4">Подписки</th>
+                    <th rowspan="2">Конверт</th>
+                    <th rowspan="2">Итого</th>
+                </tr>
+                <tr>
+                    <th>Уники</th>
+                    <th>Хиты</th>
+                    <th>ТБ</th>
+                    <th>Кол.</th>
+                    <th>Доход.</th>
+                    <th>Нов.</th>
+                    <th>Отп.</th>
+                    <th>Ребилл.</th>
+                    <th>Доход.</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>01.11.13</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>400</td>
+                    <td>3413424</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>1:1537</td>
+                    <td>3413424</td>
+                </tr>
+                <tr>
+                    <td>01.11.13</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>500</td>
+                    <td>3413424</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>1:1537</td>
+                    <td>3413424</td>
+                </tr>
+                <tr>
+                    <td>01.11.13</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>3413424</td>
+                    <td>600</td>
+                    <td>3413424</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>1:1537</td>
+                    <td>3413424</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td>Итого</td>
+                    <td>1839473920</td>
+                    <td>1839473920</td>
+                    <td>1839473920</td>
+                    <td>9636450</td>
+                    <td>9636450</td>
+                    <td>9636450</td>
+                    <td>1500</td>
+                    <td>9636450</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>1:1537</td>
+                    <td>1 500 000</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+            <div id="second">
+                <div class="paybox-title clearfix">
+                    <div class="changedate">
+                        <table class="b-radiobox__table">
+                            <tr>
+                                <td style="width:85px;">Сегодня</td>
+                                <td style="width: 70px;">Вчера</td>
+                                <td style="width: 85px;">Неделя</td>
+                                <td style="width: 90px;">Месяц</td>
+                                <td style="width: 75px;">Год</td>
+                            </tr>
+                        </table>
+                        <div class="b-radiobox clearfix">
+                            <form>
+                                <div class="b-radiobox__item">
+                                    <input type="radio" class="b-radio" name="radio" value="1" checked="checked" />
+                                </div>
+                                <div class="b-radiobox__item2"></div>
+                                <div class="b-radiobox__item">
+                                    <input type="radio" class="b-radio" name="radio" value="2" />
+                                </div>
+                                <div class="b-radiobox__item2"></div>
+                                <div class="b-radiobox__item">
+                                    <input type="radio" class="b-radio" name="radio" value="3" />
+                                </div>
+                                <div class="b-radiobox__item2"></div>
+                                <div class="b-radiobox__item">
+
+                                    <input type="radio" class="b-radio" name="radio" value="4" />
+                                </div>
+                                <div class="b-radiobox__item2"></div>
+                                <div class="b-radiobox__item">
+                                    <input type="radio" class="b-radio" name="radio" value="5" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="datebox-right">
+                        <input type="text" id="from" name="from" />
+                        <label>-</label>
+                        <input type="text" id="to" name="to" />
+                        <input class="sendbut" value="Выбрать" type="button" />
+                    </div>
+                </div>
+                <table class="paytable">
+                    <thead>
+                    <tr>
+                        <th rowspan="2">Потоки</th>
+                        <th colspan="3">Траффик</th>
+                        <th rowspan="2">Загрузки</th>
+                        <th rowspan="2">Установки</th>
+                        <th colspan="2">СМС</th>
+                        <th colspan="4">Подписки</th>
+                        <th rowspan="2">Конверт</th>
+                        <th rowspan="2">Итого</th>
+                    </tr>
+                    <tr>
+                        <th>Уники</th>
+                        <th>Хиты</th>
+                        <th>ТБ</th>
+                        <th>Кол.</th>
+                        <th>Доход.</th>
+                        <th>Нов.</th>
+                        <th>Отп.</th>
+                        <th>Ребилл.</th>
+                        <th>Доход.</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>400</td>
+                        <td>3413424</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>1:1537</td>
+                        <td>3413424</td>
+                    </tr>
+                    <tr>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>500</td>
+                        <td>3413424</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>1:1537</td>
+                        <td>3413424</td>
+                    </tr>
+                    <tr>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>3413424</td>
+                        <td>600</td>
+                        <td>3413424</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>1:1537</td>
+                        <td>3413424</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>3413424</td>
+                        <td>1839473920</td>
+                        <td>1839473920</td>
+                        <td>1839473920</td>
+                        <td>9636450</td>
+                        <td>9636450</td>
+                        <td>9636450</td>
+                        <td>1500</td>
+                        <td>9636450</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>1:1537</td>
+                        <td>1 500 000</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        <div id="third">
+            <div class="paybox-title clearfix">
+                <div class="changedate">
+                    <table class="b-radiobox__table">
+                        <tr>
+                            <td style="width:85px;">Сегодня</td>
+                            <td style="width: 70px;">Вчера</td>
+                            <td style="width: 85px;">Неделя</td>
+                            <td style="width: 90px;">Месяц</td>
+                            <td style="width: 75px;">Год</td>
+                        </tr>
+                    </table>
+                    <div class="b-radiobox clearfix">
+                        <form>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="1" checked="checked" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="2" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="3" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+
+                                <input type="radio" class="b-radio" name="radio" value="4" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="5" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="datebox-right">
+                    <input type="text" id="from" name="from" />
+                    <label>-</label>
+                    <input type="text" id="to" name="to" />
+                    <input class="sendbut" value="Выбрать" type="button" />
+                </div>
+            </div>
+            <table class="paytable">
+                <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Потоки</th>
+                    <th>Оператор</th>
+                    <th>Абонент</th>
+                    <th>Ребилы</th>
+                    <th>Доходы</th>
+                    <th>Статус</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>01.11.13</td>
+                    <td>2128383</td>
+                    <td>МегаФон</td>
+                    <td>+79167463523</td>
+                    <td>34</td>
+                    <td>3413424</td>
+                    <td>Ожидается</td>
+                </tr>
+                <tr>
+                    <td>01.11.13</td>
+                    <td>2128383</td>
+                    <td>МегаФон</td>
+                    <td>+79167463523</td>
+                    <td>34</td>
+                    <td>3413424</td>
+                    <td>Ожидается</td>
+                </tr>
+                <tr>
+                    <td>01.11.13</td>
+                    <td>2128383</td>
+                    <td>МегаФон</td>
+                    <td>+79167463523</td>
+                    <td>34</td>
+                    <td>3413424</td>
+                    <td>Ожидается</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td>Итого</td>
+                    <td>1839473920</td>
+                    <td></td>
+                    <td></td>
+                    <td>34</td>
+                    <td>9636450</td>
+                    <td></td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div id="fourth">
+            <div class="paybox-title clearfix">
+                <div class="changedate">
+                    <table class="b-radiobox__table">
+                        <tr>
+                            <td style="width:85px;">Сегодня</td>
+                            <td style="width: 70px;">Вчера</td>
+                            <td style="width: 85px;">Неделя</td>
+                            <td style="width: 90px;">Месяц</td>
+                            <td style="width: 75px;">Год</td>
+                        </tr>
+                    </table>
+                    <div class="b-radiobox clearfix">
+                        <form>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="1" checked="checked" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="2" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="3" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+
+                                <input type="radio" class="b-radio" name="radio" value="4" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="5" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="datebox-right">
+                    <input type="text" id="from" name="from" />
+                    <label>-</label>
+                    <input type="text" id="to" name="to" />
+                    <input class="sendbut" value="Выбрать" type="button" />
+                </div>
+            </div>
+            <table class="paytable">
+                <thead>
+                <tr>
+                    <th>Получена</th>
+                    <th>Потоки</th>
+                    <th>Телефон</th>
+                    <th>Страна</th>
+                    <th>Оператор</th>
+                    <th>Короткий номер</th>
+                    <th>Доход</th>
+                    <th>Тип мидлета</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>01.11.13</td>
+                    <td>3413424</td>
+                    <td>+79167463523</td>
+                    <td>Россия</td>
+                    <td>МегаФон</td>
+                    <td>4483</td>
+                    <td>3413424</td>
+                    <td>Ожидается</td>
+                </tr>
+                <tr>
+                    <td>01.11.13</td>
+                    <td>3413424</td>
+                    <td>+79167463523</td>
+                    <td>Россия</td>
+                    <td>МегаФон</td>
+                    <td>4483</td>
+                    <td>3413424</td>
+                    <td>Ожидается</td>
+                </tr>
+                <tr>
+                    <td>01.11.13</td>
+                    <td>3413424</td>
+                    <td>+79167463523</td>
+                    <td>Россия</td>
+                    <td>МегаФон</td>
+                    <td>4483</td>
+                    <td>3413424</td>
+                    <td>Ожидается</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td>Итого</td>
+                    <td>1839473920</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>9636450</td>
+                    <td></td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div id="fiveth">
+            <div class="paybox-title clearfix">
+                <div class="changedate">
+                    <table class="b-radiobox__table">
+                        <tr>
+                            <td style="width:85px;">Сегодня</td>
+                            <td style="width: 70px;">Вчера</td>
+                            <td style="width: 85px;">Неделя</td>
+                            <td style="width: 90px;">Месяц</td>
+                            <td style="width: 75px;">Год</td>
+                        </tr>
+                    </table>
+                    <div class="b-radiobox clearfix">
+                        <form>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="1" checked="checked" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="2" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="3" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+
+                                <input type="radio" class="b-radio" name="radio" value="4" />
+                            </div>
+                            <div class="b-radiobox__item2"></div>
+                            <div class="b-radiobox__item">
+                                <input type="radio" class="b-radio" name="radio" value="5" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="datebox-right">
+                    <input type="text" id="from" name="from" />
+                    <label>-</label>
+                    <input type="text" id="to" name="to" />
+                    <input class="sendbut" value="Выбрать" type="button" />
+                </div>
+            </div>
+            <table class="paytable">
+                <thead>
+                <tr>
+                    <th>Рефералы</th>
+                    <th>Дата регистрации</th>
+                    <th>Доход</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>id256</td>
+                    <td>01.11.13</td>
+                    <td>3413424</td>
+                </tr>
+                <tr>
+                    <td>id8374</td>
+                    <td>01.11.13</td>
+                    <td>3413424</td>
+                </tr>
+                <tr>
+                    <td>kolya</td>
+                    <td>01.11.13</td>
+                    <td>3413424</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td>Итого</td>
+                    <td></td>
+                    <td>9636450</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        </div>
+
+    </section>
+    <!-- .hs -->
+</div>
+<footer>
+    <hr />
+    <div class="foot-top">
+        <nav class="footermenu clearfix">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="rules.html">Правила</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="partners.html">Партнёры</a></li>
+                <li><a href="company.html">Компания</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix" style="margin-top: 33px;">
+            <nav class="footerbotmenu clearfix">
+                <ul>
+                    <li><a href="#">iOS</a></li>
+                    <li><a href="#">Android</a></li>
+                    <li><a href="#">SMS, MT, VISA, Мобильная коммерция</a></li>
+                    <li><a href="#">50 стран для вашего трафика</a></li>
+                </ul>
+            </nav>
+            <span class="copy"><img src="images/minilogo.png" alt=""/> &copy 2013 iDroid.com — партнерская программа</span>
+
+        </div>   </div>
+</footer>
+<!-- .f1 -->
+
+
+</body>
+</html>

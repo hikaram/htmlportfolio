@@ -1,0 +1,162 @@
+.panel h2.title {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: #FFFFFF;
+    font-family: "Georgia",sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+/* Styling for specific sliders */
+#coda-nav-1 {
+    width: 940px !important;
+    margin: 0 auto;
+}
+#coda-nav-1 ul {
+    background: url('../images/tabbg.png') repeat-x;
+    width: 940px !important;
+    margin: 0 auto;
+    display: block;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#coda-nav-left-5 {
+    margin: 0 1px 0 135px
+}
+#coda-nav-left-5, #coda-nav-5, #coda-nav-right-5 {
+    float: left
+}
+#coda-nav-5 ul {
+    margin: 0 !important
+}
+#coda-nav-left-5 a, #coda-nav-right-5 a {
+    padding: 3px;
+    width: 20px
+}
+#coda-slider-5 {
+    clear: both
+}
+#coda-slider-9, #coda-slider-9 .panel {
+    width: 465px
+}
+#coda-slider-9 h2.title {
+    display: none
+}
+/* Most common stuff you'll need to change */
+.coda-slider-wrapper {
+    padding: 50px 0 0 0;
+    position: relative;
+}
+.coda-slider {
+    background: none;
+}
+/* Use this to keep the slider content contained in a box even when JavaScript is disabled */
+.coda-slider-no-js .coda-slider {
+    height: 200px;
+    overflow: auto !important;
+    padding-right: 20px
+}
+/* Change the width of the entire slider (without dynamic arrows) */
+.coda-slider, .coda-slider .panel {
+    width: 981px !important;
+}
+/* Change margin and width of the slider (with dynamic arrows) */
+.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel {
+    width: 981px !important;
+}
+.coda-slider-wrapper.arrows .coda-slider {
+    height: 560px !important;
+}
+/* Arrow styling */
+.coda-nav-left a {
+    background:url("../images/arrow-l.png");
+    color: #fff;
+    width: 68px;
+    height: 67px;
+    text-indent: -99999px;
+    position: absolute;
+    z-index: 9999;
+    top: 265px;
+}
+.coda-nav-right a {
+    background:url("../images/arrow-r.png");
+    color: #fff;
+    width: 68px;
+    height: 67px;
+    text-indent: -99999px;
+    position: absolute;
+    top:265px;
+    right: 0;
+}
+
+/* Tab nav */
+.coda-nav ul li a.current, .coda-nav ul li a:hover {
+    background:  url('../images/slide-icon1.png') no-repeat 10px 8px, url('../images/tabbg-act.png') repeat-x 0 0;
+    color: #fff;
+}
+/* Panel padding */
+.coda-slider .panel-wrapper {
+    padding-left: 150px;
+}
+/* Preloader */
+.coda-slider p.loading {
+    padding: 20px;
+    text-align: center
+}
+/* Don't change anything below here unless you know what you're doing */
+/* Tabbed nav */
+.coda-nav ul {
+    clear: both;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 0 8px 0;
+}
+.coda-nav ul li {
+    display: block;
+    float: left;
+    position: relative;
+}
+.coda-nav ul li a {
+    color: #21252B;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 30px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    margin-right: 0;
+    padding: 3px 9px;
+    text-decoration: none;
+}
+.safari .coda-nav ul li a {
+    font-size: 13px;
+}
+.mac .opera .coda-nav ul li a {
+    font-size: 13px;
+    letter-spacing: -1px !important;
+}
+/* Miscellaneous */
+.coda-slider-wrapper {
+    clear: both;
+}
+.coda-slider {
+    float: left;
+    overflow: hidden;
+    position: relative
+}
+.coda-slider .panel {
+    display: block;
+    float: left
+}
+.coda-slider .panel-container {
+    position: relative
+}
+.coda-nav-left a, .coda-nav-right a {
+    display: block;
+    text-align: center;
+    text-decoration: none
+}
+	
+	
+	

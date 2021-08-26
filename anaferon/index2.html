@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/HeliosCondLight_400.font.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/litebox.js"></script>
+    <link href="css/print.css" type="text/css" rel="stylesheet" media="print"  />
+    <style type="text/css">
+
+media print { /* Стиль для печати */
+ *{display:none;}
+#litebox img{  display: block;
+}}
+
+</style>
+    <script type="text/javascript">
+     Cufon.replace('.menubot p', { fontFamily: 'HeliosCondLight' });
+     Cufon.replace('.menu ul li', { fontFamily: 'HeliosCondLight' });
+</script>
+
+    <title>index 1</title>
+
+
+    <!--[if IE 6]>
+<script src="js/dd_belatedpng_006a.js"></script>
+<script>
+DD_belatedPNG.fix('img, .hcont, .headerimg');
+</script>
+<![endif]-->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#mycarousel').jcarousel({
+        start: 1
+    });
+    
+});
+
+
+/*function printme() {
+
+pr = document.getElementById('printer').innerHTML; 
+newWin=window.open('','printWindow','Toolbar=0,Location=0,Directories=0,Status=0,Menubar=0,Scrollbars=0,Resizable=0');
+newWin.document.open();
+newWin.document.write(pr);
+newWin.document.close();
+)*/
+
+
+
+/*
+function makepage(src) {
+  // We break the closing script tag in half to prevent
+  // the HTML parser from seeing it as a part of
+  // the *main* page.
+  return "<html>\n" +
+    "<head>\n" +
+    "<title>Temporary Printing Window</title>\n" +
+    "<script>\n" +
+    "function step1() {\n" +
+    "  setTimeout('step2()', 10);\n" +
+    "}\n" +
+    "function step2() {\n" +
+    "  window.print();\n" +
+    "  window.close();\n" +
+    "}\n" +
+    "</scr" + "ipt>\n" +
+    "</head>\n" +
+    "<body onLoad='step1()'>\n" +
+    "<img src='" + src + "'/>\n" +
+    "</body>\n" +
+    "</html>\n";
+}
+function printme(evt) {
+  // Old IE
+  var image = evt.target;
+  if (!image) image = window.event.srcElement;
+  if (!evt) evt = window.event;
+  src = image.src;
+  link = "about:blank";
+  var pw = window.open(link,"_new");
+  pw.document.open();
+  pw.document.write(makepage(src));
+  //pw.document.close();
+}*/
+</script>
+
+  </head>
+  <body>
+    <div id="main">
+      <div id="sidebar">
+        <div class="menu">
+          <img alt="" src="images/menu-top.png" class="img-top" />
+          <div class="icons">
+            <ul>
+            <li><a href="/"><img alt="" src="images/home.jpg" /></a></li>
+            <li><a href="#"><img alt="" src="images/map.jpg" /></a></li>
+            <li><a href="#"><img alt="" src="images/mail.jpg" /></a></li>
+          </ul>
+            <div class="clearing"></div>
+          </div>
+          <ul>
+            <li class="link1"><a href="index.html">Лечение</a></li>
+            <li class="link2"><a href="index1.html">Профилактика</a></li>
+            <li class="link3"><a href="index2.html">Оздоровление</a></li>
+          </ul>
+          <div class="menubot">
+            <p><img alt="" src="images/pimp4.jpg" /> Книжный клуб<br/>  «Почитайка»</p>
+          </div>
+          <img alt="" src="images/menu-bot.png" class="img-bot" />
+        </div>
+
+        <div class="saidtext">
+<p>Послушайте, папы, послушайте, мамы,<br/>
+Доверьтесь совету, не будьте упрямы!<br/>
+Ведь это кощунство, ведь это обман,<br/>
+Когда вместо книги - телеэкран!<br/>
+И утро, и вечер, недели подряд<br/>
+Сидят ваши дети и в ящик глядят.<br/>
+Жуют, в телевизор засунувши нос,<br/>
+И их усыпляет телегипноз.<br/>
+Они не играют, они не шалят,<br/>
+Они не похожи на прежних ребят.<br/>
+Послушайте, папы, послушайте, мамы,<br/>
+Доверьтесь совету, не будьте упрямы!<br/>
+Выбросьте телек, нету в нем толку,<br/>
+Повесьте на стенку книжную полку,<br/>
+И по прошествии нескольких дней<br/>
+Вы не узнаете ваших детей …</p>
+        </div>
+        <img alt="" src="images/said-bot.png" />
+        <div class="saidbottext"> <i><strong>Роальд Даль.</strong> <br/>
+«Чарли и шоколадная фабрика»</i> </div>
+      </div>
+      <div id="page">
+        <h1>Книжный клуб «Почитайка»</h1>
+        <img alt="" src="images/header-img.png" class="headerimg" />
+        <div id="login">
+          <img alt="" src="images/login-top.png" class="img-top" />
+          <div class="loginform">
+            <p class="logint-top">Личный кабинет</p>
+            <p><input type="text" value="логин" onfocus="if (this.value=='логин') this.value='';"
+onblur="if (this.value==''){this.value='логин'}" class="inptext" /></p>
+            <p><input type="text" onfocus="if (this.value=='пароль') this.value='';"
+onblur="if (this.value==''){this.value='пароль'}" value="пароль" class="inptext" /></p>
+            <p><input type="checkbox" class="checks" /> запомнить меня</p>
+            <p><input type="submit" value="" class="loginenter" /></p>
+            <span><a href="#">вспомнить пароль</a></span>
+          </div>
+          <img alt="" src="images/login-bottom.png" class="img-bot" />
+          <p class="regtext"><a href="#">регистрация</a></p>
+        </div>
+        <div class="clearing"></div>
+       
+       <div class="content-recenz">
+        <h3>Рецензии</h3>
+        
+        <a href="#" class="toback">Вернуться к списку</a>
+        
+        
+        <h4>Астрид Линдгрен</h4>
+        <i>Мы - на острове Сальткрока</i>
+
+        <p>Сальткрока — это утопающий в алых розах шиповника и белых гирляндах жасмина остров, 
+        где среди серых щербатых скал растут зеленые дубы и березки, на лугах цветут цветы и густой кустарник. 
+        Остров, за которым начинается открытое море. Чтобы на него попасть, нужно несколько часов плыть на белом
+         рейсовом пароходике «Сальткрока-I». На нем-то и отправилась в один прекрасный июньский день семья коренных 
+         стокгольмцев по фамилии Мелькерссон.</p>
+        
+
+         <div class="clearing"></div>
+            </div>
+            <h3 class="gall">Галерея</h3>
+		
+			<ul id="mycarousel" class="jcarousel-skin-tango">				
+				<li><a href="images/img1.jpg" rel="lightbox"><img src="images/img1.jpg" alt="" /></a></li>
+				<li><a href="images/img2.jpg" rel="lightbox"><img src="images/img2.jpg" alt="" /></a></li>
+				<li><a href="images/img3.jpg" rel="lightbox"><img src="images/img3.jpg" alt="" /></a></li>
+				<li><a href="images/img4.jpg" rel="lightbox"><img src="images/img4.jpg" alt="" /></a></li>
+				<li><a href="images/img5.jpg" rel="lightbox"><img src="images/img2.jpg" alt="" /></a></li>
+                <li><img src="images/img3.jpg" alt="" /></li>
+				<li><img src="images/img4.jpg" alt="" /></li>
+                <li><img src="images/img3.jpg" alt="" /></li>
+				<li><img src="images/img4.jpg" alt="" /></li>			
+			</ul>
+	<h3 class="comm">Коментарии</h3>
+  <ul id="recenz-coment">
+          <li>
+            <h3>Валентин 12.10.10  |  14:12</h3>
+            Ура! Мы - на острове Сальткрока
+          </li>
+          <li><h3>Зинаида Петровна 09.10.10  |  12:26</h3>
+          Я всех люблю! Я люблю такого замечательного человека как Астрид, его творчество, желание жить и его фамилию. Я люблю когда буквы превращаются в слова, слова в предложения, предложения в абзацы, а абзацы в поемы и рассказы. Так здорово что кто-то берет потом и записывает их на бумагу. Я так это люблю. Боже мой, я так люблю писать комментарии!!!
+          </li>
+          <li><h3>Эрнест Топольский 04.10.10  |  00:17 </h3>
+          А вы знаете, когда-то в детстве я съел кузнечика. Потом целую неделю грустил... Знаю что не в тему, но так захотелось поделиться переживаниями, что не сдержался, простите.
+          </li>
+        </ul>
+        
+         <ul class="pager">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">10</a></li>
+        </ul>
+           <div class="clearing"></div>
+        
+        <h3 class="comm">Добавить комментарий</h3>
+        
+          <p>
+          <textarea class="text-coment">
+          </textarea>
+          </p>
+          <div class="logincom">
+            <div class="f-l">Логин</div> <input type="text" value=""  class="inplogin" />
+            <div class="clearing"></div>
+            <div class="f-l">Пароль</div> <input type="text" value="" class="inplogin" />
+            <div class="clearing"></div>
+            </div>
+       <p class="reg-p"> Для написания комментария нужно <a href="" class="reg-a">зарегистрироваться</a>.</p>
+       
+       <a href="" class="submit-comm"><img alt="" src="images/submit-comm.jpg" /></a>
+        
+       
+      </div>
+      <div class="clearing"></div>
+
+
+    </div>
+
+    <div class="footer">
+        	<!-- contact information -->
+            <div class="foot_1"><h4>Контактная информация</h4>
+<p>Тел. (044) 229-88-96 <br/>(Киев, Украина)</p><a href="mailto:registration@anaferon.com.ua" title="registration@anaferon.com.ua">registration@anaferon.com.ua</a></div>
+            <div class="foot_3">
+            	<p>Copyright 2002-2009<br/><br/>
+                  <span>Производитель: НПФ "Материа<br/> Медика Холдинг"</span></p>
+                <a title="Создание сайта - Media5.  Киев, Украина." href="http://www.media5.com/">Создание сайта</a>
+                <a title="Создание сайта - Media5. Киев, Украина." href="http://www.media5.com/"><img title="Создание сайта - Media5. Киев, Украина." alt="Создание сайта - Media5. Киев, Украина." src="images/media5logo.jpg" /></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+  </body>
+</html>

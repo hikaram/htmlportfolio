@@ -1,0 +1,17 @@
+* html .clearfix {height: 1%}
+.ul_middle {margin-left:42px}
+.venecia_go, .prizes {margin-left:42px}
+* html .ul_small li {display:inline}
+.media5 {position:relative;top:1px}
+* html .shadow, * html .big_ph img {
+position:absolute;
+}
+html, body { margin: 0; padding: 0; width: 100%; }
+html{
+  background:url(about:blank)
+}
+* html .big_ph img { top:expression(eval(document.documentElement.scrollTop+50)); margin-top:0px;}
+
+.footer {margin-top:66px}
+
+.ul_middle {padding-left:170px}

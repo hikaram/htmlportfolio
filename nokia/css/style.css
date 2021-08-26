@@ -1,0 +1,163 @@
+.clear {
+  clear: both;
+}
+#body-wrapper {
+  margin: 0 auto;
+  width: 996px;
+}
+#header-wrapper {
+  min-height: 100px;
+  padding: 20px 0;
+}
+#footer-wrapper {
+  min-height: 100px;
+  padding: 20px 0;
+}
+.cabinet-main {
+  float: left;
+  width: 675px;
+}
+.user-cabinet-wrapper {
+  width: 100%;
+}
+.left-sidebar {
+  float: left;
+  padding-right: 20px;
+  width: 300px;
+}
+.faq-wrapper .faq_left_sidebar {
+  float: left;
+  padding-right: 20px;
+  width: 150px;
+}
+.faq-wrapper .faq_left_sidebar ul {
+  border: 1px solid black;
+  padding: 5px;
+}
+.faq-wrapper .faq_main ul {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.faq-wrapper .faq_main {
+  float: left;
+  width: 410px;
+}
+.user-cabinet-wrapper .left-sidebar .user-balance {
+  border: 1px solid black;
+  float: left;
+  padding: 15px;
+  width: 113px;
+}
+.user-cabinet-wrapper .left-sidebar .user-cart {
+  border: 1px solid black;
+  float: right;
+  padding: 15px;
+  width: 113px;
+}
+#logo {
+  float: left;
+}
+#login {
+  float: right;
+}
+.popup {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid black;
+  left: 50%;
+  margin-left: -300px;
+  position: fixed;
+  top: 10px;
+  width: 600px;
+  z-index: 10000;
+}
+.popup-dark {
+  background: none repeat scroll 0 0 #000000;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9990;
+}
+input, textarea {
+  border: 1px solid black;
+}
+a.button {
+  background: none repeat scroll 0 0 #DDDDDD;
+  cursor: pointer;
+}
+.sidebar-links-block {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  width: 268px;
+}
+.login-social {
+  border-top: 1px solid #d4d4d4;
+  padding-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.login-social__title {
+  color: #333333;
+  font-family:  'nokia_pure_textbold', arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.popupTitle {
+  color: #124191;
+  font-size: 20px;
+  padding: 30px 30px 30px 35px;
+}
+.popupClose {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+.label {
+  font-weight: bold;
+}
+.messages-wrapper {
+}
+.messages-wrapper table {
+  width: 98%;
+}
+.messages-wrapper table tr td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+
+/*	  Login Form	*/
+.popupContent {
+  padding: 0 35px;
+}
+#popup-login {
+  width: 365px;
+  border: 1px solid #808080;
+}
+.b-aboutform__bottom {
+  background: #f1f1f1;
+  border-top: 1px solid #d4d4d4;
+  padding: 25px 40px;
+}
+.b-aboutform__bottom a {
+  font-size: 14px;
+  font-family: 'nokia_pure_headlineregular', arial, sans-serif;
+  color: #124191;
+  text-decoration: none;
+}
+.w28 {width: 280px;}
+.b-popupform__title {
+  color: #333333;
+  display: block;
+  font-family: 'nokia_pure_headlineregular', arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

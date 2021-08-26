@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<link rel="stylesheet" href="css/template.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/extra.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+        <script type="text/javascript" src="js/jscarousel.js"></script>
+        <script type="text/javascript" src="js/jquery.modal.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+<!--[if  IE 7]><link rel="stylesheet" href="css/ie7.css" type="text/css" /><![endif]-->
+<style>
+  button {
+    float: left;
+    margin: 50px 10px 0;
+}
+</style>
+</head>
+<body>
+    <!-- start POPUP -->
+  <div class="popup-window" id="loginform">
+	<div class="pw-out">
+		<div class="center enter">
+			<form action="">
+				<fieldset>
+					<h3>Авторизация</h3>
+					<div class="error">Такой комбинации логина и пароля не существует!</div>
+					<div class="row"><label>E-mail:</label><input type="text" class="text1" /></div>
+					<div class="row"><label>Пароль:</label><input type="password" class="text1" /></div>
+                    <div class="reg"><a href="#" class="ShowRobot">регистрация</a>|<a href="#" class="ShowForgot">забыли пароль?</a></div>
+					<div class="remember"><div class="checked"><input type="checkbox" /><label>запомнить меня</label></div></div>
+					<div class="btn ok fll"><input type="submit" value="OK"/><em>&nbsp;</em></div>
+				</fieldset>
+			</form>
+		</div>
+		<a href="#" class="close"><img src="images/close.gif" alt="" /></a>
+	</div>
+</div>
+  
+  <div class="popup-window" id="preorder">
+	<div class="pw-out">
+		<div class="center pre-order">
+			<form action="">
+				<fieldset>
+					<h3>Оформление предзаказа</h3>
+					<p>DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</p>
+					<div class="row"><label>Введите ваше имя:</label><input type="text" class="text1" /></div>
+					<div class="row"><label>Введите ваш e-mail:</label><input type="text" class="text1" /></div>
+					<div class="row"><label>Ваш телефон:</label><input type="text" class="text1" /></div>
+					<div class="row"><label>Ваше комментарий:</label><div class="textarea"><textarea cols="1" rows="1"></textarea></div></div>
+					<div class="btn ok fll"><input type="submit" value="OK"/><em>&nbsp;</em></div>
+				</fieldset>
+			</form>
+		</div>
+		<a href="#" class="close"><img src="images/close.gif" alt="" /></a>
+	</div>
+</div>
+  
+
+
+    <div class="popup-window" id="thanks">
+	<div class="pw-out">
+		<div class="center thanks">
+			<h3>Благодарим Вас!</h3>
+			<p>Текст уведомления здесь</p><br /><br /><br /><br /><br />
+			<div class="back">Вернуться на <a href="#">главную страницу</a></div>
+		</div>
+		<a href="#" class="close"><img src="images/close.gif" alt="" /></a>
+	</div>
+</div>
+    
+    <div class="popup-window" id="forgotpass">
+	<div class="pw-out">
+		<div class="center recovery">
+			<form action="">
+				<fieldset>
+					<h3>Восстановления пароля</h3>
+					<p>Введите Ваш e-mail в форму ниже, чтобы восстановить пароль</p>
+					<div class="error">неверный e-mail!</div>
+					<div class="row"><label>E-mail:</label><input type="text" class="text1" /></div>
+					<div class="btn ok fll"><input type="submit" value="OK"/><em>&nbsp;</em></div>
+				</fieldset>
+			</form>
+		</div>
+		<a href="#" class="close"><img src="images/close.gif" alt="" /></a>
+	</div>
+</div>
+    
+    
+    <div class="popup-window" id="robot">
+	<div class="pw-out">
+		<div class="center antibot">
+			<form action="">
+				<fieldset>
+					<h3>Защита от робота</h3>
+					<div class="error">неверный код!</div>
+					<div class="code"><img src="images/other/11.gif" alt="" /><br /><a href="#">обновить код</a></div>
+					<label>Код с картинки</label>
+					<input type="text" class="text" />
+					<div class="btn ok fll"><input type="submit" value="OK"/><em>&nbsp;</em></div>
+				</fieldset>
+			</form>
+		</div>
+		<a href="#" class="close"><img src="images/close.gif" alt="" /></a>
+	</div>
+</div>
+<!-- end POPUP -->
+  
+<div class="wrapper">
+	<!-- start HEADER -->
+	<div class="header">
+		<div class="h-logo fll">Интернет магазин<br /><a href="#"><img src="images/logo.png" alt="" /></a></div>
+		<div class="h-cart flr"><a href="#"><img src="images/h-cart.png" alt="" /></a>2 товара<br /><a href="#" class="ShowPreorder">Оформить заказ</a></div>
+        <div class="h-enter"><a href="#" class="showFormLogin">Войдите</a> или <a href="#" class="ShowThank">зарегистрируйтесь</a></div>
+		<ul class="h-menu">
+			<li class="active"><span>Главная</span></li>
+			<li><a href="#"><span>Новости</span></a></li>
+			<li><a href="#"><span>О нас</span></a></li>
+			<li><a href="#"><span>Оплата и доставка</span></a></li>
+			<li><a href="#"><span>Статьи</span></a></li>
+			<li><a href="#"><span>Обратная связь</span></a></li>
+			<li><a href="#"><span>Контакты</span></a></li>
+		</ul>
+	</div>
+	<!-- end HEADER -->
+	<div class="container">
+		<div class="content-bg">
+			<!-- start CONTENT -->
+			<div class="content c-two-cols">
+				
+				<div class="c-slider">
+						
+          
+                                    <div class="cartop">
+                                        <ul id="carouseltop" class="top">
+                                            <li class="active"><a href="#"><span>Масштабные</span>модели</a></li>
+                                            <li><a href="#"><span>Почтовые</span>марки</a></li>
+                                            <li><a href="#"><span>Сборные</span>модели</a></li>
+
+                                            <li><a href="#"><span>Масштабные</span>модели</a></li>
+                                            <li><a href="#"><span>Почтовые</span>марки</a></li>
+                                            <li><a href="#"><span>Сборные</span>модели</a></li>
+                                        </ul>
+                                    </div>
+                 
+                  
+					<div class="body">
+						<div class="photo fll"><img src="images/other/01.jpg" alt="" /></div>
+						<div class="text">
+							<h2>Масштабные модели</h2>
+							<p>Сборные масштабные модели требуют терпения, времени и упорства, зато результат обычно превосходит все ожидания. Не случайно именно конструирование масштабных копий является одним из основных направлений моделизма - готовые комплекты сборных моделей появились сравнительно недавно.</p>
+							<div class="more"><a href="#">перейти к разделу</a></div>
+						</div>
+					</div>
+					
+					<a href="#" class="back"><img src="images/back.gif" alt="" /></a>
+					<a href="#" class="next"><img src="images/next.gif" alt="" /></a>
+				</div>
+
+			</div>
+			<!-- end CONTENT -->
+		</div>
+		<!-- start LEFT-BLOCK -->
+		<div class="left-block">
+			<h2>Каталог</h2>
+			<div class="lb-menu">
+				<div class="lbm-in">
+                                    <div class="leftmenu">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Аэрография</a>
+                                                <ul>
+                                                    <li><a href="#">Аэрография 1</a></li>
+                                                    <li><a href="#">Аэрография 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Авиация</a>
+                                                <ul>
+                                                    <li><a href="#">Авиация 1</a></li>
+                                                    <li><a href="#">Авиация 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Автомодели</a>
+                                                <ul>
+                                                    <li><a href="#">Автомодели 1</a></li>
+                                                    <li><a href="#">Автомодели 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Коллекционные модели военной техники</a>
+                                                <ul>
+                                                    <li><a href="#">БТТ 1/72</a></li>
+                                                    <li><a href="#">Вертолеты 1/72</a></li>
+                                                    <li class="active"><a href="#">Самолеты 1/72</a></li>
+                                                    <li><a href="#">Фигуры 1/72</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Коллекционные модели автомобилей</a>
+                                                <ul>
+                                                    <li><a href="#">Коллекционные модели автомобилей 1</a></li>
+                                                    <li><a href="#">Коллекционные модели автомобилей 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Разное</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Аэрография</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Авиация</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Автомодели</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Коллекционные модели военной техники</a>
+                                                <ul>
+                                                    <li><a href="#">БТТ 1/72</a></li>
+                                                    <li><a href="#">Вертолеты 1/72</a></li>
+                                                    <li class="active"><a href="#">Самолеты 1/72</a></li>
+                                                    <li><a href="#">Фигуры 1/72</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Коллекционные модели автомобилей</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Разное</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+					<a href="#" class="up"><img src="images/up.gif" alt="" /></a>
+					<a href="#" class="down"><img src="images/down.gif" alt="" /></a>
+					
+				</div>
+			</div>
+		</div>
+		<!-- end LEFT-BLOCK -->
+	</div>
+	
+	<div class="c-special">
+
+		<div class="news fll">
+			<h3>Новости <a href="#">посмотреть все</a></h3>
+			<p><span>22.04.2011</span><a href="#">Пополнился раздел “Автомодели”...</a></p>
+			<p><span>23.04.2011</span><a href="#">Обновился ассортимент популярных игрушек торговой марки K`s Kids...</a></p>
+			<p><span>23.04.2011</span><a href="#">В продаже появились песочницы, качалки, каталки...</a></p>
+		</div>
+		
+		<div class="fll">
+			<h3>Спецпредложение <a href="#">посмотреть все</a></h3>
+			<div class="item">
+				<a href="#"><img src="images/other/05.jpg" alt="" /></a>
+				<p>С 20 по 24 апреля покупайте масштабные модели и получите скидку 20% на покупку второй модели!</p>
+				<div class="more"><a href="#">Узнать больше</a></div>
+			</div>
+		</div>
+		
+		<div class="sales fll">
+			<h3>Распродажи <a href="#">посмотреть все</a></h3>
+			<div class="item">
+				<a href="#"><img src="images/other/06.jpg" alt="" /></a>
+				<p>Коллекционная модель самолета T-6 Texan</p>
+				<div class="old">1200<span>Р</span></div>
+				<div class="new">999<span>Р</span><em>новая цена!</em></div>
+				<div class="more"><a href="#">Узнать больше</a></div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="c-bestsellers">
+		<h3>Хиты продаж <a href="#">посмотреть все</a></h3>
+		
+		<div class="fll">
+			<div class="photo">
+				<a href="#"><img src="images/other/07.jpg" alt="" /></a>
+				<div class="in-stock">есть в наличии</div>
+				<div class="price">1 522<span>Р</span></div>
+			</div>
+			<div class="body">
+				<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+				<p>Масштаб модели: <span>1/10</span></p>
+				<p>Производитель: <span>Maisto</span></p>
+                <div class="btn in-cart flr"><a href="#"><b>&nbsp;</b><span><img src="images/cart.png" alt="" />в корзину</span></a></div>
+			</div>
+		</div>
+		
+		<div class="fll">
+			<div class="photo">
+				<a href="#"><img src="images/other/08.jpg" alt="" /></a>
+				<div class="in-stock">есть в наличии</div>
+				<div class="price">1 659<span>Р</span></div>
+			</div>
+			<div class="body">
+				<p><a href="#">BMW M5 (E60) (Ring Taxi Nurburgring) DC03503RT</a></p>
+				<p>Масштаб модели: <span>1/43</span></p>
+				<p>Производитель: <span>Kinsmart</span></p>
+				<div class="btn in-cart flr"><a href="#"><b>&nbsp;</b><span><img src="images/cart.png" alt="" />в корзину</span></a></div>
+			</div>
+		</div>
+		
+		<div class="fll">
+			<div class="photo">
+				<a href="#"><img src="images/other/09.jpg" alt="" /></a>
+				<div class="in-stock">есть в наличии</div>
+				<div class="price">866<span>Р</span></div>
+			</div>
+			<div class="body">
+				<p><a href="#">Металлическая масштабная модель Chevrolet Camaro 2009</a></p>
+				<p>Масштаб модели: <span>1/35</span></p>
+				<p>Производитель: <span>Bburago</span></p>
+				<div class="btn in-cart flr"><a href="#"><b>&nbsp;</b><span><img src="images/cart.png" alt="" />в корзину</span></a></div>
+			</div>
+		</div>		
+		
+	</div>
+	
+	<div class="down"></div>
+</div>
+<!-- start FOOTER -->
+<div class="footer">
+	<div class="f-in">
+		<div class="fll">разработка сайта<br /><a href="#"><img src="images/kirsites.jpg" alt="" /></a></div>
+		<div class="flr">
+			<div class="copy">Ahobby.ru<br />Все права защищены © 2011</div>
+			<div class="count">
+				<a href="#"><img src="images/other/10.gif" alt="" /></a>
+				<a href="#"><img src="images/other/10.gif" alt="" /></a>
+			</div>
+		</div>
+		<div class="fi-menu">
+			<ul>
+				<li><h3>AHOBBY</h3>
+					<ul>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li><h3>Сервисы</h3>
+					<ul>
+						<li><a href="#">Обратная связь</a></li>
+						<li><a href="#">Статьи</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li><h3>Условия</h3>
+					<ul>
+						<li><a href="#">Оплата и доставка</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="fi-cms">Работает на «1С-Битрикс: Управление сайтом»</div>
+	</div>
+</div>
+<!-- end FOOTER -->
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Hikaram" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<title>Главная</title>
+  </head>
+  <body>
+	  <nav id="menutop">
+		<span>Ищем все, что движется!</span>
+		<ul>
+		  <li class="add"><a href="#">Создать объявление</a></li>
+		  <li><a href="#">Мои объявления</a></li>
+		  <li class="fav addmenu"><a href="#">Избранное</a><span>8</span>
+			<ul>
+			  <li><a href="#">Каталог</a></li>
+			  <li><a href="#">Отзывы</a><span>1</span></li>
+			  <li><a href="#">Koe4to</a></li>
+			</ul>
+		  </li>
+		  <li class="addmenu"><a href="#">Подписки</a>
+			<ul>
+			  <li><a href="#">One One One One One</a></li>
+			  <li><a href="#">Отзывы</a></li>
+			  <li><a href="#">Koe4to</a></li>
+			</ul>
+		  </li>
+		  <li class="last"><a href="#">Koe4to</a></li>
+		</ul>
+	  </nav>
+	  <nav id="menu" class="cf">
+		<a href="#">
+		  Ханты-Мансийский АО Югра - АС, ...
+		</a>
+		<ul>
+		  <li><a href="#">Новые авто</a></li>
+		  <li><a href="#">Подержанные авто</a></li>
+		  <li><a href="#">Автосалоны</a></li>
+		  <li><a href="#">Каталог</a></li>
+		  <li><a href="#">Автотовары</a></li>
+		  <li><a href="#">Отзывы</a></li>
+		  <li><a href="#">Новости</a></li>
+		  <li><a href="#">Акции</a></li>
+		</ul>
+	  </nav>
+	  <header>
+		<section class="f-l">
+		  <img alt="" src="/images/logo.png" />
+		  <span>Поиск по 351 392 объявлениям</span>
+		</section>
+		<form id="searchtop" action="#" method="post" class="cf">
+		  <section class="f-l">
+			<input type="text" onblur="if (this.value==''){this.value='Искать в объявлениях'}" onfocus="if (this.value=='Искать в объявлениях') this.value='';" value="Искать в объявлениях" />
+			  <ul class="autocomplit">
+				<li>BMW 7 Series</li>
+				<li>Автосалон BMW АВТОDOM</li>
+				<li>BMW X5 2007</li>
+			  </ul>			
+			<a href="#" class="showsearch"></a>
+		  </section>
+		  <input type="submit" value="" />
+		</form>		
+	  </header>
+	  <section id="content"></section>           
+  </body>
+</html>

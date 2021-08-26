@@ -1,0 +1,1412 @@
+/*
+================================================================================
+|                                     MAIN TAGS                                |
+================================================================================
+*/
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('fonts/ubuntu-regular-webfont.eot');
+    src: url('fonts/ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-regular-webfont.woff') format('woff'),
+         url('fonts/ubuntu-regular-webfont.ttf') format('truetype'),
+         url('fonts/ubuntu-regular-webfont.svg#Ubuntu') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu Italic';
+    src: url('fonts/ubuntu-italic-webfont.eot');
+    src: url('fonts/ubuntu-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-italic-webfont.woff') format('woff'),
+         url('fonts/ubuntu-italic-webfont.ttf') format('truetype'),
+         url('fonts/ubuntu-italic-webfont.svg#Ubuntu Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+	height:100%;
+}
+body {
+	background-color:#ffffff;
+	min-width:1000px;
+}
+form, body, input, select, textarea, img, div, ul, li, h1, h2, h3, h4, h5, p, a {
+	margin:0px;
+	padding:0px;
+	outline:none;
+}
+img {
+	border:0px;
+}
+h1 {
+	font-family: 'Ubuntu';
+	font-size:24px;
+	color:#1865ae;
+	font-weight:normal;
+}
+h2 {
+	font-family: 'Ubuntu';
+	font-size:16px;
+	color:#7a7e88;
+	font-weight:normal;
+	text-transform:uppercase;
+	padding-top:10px;
+	padding-bottom:30px;
+}
+h3 {
+	font-family: 'Ubuntu';
+	font-size:12px;
+	color:#a3a4a9;
+	font-weight:normal;
+	text-transform:uppercase;
+	padding-bottom:24px;
+}
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#9599a4;
+	line-height:18px;
+}
+a {
+	color:#000000;
+	text-decoration:underline;
+	outline:none;
+}
+a:hover {
+	text-decoration:none;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.clear {
+	clear:both;
+}
+.relative {
+	position:relative;
+}
+.spacer {
+	clear:both;
+}
+.overflow {
+	overflow:hidden;
+}
+#main {
+	width:975px;
+	margin:0px auto;
+}
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+#header {
+	height:87px;
+	border-bottom:1px solid #eaeaea;
+}
+#header span {
+	font-family: 'Ubuntu Italic';
+	font-size:11px;
+	color:#bdbfc2;
+	padding-top:56px;
+}
+#header span.left {
+	width:415px;
+}
+#header img {
+	float:left;
+	margin-top:50px;
+}
+#menu {
+	height:60px;
+}
+#menu .soc {
+	float:left;
+	padding-top:13px;
+}
+#menu .soc a {
+	float:left;
+	height:14px;
+	overflow:hidden;
+}
+#menu .soc a img {
+	float:left;
+}
+#menu .soc a:hover img {
+	margin-top:-14px;
+}
+#menu .soc .separator {
+	float:left;
+	margin-left:6px;
+	margin-right:6px;
+}
+#menu .nav {
+	float:left;
+	width:360px;
+	font-family: 'Ubuntu';
+	font-size:12px;
+	color:#ddddde;
+	text-transform:uppercase;
+	padding-top:13px;
+	margin-left:265px;
+}
+#menu .nav a {
+	font-family: 'Ubuntu';
+	font-size:12px;
+	color:#aeb1b4;
+	text-decoration:none;
+}
+#menu .language {
+	float:right;
+	height:11px;
+	background-image:url(images/language.gif);
+	background-repeat:no-repeat;
+	background-position:right top;
+	font-family: 'Ubuntu Italic';
+	font-size:10px;
+	color:#d1d2d4;
+	text-decoration:none;
+	padding-right:26px;
+	padding-top:1px;
+	margin-top:14px;
+}
+#menu .language:hover {
+	background-position:right -12px;
+	color:#32baf6;
+}
+/*
+================================================================================
+|                                     CONTENT                                  |
+================================================================================
+*/
+#banners {
+	height:238px;
+	border-bottom:1px solid #cbcbcb;
+}
+#banners div {
+	position:relative;
+	float:left;
+	width:309px;
+	height:175px;
+	background-image:url(images/banner.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	margin-right:24px;
+}
+#banners div img {
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#banners div.banner_01 span {
+	position:relative;
+	left:112px;
+	top:43px;
+	font-family: 'Ubuntu Italic';
+	font-size:18px;
+	color:#255f89;
+	line-height:18px;
+}
+#banners div.banner_01 span sub, #banners div.banner_01 span sup {
+	color:#d2d5da;
+}
+#banners div.banner_01 span em {
+	position:absolute;
+	left:53px;
+	top:69px;
+	font-size:12px;
+	font-style:normal;
+	color:#9fa4b0;
+	white-space:nowrap;
+}
+#banners div.banner_02 .play {
+	left:119px;
+	top:42px;
+}
+#banners div.banner_03 {
+	margin-right:0px;
+}
+#banners div.banner_03 img {
+	left:auto;
+	right:0px;
+}
+#banners div.banner_03 strong {
+	display:block;
+	width:215px;
+	font-family: 'Ubuntu Italic';
+	font-size:18px;
+	color:#255f89;
+	font-weight:normal;
+	padding-left:23px;
+	padding-top:21px;
+	padding-bottom:12px;
+}
+#banners div.banner_03 p {
+	width:215px;
+	font-size:12px;
+	line-height:16px;
+	padding-left:23px;
+	padding-bottom:16px;
+}
+#banners div.banner_03 a {
+	float:left;
+	font-family: 'Ubuntu Italic';
+	font-size:12px;
+	color:#32baf6;
+	text-decoration:none;
+	margin-left:23px;
+}
+#banners div.banner_03 a:hover {
+	text-decoration:underline;
+}
+.head {
+	position:relative;
+	height:131px;
+}
+.head em {
+	display:block;
+	font-family: 'Ubuntu Italic';
+	font-size:16px;
+	color:#e0e2e7;
+	font-style:normal;
+	padding-top:41px;
+	padding-bottom:7px;
+}
+.head .nav {
+	position:absolute;
+	right:0px;
+	top:65px;
+	font-family: 'Ubuntu';
+	font-size:12px;
+	color:#ddddde;
+	text-transform:uppercase;
+	padding-top:13px;
+	margin-left:265px;
+}
+.head .nav a {
+	font-family: 'Ubuntu';
+	font-size:12px;
+	color:#aeb1b4;
+	text-decoration:none;
+}
+.head .nav a.on {
+	color:#1865ae !important;
+}
+.head .up {
+	position:absolute;
+	right:0px;
+	top:7px;
+	width:44px;
+	height:43px;
+	overflow:hidden;
+	background-image:url(images/up.png);
+	background-repeat:no-repeat;
+	background-position:left 0px;
+	text-decoration:none !important;
+}
+.head .up:hover {
+	background-position:left -43px;
+}
+/*
+================================================================================
+|                                     MUSIC                                    |
+================================================================================
+*/
+#music {
+	position:relative;
+	overflow:hidden;
+	border:1px solid #e1e2e5;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	behavior:url(scripts/PIE.htc);
+}
+#music .top {
+	position:relative;
+	height:36px;
+	border-bottom:1px solid #e1e2e5;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f8f8f9), to(#edf0f1));
+	background: -webkit-linear-gradient(#f8f8f9, #edf0f1);
+	background: -moz-linear-gradient(#f8f8f9, #edf0f1);
+	background: -ms-linear-gradient(#f8f8f9, #edf0f1);
+	background: -o-linear-gradient(#f8f8f9, #edf0f1);
+	background: linear-gradient(#f8f8f9, #edf0f1);
+	-pie-background: linear-gradient(#f8f8f9, #edf0f1);
+	behavior:url(scripts/PIE.htc);
+	z-index:2;
+}
+#music .top span {
+	float:left;
+	height:14px;
+	background-image:url(images/music_top_icon.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	font-family: 'Ubuntu Italic';
+	font-size:11px;
+	color:#a3a4a9;
+	padding-left:22px;
+	padding-top:1px;
+	margin-left:10px;
+	margin-top:11px;
+}
+#music .top a {
+	float:right;
+	height:14px;
+	background-image:url(images/download_icon.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	font-family: 'Ubuntu Italic';
+	font-size:11px;
+	color:#a3a4a9;
+	text-decoration:none;
+	padding-left:22px;
+	padding-top:2px;
+	margin-right:17px;
+	margin-top:10px;
+}
+#music .top a:hover {
+	color:#32baf6;
+}
+#music .mp3 {
+	position:relative;
+	cursor:pointer;
+	height:42px;
+	border-top:1px dotted #e5e5e5;
+	margin-top:-1px;
+	z-index:1;
+}
+#music .mp3:hover {
+	background-color:#bee9fc;
+}
+#music .mp3.on {
+	background:none !important;
+}
+#music .mp3 p {
+	float:left;
+	width:18px;
+	font-size:10px;
+	color:#dcdde0;
+	padding-left:10px;
+	padding-top:11px;
+}
+#music .mp3 strong {
+	float:left;
+	font-family: 'Ubuntu';
+	font-size:18px;
+	color:#797e89;
+	font-weight:normal;
+	padding-top:9px;
+	padding-right:10px;
+}
+#music .mp3 span {
+	float:left;
+	font-family: 'Ubuntu Italic';
+	font-size:11px;
+	color:#a3a4a9;
+	padding-top:16px;
+}
+#music .mp3 .arrow_open {
+	display:none;
+	position:absolute;
+	left:468px;
+	top:7px;
+}
+#music .mp3:hover .arrow_open {
+	display:inline;
+}
+#music .mp3.on .arrow_open {
+	display:none !important;
+}
+#music .mp3 .close {
+	display:none;
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:39px;
+	height:41px;
+	overflow:hidden;
+	background-image:url(images/mp3_close.png);
+	background-repeat:no-repeat;
+	background-position:left 0px;
+	text-decoration:none !important;
+}
+#music .mp3 .close:hover {
+	background-position:left -41px;
+}
+#music .mp3.on .close {
+	display:block !important;
+}
+#music .mp3 .small_player_icon {
+	cursor:pointer;
+	position:absolute;
+	right:14px;
+	top:8px;
+	width:53px;
+	height:26px;
+	background-image:url(images/small_player_icon.png);
+	background-repeat:no-repeat;
+	background-position:left 0px;
+}
+#music .mp3:hover .small_player_icon {
+	background-position:left -26px;
+}
+#music .mp3 .small_player_icon:hover {
+	background-position:left -52px;
+}
+#music .mp3.on .small_player_icon {
+	display:none;
+}
+#music .mp3 .small_player_icon .small_player {
+	display:none;
+	cursor:auto;
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:53px;
+	height:26px;
+	overflow:hidden;
+}
+#music .mp3 .small_player_icon .small_player .volume {
+	cursor:pointer;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:26px;
+	height:26px;
+	overflow:hidden;
+	background-image:url(images/small_player_control.png);
+	background-repeat:no-repeat;
+	background-position:left -26px;
+}
+#music .mp3 .small_player_icon .small_player .volume span {
+	cursor:pointer;
+	position:absolute;
+	bottom:8px;
+	width:2px;
+	overflow:hidden;
+	background-color:#d4d4d4;
+	padding:0px;
+}
+#music .mp3 .small_player_icon .small_player .volume span.on {
+	background-color:#1865ae;
+}
+#music .mp3 .small_player_icon .small_player .volume .v25 {
+	left:8px;
+	height:4px;
+}
+#music .mp3 .small_player_icon .small_player .volume .v50 {
+	left:11px;
+	height:6px;
+}
+#music .mp3 .small_player_icon .small_player .volume .v75 {
+	left:14px;
+	height:8px;
+}
+#music .mp3 .small_player_icon .small_player .volume .v100 {
+	left:17px;
+	height:10px;
+}
+#music .mp3 .small_player_icon .small_player .body {
+	position:absolute;
+	left:26px;
+	top:0px;
+	width:1px;
+	height:26px;
+	overflow:hidden;
+	background-image:url(images/small_player_control.png);
+	background-repeat:no-repeat;
+	background-position:left -52px;
+}
+#music .mp3 .small_player_icon .small_player .body span {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:160px;
+	text-align:center;
+	padding-top:4px;
+}
+#music .mp3 .small_player_icon .small_player .body span a {
+	font-family: 'Ubuntu Italic';
+	font-size:11px;
+	color:#bdbfc2;
+	text-decoration:none;
+}
+#music .mp3 .small_player_icon .small_player .body span a:hover {
+	color:#32baf6;
+}
+#music .mp3 .small_player_icon .small_player .body div {
+	cursor:pointer;
+	position:absolute;
+	left:0px;
+	bottom:2px;
+	width:154px;
+	height:3px;
+	overflow:hidden;
+	margin-left:3px;
+}
+#music .mp3 .small_player_icon .small_player .body div strong {
+	display:block;
+	float:none;
+	width:0px;
+	max-width:154px !important;
+	height:2px;
+	border-top:1px solid #015c93;
+	background-color:#0172b6;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	padding:0px;
+}
+#music .mp3 .small_player_icon .small_player .play {
+	cursor:pointer;
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:26px;
+	height:26px;
+	overflow:hidden;
+	background-image:url(images/small_player_control.png);
+	background-repeat:no-repeat;
+	background-position:left 0px;
+}
+#music .more {
+	display:none;
+	position:relative;
+	overflow:hidden;
+	border-top:1px dotted #e5e5e5;
+	background-color:#f6f6f6;
+	padding-bottom:64px;
+}
+#music .more div.left {
+	width:495px;
+	padding-top:47px;
+	padding-left:35px;
+}
+#music .more div.left p {
+	width:380px;
+	height:91px;
+	font-family: 'Ubuntu';
+	font-size:12px;
+	color:#a3a4a9;
+	line-height:18px;
+	text-align:center;
+	padding-left:39px;
+}
+#music .more div.left p em {
+	display:block;
+	font-family: 'Ubuntu Italic';
+	font-size:14px;
+	color:#797e89;
+	font-style:normal;
+}
+#music .more div.left .dinamic {
+	float:left;
+	margin-top:13px;
+}
+#music .more div.left .player {
+	position:relative;
+	float:left;
+	width:356px;
+	height:439px;
+	overflow:hidden;
+	background-image:url(images/player.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+#music .more div.left .player.on div {
+	display:block;
+}
+#music .more div.left .player div {
+	display:none;
+	cursor:pointer;
+	position:absolute;
+	left:22px;
+	top:167px;
+	width:312px;
+	height:5px;
+}
+#music .more div.left .player div strong {
+	cursor:pointer;
+	position:absolute;
+	left:0px;
+	top:0px;
+	max-width:312px;
+	height:5px;
+	background-color:#0172b6;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+#music .more div.left .player div strong em {
+	cursor:pointer;
+	position:absolute;
+	right:-18px;
+	top:-29px;
+	width:35px;
+	height:19px;
+	background-image:url(images/time.png);
+	background-repeat:no-repeat;
+	background-position:left 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#767676;
+	font-style:normal;
+	text-align:center;
+	padding-top:1px;
+}
+#music .more div.left .player div:hover strong em {
+	background-position:left -20px;
+	color:#fbfcfc;
+}
+#music .more div.left .player .button {
+	position:relative;
+	height:32px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e7e7e7), to(#fefefe));
+	background: -webkit-linear-gradient(#e7e7e7, #fefefe);
+	background: -moz-linear-gradient(#e7e7e7, #fefefe);
+	background: -ms-linear-gradient(#e7e7e7, #fefefe);
+	background: -o-linear-gradient(#e7e7e7, #fefefe);
+	background: linear-gradient(#e7e7e7, #fefefe);
+	-pie-background: linear-gradient(#e7e7e7, #fefefe);
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	behavior:url(scripts/PIE.htc);
+	padding:3px;
+	margin-top:401px;
+}
+#music .more div.left .player .button.left {
+	margin-left:11px;
+}
+#music .more div.left .player .button.right {
+	margin-right:12px;
+}
+#music .more div.left .player .button a {
+	display:block;
+	width:45px;
+	height:30px;
+	overflow:hidden;
+	border:1px solid #cccccc;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#e4e4e4));
+	background: -webkit-linear-gradient(#ffffff, #e4e4e4);
+	background: -moz-linear-gradient(#ffffff, #e4e4e4);
+	background: -ms-linear-gradient(#ffffff, #e4e4e4);
+	background: -o-linear-gradient(#ffffff, #e4e4e4);
+	background: linear-gradient(#ffffff, #e4e4e4);
+	-pie-background: linear-gradient(#ffffff, #e4e4e4);
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	behavior:url(scripts/PIE.htc);
+	text-decoration:none !important;
+}
+#music .more div.left .player .button a:hover {
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#eaeaea));
+	background: -webkit-linear-gradient(#ffffff, #eaeaea);
+	background: -moz-linear-gradient(#ffffff, #eaeaea);
+	background: -ms-linear-gradient(#ffffff, #eaeaea);
+	background: -o-linear-gradient(#ffffff, #eaeaea);
+	background: linear-gradient(#ffffff, #eaeaea);
+	-pie-background: linear-gradient(#ffffff, #eaeaea);
+}
+#music .more div.left .player .button a img {
+	float:left;
+	margin-left:17px;
+}
+#music .more div.left .player .button a.pause img {
+	margin-top:-30px;
+}
+#music .more div.left .player .button a span {
+	cursor:pointer;
+	position:absolute;
+	bottom:13px;
+	width:3px;
+	overflow:hidden;
+	background-color:#d4d4d4;
+}
+#music .more div.left .player .button a span.on {
+	background-color:#1865ae;
+}
+#music .more div.left .player .button a .v25 {
+	left:17px;
+	height:4px;
+}
+#music .more div.left .player .button a .v50 {
+	left:22px;
+	height:7px;
+}
+#music .more div.left .player .button a .v75 {
+	left:27px;
+	height:10px;
+}
+#music .more div.left .player .button a .v100 {
+	left:32px;
+	height:13px;
+}
+#music .more div.left .buttons {
+	position:relative;
+	float:left;
+	height:32px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e7e7e7), to(#fefefe));
+	background: -webkit-linear-gradient(#e7e7e7, #fefefe);
+	background: -moz-linear-gradient(#e7e7e7, #fefefe);
+	background: -ms-linear-gradient(#e7e7e7, #fefefe);
+	background: -o-linear-gradient(#e7e7e7, #fefefe);
+	background: linear-gradient(#e7e7e7, #fefefe);
+	-pie-background: linear-gradient(#e7e7e7, #fefefe);
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	behavior:url(scripts/PIE.htc);
+	padding:3px;
+	margin-left:129px;
+	margin-top:-38px;
+}
+#music .more div.left .buttons span {
+	position:relative;
+	display:block;
+	height:30px;
+	overflow:hidden;
+	border:1px solid #cccccc;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#e4e4e4));
+	background: -webkit-linear-gradient(#ffffff, #e4e4e4);
+	background: -moz-linear-gradient(#ffffff, #e4e4e4);
+	background: -ms-linear-gradient(#ffffff, #e4e4e4);
+	background: -o-linear-gradient(#ffffff, #e4e4e4);
+	background: linear-gradient(#ffffff, #e4e4e4);
+	-pie-background: linear-gradient(#ffffff, #e4e4e4);
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	behavior:url(scripts/PIE.htc);
+}
+#music .more div.left .buttons span a {
+	position:relative;
+	float:left;
+	height:22px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#797e89;
+	text-decoration:none;
+	behavior:url(scripts/PIE.htc);
+	padding-left:12px;
+	padding-right:12px;
+	padding-top:8px;
+}
+#music .more div.left .buttons span a.download_disk {
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+}
+#music .more div.left .buttons span a:hover {
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#eaeaea));
+	background: -webkit-linear-gradient(#ffffff, #eaeaea);
+	background: -moz-linear-gradient(#ffffff, #eaeaea);
+	background: -ms-linear-gradient(#ffffff, #eaeaea);
+	background: -o-linear-gradient(#ffffff, #eaeaea);
+	background: linear-gradient(#ffffff, #eaeaea);
+	-pie-background: linear-gradient(#ffffff, #eaeaea);
+	color:#1e8bc3;
+}
+#music .more div.left .buttons span a:active {
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#898888), to(#b7b7b7));
+	background: -webkit-linear-gradient(#898888, #b7b7b7);
+	background: -moz-linear-gradient(#898888, #b7b7b7);
+	background: -ms-linear-gradient(#898888, #b7b7b7);
+	background: -o-linear-gradient(#898888, #b7b7b7);
+	background: linear-gradient(#898888, #b7b7b7);
+	-pie-background: linear-gradient(#898888, #b7b7b7);
+	color:#ffffff;
+}
+#music .more div.right {
+	float:left;
+	width:400px;
+	/*overflow:hidden;*/
+	background-color:#ffffff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-webkit-box-shadow: 0 1px 1px #ecedef;
+	-moz-box-shadow: 0 1px 1px #ecedef;
+	box-shadow: 0 1px 1px #ecedef;
+	behavior:url(scripts/PIE.htc);
+	margin-top:63px;
+}
+#music .more div.right h1 {
+	height:126px;
+	border-bottom:1px dotted #e0e0e0;
+	color:#797e89;
+	text-align:center;
+	margin-left:42px;
+	margin-right:42px;
+}
+#music .more div.right h1 em {
+	display:block;
+	font-family: 'Ubuntu Italic';
+	font-size:11px;
+	color:#e0e2e7;
+	font-style:normal;
+	padding-top:49px;
+	padding-bottom:2px;
+}
+#music .more div.right div {
+	min-height:281px;
+	//min-height:289px;
+	overflow:hidden;
+}
+#music .more div.right div p {
+	position:relative;
+	float:left;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	color:#797e89;
+	line-height:21px;
+	font-style:italic;
+	padding-top:27px;
+	padding-bottom:43px;
+}
+#music .more div.right div p.center {
+	text-align:center;
+}
+#music .more div.right img {
+	float:right;
+	margin-right:19px;
+	margin-top:-53px;
+}
+#music .more div.right center {
+	float:left;
+	width:316px;
+	padding-top:36px;
+	padding-bottom:48px;
+	margin-left:42px;
+	margin-right:42px;
+	margin-top:-48px;
+	//margin-top:-49px;
+}
+#music .more div.right center a {
+	font-family: 'Ubuntu Italic';
+	font-size:12px;
+	color:#d2d2d2;	
+	text-decoration:none;
+}
+#music .more div.right center {position:relative;}
+#music .more div.right center span {
+	background-image:url(images/soc_bg.png);
+	background-repeat:no-repeat;
+	display: block;
+	height: 56px;
+	left: 55px;
+	padding-left: 10px;
+	position: absolute;
+	top: 60px;
+	width: 194px;	
+}
+#music .more div.right center span  a {
+	background-repeat:no-repeat;
+	display: inline-block;
+	float: left;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	margin-top: 14px;
+}
+#music .more div.right center span  .icon_soc01 {
+	background-image:url(images/soc_01.png);
+}
+#music .more div.right center span  .icon_soc02 {
+	background-image:url(images/soc_02.png);
+}
+#music .more div.right center span  .icon_soc03 {
+	background-image:url(images/soc_03.png);
+}
+#music .more div.right center span  .icon_soc04 {
+	background-image:url(images/soc_04.png);
+}
+#music .more div.right center span  .icon_soc06 {
+	background-image:url(images/soc_06.png);
+}
+#music .more div.right center span  .icon_soc07 {
+	background-image:url(images/soc_07.png);
+}
+#music .more div.right center a:hover {
+	color:#32baf6;
+}
+#music .bottom {
+	position:relative;
+	height:62px;
+	border-top:1px solid #e1e2e5;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f8f8f9), to(#edf0f1));
+	background: -webkit-linear-gradient(#f8f8f9, #edf0f1);
+	background: -moz-linear-gradient(#f8f8f9, #edf0f1);
+	background: -ms-linear-gradient(#f8f8f9, #edf0f1);
+	background: -o-linear-gradient(#f8f8f9, #edf0f1);
+	background: linear-gradient(#f8f8f9, #edf0f1);
+	-pie-background: linear-gradient(#f8f8f9, #edf0f1);
+	behavior:url(scripts/PIE.htc);
+	z-index:2;
+}
+#music .bottom a {
+	height:28px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fafafa), to(#dce1e3));
+	background: -webkit-linear-gradient(#fafafa, #dce1e3);
+	background: -moz-linear-gradient(#fafafa, #dce1e3);
+	background: -ms-linear-gradient(#fafafa, #dce1e3);
+	background: -o-linear-gradient(#fafafa, #dce1e3);
+	background: linear-gradient(#fafafa, #dce1e3);
+	-pie-background: linear-gradient(#fafafa, #dce1e3);
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-webkit-box-shadow: 0 1px 1px #889198;
+	-moz-box-shadow: 0 1px 1px #889198;
+	box-shadow: 0 1px 1px #889198;
+	behavior:url(scripts/PIE.htc);
+	font-family: 'Ubuntu';
+	font-size:16px;
+	color:#aeb0b4;
+	text-decoration:none;
+	padding-left:27px;
+	padding-right:27px;
+	padding-top:7px;
+	margin-top:14px;
+}
+#music .bottom a:hover {
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fafafa), to(#e7eaeb));
+	background: -webkit-linear-gradient(#fafafa, #e7eaeb);
+	background: -moz-linear-gradient(#fafafa, #e7eaeb);
+	background: -ms-linear-gradient(#fafafa, #e7eaeb);
+	background: -o-linear-gradient(#fafafa, #e7eaeb);
+	background: linear-gradient(#fafafa, #e7eaeb);
+	-pie-background: linear-gradient(#fafafa, #e7eaeb);
+	color:#1e8bc3;
+}
+#music .bottom a:active {
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#c8cacd), to(#d7d8dc));
+	background: -webkit-linear-gradient(#c8cacd, #d7d8dc);
+	background: -moz-linear-gradient(#c8cacd, #d7d8dc);
+	background: -ms-linear-gradient(#c8cacd, #d7d8dc);
+	background: -o-linear-gradient(#c8cacd, #d7d8dc);
+	background: linear-gradient(#c8cacd, #d7d8dc);
+	-pie-background: linear-gradient(#c8cacd, #d7d8dc);
+	-webkit-box-shadow:inset 0 1px 3px #b3b5b8;
+	-moz-box-shadow:inset 0 1px 3px #b3b5b8;
+	box-shadow:inset 0 1px 3px #b3b5b8;
+	text-shadow: 0px 1px 1px #ffffff;
+	behavior:url(scripts/PIE.htc);
+	color:#aeb0b4;
+}
+#music .bottom a.left {
+	margin-left:17px;
+}
+#music .bottom a.right {
+	margin-right:17px;
+}
+/*
+================================================================================
+|                                     VIDEO                                    |
+================================================================================
+*/
+#video_block {
+	overflow:hidden;
+	border-bottom:1px solid #cbcbcb;
+}
+#video_block .head {
+	position:relative;
+	border-bottom:1px solid #cbcbcb;
+	z-index:2;
+}
+#video_block .video {
+	overflow:hidden;
+	padding-bottom:32px;
+	margin-top:-1px;
+}
+#video_block .video {
+	overflow:hidden;
+	padding-bottom:32px;
+	margin-top:-1px;
+}
+#video_block .video .player {
+	position:relative;
+	float:left;
+	width:642px;
+	height:380px;
+	overflow:hidden;
+	border-top:1px solid #e0e0e0;
+	padding-top:31px;
+	margin-right:25px;
+}
+#video_block .video .text {
+	position:relative;
+	float:left;
+	width:308px;
+	height:380px;
+	overflow:hidden;
+	border-top:1px solid #e0e0e0;
+	padding-top:31px;
+}
+#video_block .video .text span {
+	position:absolute;
+	left:0px;
+	bottom:12px;
+}
+#video_block .video .text span a {
+	float:left;
+	width:27px;
+	height:26px;
+	overflow:hidden;
+	margin-right:7px;
+}
+#video_block .video .text span a img {
+	float:left;
+}
+#video_block .video .text span a:hover img {
+	margin-top:-26px;
+}
+/*
+================================================================================
+|                                     ALBUM                                    |
+================================================================================
+*/
+#album_block {
+	overflow:hidden;
+	border-bottom:1px solid #cbcbcb;
+	padding-bottom:56px;
+}
+#album_block .head {
+	border-bottom:1px solid #e0e0e0;
+	margin-bottom:47px;
+}
+#album_block .left {
+	width:642px;
+}
+#album_block .left p {
+	padding-bottom:18px;
+}
+#album_block .left p.first {
+	font-family: 'Ubuntu';
+	font-size:18px;
+	color:#7a7e88;
+	line-height:28px;
+	padding-bottom:29px;
+	padding-right:70px;
+}
+#album_block .left em {
+	display:block;
+	font-family: 'Ubuntu Italic';
+	font-size:12px;
+	color:#bdbfc2;
+	font-style:normal;
+	padding-top:14px;
+	padding-bottom:6px;
+}
+#album_block .left a {
+	clear:both;
+	float:left;
+	background-image:url(images/li.png);
+	background-repeat:no-repeat;
+	background-position:left 4px;
+	font-family: 'Ubuntu';
+	font-size:11px;
+	color:#32baf6;
+	white-space:nowrap;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding-left:12px;
+	margin-top:6px;
+}
+#album_block .left a:hover {
+	text-decoration:underline;
+}
+#album_block .right {
+	width:312px;
+}
+#album_block .right .img {
+	float:right;
+}
+#album_block .right em {
+	display:block;
+	font-family: 'Ubuntu Italic';
+	font-size:11px;
+	color:#a3a4a9;
+	line-height:14px;
+	font-style:normal;
+	text-align:center;
+	padding-bottom:41px;
+}
+#album_block .right div {
+	position:relative;
+	overflow:hidden;
+	border:1px solid #e5e5e5;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	behavior:url(scripts/PIE.htc);
+}
+#album_block .right div a {
+	position:relative;
+	display:block;
+	height:36px;
+	border-bottom:1px solid #e5e5e5;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fefefe), to(#ebebeb));
+	background: -webkit-linear-gradient(#fefefe, #ebebeb);
+	background: -moz-linear-gradient(#fefefe, #ebebeb);
+	background: -ms-linear-gradient(#fefefe, #ebebeb);
+	background: -o-linear-gradient(#fefefe, #ebebeb);
+	background: linear-gradient(#fefefe, #ebebeb);
+	-pie-background: linear-gradient(#fefefe, #ebebeb);
+	behavior:url(scripts/PIE.htc);
+	font-family: 'Ubuntu';
+	font-size:12px;
+	color:#32baf6;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding-left:62px;
+	padding-top:26px;
+}
+#album_block .right div a:hover {
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#848486), to(#58595c));
+	background: -webkit-linear-gradient(#848486, #58595c);
+	background: -moz-linear-gradient(#848486, #58595c);
+	background: -ms-linear-gradient(#848486, #58595c);
+	background: -o-linear-gradient(#848486, #58595c);
+	background: linear-gradient(#848486, #58595c);
+	-pie-background: linear-gradient(#848486, #58595c);
+	text-shadow: 0px -1px 1px #383838;
+	color:#ffffff;
+}
+#album_block .right div a.last {
+	border-bottom:0px solid #e5e5e5;
+}
+#album_block .right div a img {
+	position:absolute;
+	left:16px;
+	top:14px;
+}
+#album_block .right div a img.on {
+	display:none;
+}
+#album_block .right div a:hover img.off {
+	display:none;
+}
+#album_block .right div a:hover img.on {
+	display:inline;
+}
+/*
+================================================================================
+|                                     CONTACT                                  |
+================================================================================
+*/
+#info_block {
+	overflow:hidden;
+	border-bottom:1px solid #cbcbcb;
+	padding-bottom:50px;
+}
+#info_block .head {
+	border-bottom:1px solid #e0e0e0;
+	margin-bottom:47px;
+}
+#info_block .left {
+	width:642px;
+}
+#info_block .left p {
+	padding-bottom:18px;
+}
+#info_block .left p.first {
+	font-family: 'Ubuntu';
+	font-size:18px;
+	color:#7a7e88;
+	line-height:28px;
+	padding-bottom:34px;
+	padding-right:10px;
+}
+#info_block .left .left {
+	width:309px;
+}
+#info_block .left .left p {
+	color:#7a7e88;
+}
+#info_block .left .left p a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#32baf6;
+	text-decoration:none;
+}
+#info_block .left .left p a:hover {
+	text-decoration:underline;
+}
+#info_block .left .left p span {
+	color:#e1e2e5;
+}
+#info_block .left .right {
+	float:left;
+	width:240px;
+}
+#info_block .left .right #gallery {
+	cursor:pointer;
+	position:relative;
+	float:left;
+	width:201px;
+	height:201px;
+	overflow:hidden;
+	margin-left:20px;
+	margin-top:12px;
+	margin-bottom:29px;
+}
+#info_block .left .right  #gallery img {
+	
+	cursor:pointer;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#info_block .left .right em {
+	display:block;
+	font-family: 'Ubuntu Italic';
+	font-size:11px;
+	color:#a3a5a9;
+	font-style:normal;
+	line-height:14px;
+	text-align:center;
+}
+#info_block .right {
+	width:312px;
+	padding-top:10px;
+}
+#info_block .right p {
+	padding-bottom:18px;
+}
+#info_block .right p span {
+	color:#e1e2e5;
+}
+#info_block .right a {
+	clear:both;
+	float:left;
+	height:22px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	font-family: 'Ubuntu';
+	font-size:11px;
+	color:#32baf6;
+	white-space:nowrap;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding-left:46px;
+	padding-top:10px;
+	margin-bottom:4px;
+}
+#info_block .right a.mail {
+	float:none;
+	height:auto;
+	background:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#9599a4;
+	white-space:nowrap;
+	text-transform:none;
+	text-decoration:none !important;
+	padding:0px;
+	margin:0px;
+}
+#info_block .right a.mail:hover {
+	color:#32baf6;
+}
+#info_block .right a:hover {
+	text-decoration:underline;
+}
+#info_block .right a.soc_01 {
+	background-image:url(images/soc_01.png);
+}
+#info_block .right a.soc_02 {
+	background-image:url(images/soc_02.png);
+}
+#info_block .right a.soc_03 {
+	background-image:url(images/soc_03.png);
+}
+#info_block .right a.soc_04 {
+	background-image:url(images/soc_04.png);
+}
+#info_block .right a.soc_05 {
+	background-image:url(images/soc_05.png);
+}
+#info_block .right a.soc_06 {
+	background-image:url(images/soc_06.png);
+}
+/*
+================================================================================
+|                                     SLIDER                                   |
+================================================================================
+*/
+#slider img {
+	float:right;
+}
+#slider div {
+	float:left;
+	width:527px;
+}
+#slider div h1 {
+	float:none;
+	text-transform:uppercase;
+	padding-top:51px;
+	padding-bottom:16px;
+}
+#slider div p {
+	font-family: 'Ubuntu';
+	font-size:16px;
+	color:#9fa3ad;
+	line-height:20px;
+	padding-bottom:49px;
+}
+#slider div a {
+	float:left;
+	width:172px;
+	height:30px;
+	background-image:url(images/b_main.png);
+	background-repeat:no-repeat;
+	background-position:left 0px;
+	font-family: 'Ubuntu';
+	font-size:16px;
+	color:#1e8bc3;
+	text-align:center;
+	text-decoration:none;
+	padding-top:7px;
+	margin-right:12px;
+}
+#slider div a:hover {
+	background-position:left -37px;
+	color:#57a5c5;
+}
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+#footer {
+	height:158px;
+}
+#footer .soc_01 {
+	float:left;
+	width:331px;
+	padding-top:22px;
+}
+#footer .soc_02 {
+	float:left;
+	padding-top:25px;
+}
+#footer .right {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#a3a5a9;
+	line-height:24px;
+	text-align:right;
+	padding-top:17px;
+}
+#footer .right a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#a3a5a9;
+	text-decoration:none;
+}
+#footer .right a:hover {
+	color:#32baf6;
+}

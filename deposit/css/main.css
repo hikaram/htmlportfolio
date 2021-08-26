@@ -1,0 +1,154 @@
+html,
+button,
+input,
+select,
+textarea {color: #222;}
+body {
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+img {vertical-align: middle;}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {resize: vertical;}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+.clear {
+  clear: both;
+  font-size:0;
+  height: 0;
+  line-height: 0;
+}
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#wrapper {
+
+}
+header {
+	padding: 17px 8px 0 8px;
+}
+.search {
+	margin: 7px 0;
+	padding: 0 8px;
+}
+.search form {
+	background:#d3d3d3;
+	border-bottom: 2px solid #afaeb2;
+	padding: 7px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+.inptxt {
+	background:#282d34;
+	border: medium none;
+    color: #727982;
+    font-size: 11px;
+    float: left;
+    height: 28px;
+    padding-left: 10px;
+    width: 98%;
+	padding-left: 10px;
+	-moz-border-radius: 6px 0 0 6px;
+	-webkit-border-radius: 6px 0 0 6px;
+	border-radius: 6px 0 0 6px;
+}
+.submit {
+	background: url('../images/search.png') no-repeat 0 0;
+	border: medium none;
+    float: right;
+    height: 30px;
+    margin-top: -30px;
+    width: 63px;
+    cursor: pointer;
+}
+.txt {
+	font-size:11px;
+	margin: 7px 0 0 0;
+	padding: 0 8px;
+}
+.tag {
+	margin: 7px 0 0 0;
+	padding: 0 8px;
+	color: #e85134;
+}
+.tag a {
+	font-size:14px;
+	color: #e85134;
+}
+.download {
+	font-size:11px;
+	margin: 7px 0 0 0;
+}
+.download  h3 {
+	margin-left: 8px;
+}
+.download ol {
+	font-size: 13px;
+	color: #000;
+	border-top:1px dotted #000;
+}
+.download ol li {
+	padding: 8px;
+	border-bottom:1px dotted #000;
+}
+.download ol li p {
+    display: inline-block;
+    margin-top: 8px;
+}
+.download ol li p a {
+	color:#05377e;
+	font-size: 13px;
+}
+.downloadbut {
+	float: right;
+}
+h3 {
+	color:#465262;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 620px) {
+
+}
+@media only screen and (min-width: 0px) and (max-width: 540px) {
+  .inptxt {width:90%;}
+}
+@media only screen and (min-width: 0px) and (max-width: 390px) {
+
+}

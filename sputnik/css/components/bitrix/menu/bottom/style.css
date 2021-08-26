@@ -1,0 +1,22 @@
+.menu-bottom {
+	list-style: none;
+	list-style-position: outside; /* IE Hack */
+	margin: 10px 0; padding: 0;
+	line-height: 11px;
+}
+
+.menu-bottom a { text-decoration: none; }
+.menu-bottom a:hover { text-decoration: underline; }
+.menu-bottom a.selected { font-weight: bold; }
+
+.menu-bottom li {
+	margin: 0; padding: 0;
+	display: inline;
+}
+
+.menu-bottom li,
+.menu-bottom li a {
+	font-size: 11px;
+	color: #808285;
+	line-height: 11px;
+}

@@ -1,0 +1,282 @@
+html,
+button,
+input,
+select,
+textarea {color: #222;}
+body {
+  background: #000;
+  font-family: "Trebuchet MS", sans-serif;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+img {vertical-align: middle;}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {resize: vertical;}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+.clear {
+  clear: both;
+  font-size:0;
+  height: 0;
+  line-height: 0;
+}
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#wrapper {
+
+}
+header {
+ background: url("../images/bghead.jpg") repeat-x left top;
+  height: 78px;
+  width: auto;
+}
+.head {
+  margin: 0 auto 0;
+  max-width: 640px;
+  width: auto;
+}
+h1 {
+	background: url("../images/logo.png") no-repeat 0 0;
+	color: #FFFFFF;
+    font-size: 26px;
+    height: 63px;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-left: 180px;
+}
+.box1 {
+}
+.box1 .head {
+	text-align: center;
+	height: auto;
+	position: relative;
+}
+.box1 .head > img {
+	 position: aabsolute;
+	 width:100%;
+	 top:0;
+}
+.box2 {
+	border-top: 1px solid #095a00;
+	border-bottom: 1px solid #132f38;
+	padding: 30px 0 35px;
+}
+.box2 .head {
+	 padding-left: 20px;
+}
+.box2 .head > img {
+	float: left;
+	margin: 0 35px 10px 0;
+	display:block;
+	width:20%;
+}
+ .about {
+ 	 float:left;
+ 	 width:70%;
+ }
+.box2 h3 {
+	color: #009ccd;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+.box2 span {
+	display: block;
+	 color:#005ea0;
+	 float:left;
+	 max-width: 135px;
+	 margin-right:35px;
+	 margin-top: 20px;
+}
+.box2 span a {
+    color:#005ea0;
+    font-weight: bold;
+}
+.box2  p {
+color: #bebebe;
+font-size: 18px;
+line-height: 21px;
+padding-right: 35px;
+}
+.box3 {
+    background: #bdecff url("../images/bg2.png") repeat-x;
+    border-bottom: 1px solid #93cfe5;
+    border-top: 1px solid #e3e3e3;
+}
+.box3 img {
+ 		margin: 0 4px 30px;
+    max-width: 147px;
+    width: 22%;
+}
+.box3 h3 {
+	color: #004a80;
+	font-family: "Calibri", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+.box4 {
+border-top: 1px solid #fff;
+}
+.box4 .head {
+	 padding: 30px 22px 34px;
+}
+
+.box4 h3 {
+	color: #009ccd;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.box4 ul {
+	list-style: disc outside none;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+.box4 ul li {
+	color: #bebebe;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+h2 {
+	color: #8b4602;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+p {
+	color:#31639b;
+	font-size: 22px;
+}
+.but-top {
+	display: block;
+	float: left;
+}
+.but-top img {
+	width: 100%;
+	max-width: 210px;
+	margin-top: 20px;
+}
+.but2 {
+   width: 100%;
+   display: block;
+	max-width: 322px;
+	margin: 0 auto;
+}
+
+footer {
+	background: #fff;
+  padding: 15px 0;
+  color: #666666;
+  font-family: "Calibri", sans-serif;
+  font-size: 12px;
+  height:25px;
+  width: auto;
+  text-align: center;
+}
+footer a {color: #009ccd; font-size: 14px; font-family: "Calibri", sans-serif;}
+@media only screen and (min-width: 0px) and (max-width: 620px) {
+	h1 {
+	font-size:22px;
+	padding-left: 165px;
+}
+.but-top img  {width: 100%;}
+}
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+	h1 {
+	font-size:18px;
+	padding-left: 165px;
+}
+.but-bottom {
+    display: block;
+    margin-bottom: 23%;
+    text-align: center;
+}
+.but-top {
+	left: 20%;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 407px) {
+header {
+	 height:50px;
+}
+	h1{
+	-o-background-size: 100px;
+	-webkit-background-size: 100px;
+	-moz-background-size:100px;
+	-khtml-background-size:100px;
+	background-size: 100px;
+	font-size: 12px;
+    line-height: 20px;
+    padding-left: 110px;
+}
+.but-bottom {
+    display: block;
+    margin-bottom: 14%;
+    text-align: center;
+}
+.but2 img, .but-top img  {width: 80%;}
+.box2 .head > img {
+    float: left;
+    margin: 10px 10px 9px 10px;
+    width: 20%;
+}
+.about {
+	 width:67%;
+}
+.but3 img {
+    display: block;
+    text-align: center;
+}
+.box2 p {
+    font-size: 14px;
+}
+
+.box2 h3, .box3 h3, .box4 h3 {
+    font-size: 22px;
+}
+.box4 ul li {
+    font-size: 16px;
+}
+.box3 img {
+    margin: 0 4px 30px;
+    max-width: 148px;
+    width: 39%;
+}
+}

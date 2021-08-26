@@ -1,0 +1,195 @@
+* {padding:0;margin:0;outline:none}
+img {border:0}
+body {color: #fff; background: #030A10;}
+ul {list-style:none}
+table {border-collapse:collapse;border:0}
+table td {padding:0;margin:0}
+a {color:#536168;text-decoration:none}
+a:hover {text-decoration:underline}
+.clearfix:after {content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;font-size:0}
+.clearfix {display:inline-block}
+html[xmlns] .clearfix {display:block}
+.clear {
+clear:both;
+line-height:1%;
+margin-bottom:-1px;
+height:1px;
+overflow:hidden;
+font-size:0px
+}
+
+/* general */
+#bgmain2 {
+	background: #030101 url('../images/bgmain2.jpg') no-repeat center top; 
+}
+#bgmain3 {
+	background: #030A10 url('../images/bgmain3.jpg') no-repeat center top; 
+}
+#main {
+    background: #030A10 url('../images/bgmain1.jpg') no-repeat center top; 
+}
+#page {
+    width: 1000px;
+    margin: 0 auto;
+}
+#footer {
+background: #000;
+width: 1000px;
+    margin: 0 auto;
+}
+#botbanners img {
+    display: block;
+    float: left;
+    margin-top: 15px;
+    
+}
+#footericons img {
+   display: block;
+    float: left;
+    margin-right: 10px; 
+}
+.cont-left {
+    float: left;
+    width: 470px;
+    margin-top: 36px;
+}
+.cont-right {
+    float: right;
+    width: 292px;
+    margin-top: 46px;
+}
+#menu {
+    float: left;
+    font-size: 11px;
+    font-family: Arial;
+    text-transform: uppercase;
+    width: 100%;
+}
+#menu ul li {
+  float: left;  
+}
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.logo-top {
+    float: left;
+    margin-top: 8px;
+    margin-right: 28px;
+}
+.menu1 {
+    margin-top: 27px;
+    float: left;
+}
+.menu2 {
+    margin-top: 27px;
+    float: right;
+}
+.pimpa2 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.arrow {
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom: 115px;
+}
+.arrleft {
+    float: left;
+    margin-left: 105px;
+}
+.arrright {
+    float: right;
+    margin-right: 100px;
+}
+.footertext {
+    float: left;
+    font-size: 11px;
+    font-family: Tahoma;
+}
+.logo-footer {
+    float: right;
+} 
+.cont-fot {
+    float: right;
+    width: 340px;
+}
+.price1 {
+    background: url('../images/bg-price.jpg');
+    color: #000;
+    font-family: Tahoma;
+    font-size: 16px;
+    height: 30px;
+    width: 97px;
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+}
+.pricetext1 {
+    font-family: Tahoma;
+    font-size: 30px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 8px;
+}
+.pricetext2 {
+    margin-left: 92px;
+    margin-top: 8px;
+}
+.pricetext2 p {
+    font-family: Tahoma;
+    font-size: 12px;
+    margin-left: 22px;
+    padding-bottom: 7px;
+}
+.pricetext2 p span {
+	display: block;
+	float: left;
+}
+.viborvel {
+    margin-bottom: 22px; 
+    }
+    .bigsearch {
+        font-family: Tahoma;
+        font-size: 11px;
+        color: #569FC2;
+      background: url('../images/bsearch.png');  
+      width: 110px;
+      height: 12px;
+      padding:3px 0 0 20px;
+      margin-bottom: 26px;
+    }
+    .menu3 {
+        margin-bottom: 21px;
+    }
+    .menu3 ul li {
+        float: left;
+    }
+    .menu4 {
+        margin-bottom: 21px;
+    }
+     .menu4 ul li {
+        float: left;
+    }
+    .begprice {
+        margin-bottom: 40px;
+    } 
+    #amount {
+    	background: none;
+    	border:none;
+    	color: #fff; 
+    	float: left;
+    margin-left: 10px;
+	}
+	.ui-slider-horizontal {
+		width: 136px !important;
+		float: left;
+	}
+	.minprice {
+		float: left;
+	margin-right: 10px;
+}
+#slider {
+	background: url(../images/line1.png) no-repeat;
+	_position: static;
+}

@@ -1,0 +1,240 @@
+html,
+button,
+input,
+select,
+textarea {color: #222;}
+body {
+  background: #fff url(../images/bg.jpg) repeat-x 0 0;
+  font-family: "Tahoma", sans-serif;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+img {vertical-align: middle;}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {resize: vertical;}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+.clear {
+  clear: both;
+  font-size:0;
+  height: 0;
+  line-height: 0;
+}
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#wrapper {
+  margin: 0 auto 0;
+  max-width: 640px;
+  width: auto;
+  position: relative;
+}	
+header {
+  height: 68px;
+    padding-top: 11px;
+}
+.bg1 {
+	position: relative;
+}
+.bg1 > img {
+	position: absolute;
+	max-width: 640px;
+	width: 100%;	
+}
+h1 {
+	background: url("../images/logo.jpg") no-repeat;
+	color: #FFFFFF;
+    font-size: 30px;
+    height: 56px;
+    line-height: 50px;
+    padding-left: 70px;
+}
+#main {
+	margin-top: 42px;
+	padding: 0 10px;
+	text-align: center;
+	position: relative;
+}
+h2 {
+	color: #8b4602;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 15px 0;
+}
+p {
+	color:#31639b;
+	font-size: 22px;
+	line-height: 130%;
+}
+.but-top {
+		display: block;
+    position: relative;
+    text-align: center;
+}
+.bg2 {
+		left: 0;
+    position: absolute;
+    top: 0;
+    max-width: 640px;
+		width: 100%;	
+}
+.bg3 {
+	position: relative;
+}
+.bg3 > img {
+	position: absolute;
+	max-width: 640px;
+	width: 100%;	
+}
+.but-top img {
+	width: 100%;
+	max-width: 347px;
+	margin-top: 20px;
+}
+.but-bottom {
+	display: block;
+	text-align: center;
+	margin: 25px 0 0 0;
+}
+.but-bottom img {
+	width: 100%;
+	max-width: 347px;
+}
+footer {
+	background: #fff;
+		bottom: 0;
+    color: #666666;
+    font-family: "Georgia",sans-serif;
+    font-size: 12px;
+    height: 25px;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+footer a {color: #31639b; font-size: 14px;}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+	h1, h2, p { 
+	font-size:16px;
+}
+.but-bottom {
+    display: block;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.but-bottom img, .but-top img  {width: 100%;}
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+body {
+	 		-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-khtml-background-size: 100% 100%;
+	background-size: 100% 100%;	
+}
+header {
+background: #fff url(../images/bg.jpg) repeat-x 0 0;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 510px) {
+.but-bottom {
+    display: block;
+    margin-bottom: 23%;
+    text-align: center;
+}
+.but-top img {
+    max-width: 230px;
+    width: 100%;
+}
+.but-bottom img {
+    max-width: 195px;
+    width: 100%;
+}
+.but-bottom {
+    display: block;
+    margin-bottom: 9%;
+    text-align: center;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+	h1, h2, p { 
+	font-size:12px;
+}
+p {line-height: 12px;}
+#main {
+    margin-top: 30px;
+    }
+.but-top {
+	display: block;
+	text-align: center;
+}
+.but-bottom {
+		display: block;
+    text-align: center;
+}
+.but-bottom img, .but-top img  {width: 50%;}
+}
+
+@media ((retina) and (max-width: 390px)) {
+#wrapper {
+  background: url("../images/bgmain.jpg") no-repeat scroll center 67px transparent;
+  }
+
+}
+@media only screen and (min-width: 0px) and (max-width: 355px) {
+  .but-bottom {
+    display: block;
+    margin-bottom: 20%;
+    margin-top: 11%;
+    text-align: center;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 355px) {
+.but-bottom {
+    display: block;
+    margin-bottom: 7%;
+    margin-top: 5%;
+    text-align: center;
+}
+}
+@media (-webkit-min-device-pixel-ratio:1.5),
+       (min--moz-device-pixel-ratio:1.5),
+       (-o-min-device-pixel-ratio:3/2),
+       (min-resolution:1.5dppx) {
+#wrapper {
+  background: url("../images/bgmain.jpg") no-repeat scroll center 67px transparent;
+  }
+
+}

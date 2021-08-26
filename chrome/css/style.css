@@ -1,0 +1,121 @@
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+.promos .g-content {
+    position: relative;
+    border: none;
+}
+.features-more h2 {
+    padding-left: 41px;
+    margin: 7px 0 20px 0;
+}
+#speed .features-header-icon {
+    background: url("../images/icon1.gif") no-repeat 0 0;
+    width: 33px;
+    height: 32px;
+    position: absolute;
+}
+
+#simplicity .features-header-icon {
+    background: url("../images/icon2.gif") no-repeat 0 0;
+    width: 33px;
+    height: 32px;
+    position: absolute;
+}
+#security .features-header-icon {
+    background: url("../images/icon3.gif") no-repeat 0 0;
+    width: 33px;
+    height: 32px;
+    position: absolute;
+}
+#privacy .features-header-icon {
+    background: url("../images/icon4.gif") no-repeat 0 0;
+    width: 33px;
+    height: 32px;
+    position: absolute;
+}
+#personalize .features-header-icon {
+    background: url("../images/icon5.gif") no-repeat 0 0;
+    width: 33px;
+    height: 32px;
+    position: absolute;
+}
+#signin .features-header-icon {
+    background: url("../images/icon6.gif") no-repeat 0 0;
+    width: 33px;
+    height: 32px;
+    position: absolute;
+}
+.promos {
+  margin-bottom: 45px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.g-col-5 {
+    float: left;
+    width: 310px;
+}
+.wrap2 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.wrap3 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.title-wrap {
+    border-top: 1px solid #e8e8e8;
+    padding: 50px 0 20px 0;
+    margin: 0 auto;
+    max-width: 928px;
+}
+.title-wrap h3 {
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+#marquee {padding-bottom: 0;}
+.backtotop {
+    margin: 25px auto 25px;
+    max-width: 928px;
+}
+.backtotop a {
+    float: left;
+    font-size: 14px;
+    color: #696969;
+}
+.backtotop hr {
+    border: 1px solid #E8E8E8;
+    color: #E8E8E8;
+    float: left;
+    font-size: 0;
+    height: 0;
+    margin-left: 5px;
+    margin-top: 9px;
+    width: 855px;
+}
+#nav li ul {
+    border-top: 4px solid #3399CC;
+    display: none;
+}
+#nav li:hover ul {
+    display: block;
+    top: 61px !important;
+    z-index: 9999 !important;
+}

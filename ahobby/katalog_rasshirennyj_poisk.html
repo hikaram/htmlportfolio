@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<link rel="stylesheet" href="css/template.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/extra.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jscarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+<!--[if  IE 7]><link rel="stylesheet" href="css/ie7.css" type="text/css" /><![endif]-->
+</head>
+<body>
+<div class="wrapper">
+	<!-- start HEADER -->
+	<div class="header">
+		<div class="h-logo fll">Интернет магазин<br /><a href="#"><img src="images/logo.png" alt="" /></a></div>
+		<div class="h-cart flr"><a href="#"><img src="images/h-cart.png" alt="" /></a>2 товара<br /><a href="#">Оформить заказ</a></div>
+		<div class="h-enter"><a href="#">Войдите</a> или <a href="#">зарегистрируйтесь</a></div>
+		<ul class="h-menu">
+			<li class="active"><span>Главная</span></li>
+			<li><a href="#"><span>Новости</span></a></li>
+			<li><a href="#"><span>О нас</span></a></li>
+			<li><a href="#"><span>Оплата и доставка</span></a></li>
+			<li><a href="#"><span>Статьи</span></a></li>
+			<li><a href="#"><span>Обратная связь</span></a></li>
+			<li><a href="#"><span>Контакты</span></a></li>
+		</ul>
+	</div>
+	<!-- end HEADER -->
+	
+	<div class="search full">
+		<form action="">
+			<div class="fll src">
+				<div class="row name">По наименованию <p><input type="text" class="src-text" value="введите наименование" onfocus="this.value = '';" /><input type="submit" class="src-sub" value="" /></p></div>
+				<div class="row nr">По номеру в каталоге <p><input type="text" class="src-text" value="введите номер" onfocus="this.value = '';" /><input type="submit" class="src-sub" value="" /></p></div>
+				<div class="price">
+					<div class="row">
+						По цене
+                <p>от <input type="text"  id="minCost" value="100"/> руб.&nbsp;&nbsp;до <input type="text" id="maxCost" value="15000" /> руб.</p>
+                <div class="scale cf">
+                  <div id="slider"></div>
+                  <div class="bottom cf">
+                    <input type="text" class="fll" id="minCost" value="100"/>
+                    <input type="text" class="flr" id="maxCost" value="15000"/>
+                  </div>
+                </div>
+              </div>
+				</div>
+			</div>
+			<div class="top">
+				<div class="fll choose">
+					<div class="row"><a href="#">выбрать</a> IIIIIIIIIIIIIIIII:</div>
+					<div class="row"><a href="#">выбрать</a> JJJJJJJJJJJJJJJJJJJJ:</div>
+					<div class="row"><a href="#">выбрать</a> KKKKKKKKKKKKKKKKKKKK:</div>
+					<div class="row"><a href="#">выбрать</a> QQQQQQQQQQQQQQQQQQQQ:</div>
+					<div class="row"><a href="#">выбрать</a> RRRRRRRRRRRRRRRRRRRR:</div>
+				</div>
+				<div class="flr calc">
+					<div class="row"><input type="text" class="text5" /><a href="#"><img src="images/ico1.jpg" alt="" /></a> IIIIIIIIIIIIIIIII:</div>
+					<div class="row"><input type="text" class="text5" /><a href="#"><img src="images/ico2.jpg" alt="" /></a> JJJJJJJJJJJJJJJJJJJJ:</div>
+					<div class="row"><input type="text" class="text5" /><a href="#"><img src="images/ico3.jpg" alt="" /></a> KKKKKKKKKKKKKKKKKKKK:</div>
+					<div class="row"><input type="text" class="text5" /><a href="#"><img src="images/ico4.jpg" alt="" /></a> QQQQQQQQQQQQQQQQQQQQ:</div>
+					<div class="row"><input type="text" class="text5" /><a href="#"><img src="images/ico5.jpg" alt="" /></a> RRRRRRRRRRRRRRRRRRRR:</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="fll sales">
+					<p>Акции</p>
+					<div class="row"><div class="checked"><input type="checkbox" class="check" /> <label>распродажи</label></div></div>
+					<div class="row"><div class="unchecked"><input type="checkbox" class="check" /> <label>спецпредложения</label></div></div>
+					<div class="row"><div class="checked"><input type="checkbox" class="check" /> <label>хиты продаж</label></div></div>
+				</div>
+				<div class="flr picup">
+					<span class="btn flr"><em>&nbsp;</em><input type="submit" value="Подобрать"/></span>
+					<a href="#">простой поиск</a>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<div class="container">
+		<div class="content-bg">
+			<!-- start CONTENT -->
+			<div class="content c-for-catalog">
+				
+				<div class="c-speedbar"><a href="#">Главная</a> » <a href="#">Второй уровень</a> » Третий уровень</div>
+				
+				<div class="c-sort">
+					<div class="top flr">
+						<span>показать по</span>
+						<select style="display: none">
+							<option>9</option>
+							<option>30</option>
+							<option>90</option>
+							<option>все</option>
+						</select>
+						<div class="select-box1 fll">
+							<div class="select">9<a href="#"><img src="images/sel.png" alt="" /></a></div>
+							<div class="options" style="display: none">
+								<p>9</p>
+								<p>30</p>
+								<p>90</p>
+								<p>все</p>
+							</div>
+						</div>
+						<span>товаров</span>
+					</div>
+					<h2>Сортировка</h2>
+					<div class="bottom">
+						<div class="fll">
+							<a href="#" class="view"><img src="images/view-on.png" alt="" />&nbsp;&nbsp;<span>режим просмотра без цен</span></a>
+							<a href="#" class="exsist">Только имеющиеся в наличии</a>
+						</div>
+						<div class="flr">
+							Сортировать по:&nbsp;&nbsp;&nbsp;<a href="#">Цене</a> | <span>Алфавиту</span> | <a href="#">Номеру</a><b class="a-z"><span>&uarr;</span><a href="#">&darr;</a></b>
+						</div>
+					</div>
+				</div>
+				
+				<div class="c-catalog">
+						
+					<div class="fll">
+						<div class="photo">
+							<div><a href="#"><img src="images/other/07.jpg" alt="" /></a></div>
+							<div class="in-stock green">есть в наличии</div>
+							<div class="price">1 020<span>Р</span></div>
+							<p><img src="images/akcia.png" alt="" /></p>
+						</div>
+						<div class="body">
+							<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+							<p>Масштаб модели: <span>1/25</span></p>
+							<p>Производитель: <span>Maisto</span></p>
+							<div class="bottom"><div class="btn in-cart flr"><a href="#"><b>&nbsp;</b><span><img src="images/cart.png" alt="" />в корзину</span></a></div></div>
+						</div>
+					</div>
+					
+					<div class="fll">
+						<div class="photo">
+							<div><a href="#"><img src="images/other/08.jpg" alt="" /></a></div>
+							<div class="in-stock green">есть в наличии</div>
+							<div class="price">866<span>Р</span></div>
+							<p><img src="images/hits.png" alt="" /></p>
+						</div>
+						<div class="body">
+							<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+							<p>Масштаб модели: <span>1/35</span></p>
+							<p>Производитель: <span>Kinsmart</span></p>
+							<div class="bottom"><div class="btn in-cart flr"><a href="#"><b>&nbsp;</b><span><img src="images/cart.png" alt="" />в корзину</span></a></div></div>
+						</div>
+					</div>
+					
+					<div class="fll">
+						<div class="photo">
+							<div><a href="#"><img src="images/other/09.jpg" alt="" /></a></div>
+							<div class="in-stock green">есть в наличии</div>
+							<div class="price">1 020<span>Р</span></div>
+							<p class="sale"><img src="images/sale.png" alt="" /></p>
+						</div>
+						<div class="body">
+							<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+							<p>Масштаб модели: <span>1/45</span></p>
+							<p>Производитель: <span>Bburago</span></p>
+							<div class="bottom"><div class="btn in-cart flr"><a href="#"><b>&nbsp;</b><span><img src="images/cart.png" alt="" />в корзину</span></a></div></div>
+						</div>
+					</div>
+					
+					<div class="fll">
+						<div class="photo">
+							<div><a href="#"><img src="images/other/14.jpg" alt="" /></a></div>
+							<div class="in-stock red">нет в нaличии</div>
+							<div class="price">1 020<span>Р</span></div>
+						</div>
+						<div class="body">
+							<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+							<p>Масштаб модели: <span>1/25</span></p>
+							<p>Производитель: <span>Maisto</span></p>
+						</div>
+					</div>
+					
+					<div class="fll">
+						<div class="photo">
+							<div><a href="#"><img src="images/other/15.jpg" alt="" /></a></div>
+							<div class="in-stock red">нет в нaличии</div>
+							<div class="price">866<span>Р</span></div>
+						</div>
+						<div class="body">
+							<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+							<p>Масштаб модели: <span>1/45</span></p>
+							<p>Производитель: <span>Kinsmart</span></p>
+						</div>
+					</div>
+					
+					<div class="fll">
+						<div class="photo">
+							<div><a href="#"><img src="images/other/16.jpg" alt="" /></a></div>
+							<div class="in-stock green">есть в наличии</div>
+							<div class="price">1 020<span>Р</span></div>
+						</div>
+						<div class="body">
+							<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+							<p>Масштаб модели: <span>1/35</span></p>
+							<p>Производитель: <span>Bburago</span></p>
+							<div class="bottom"><div class="btn in-cart flr"><a href="#"><b>&nbsp;</b><span><img src="images/cart.png" alt="" />в корзину</span></a></div></div>
+						</div>
+					</div>
+					
+					<div class="fll">
+						<div class="photo">
+							<div><a href="#"><img src="images/other/20.jpg" alt="" /></a></div>
+							<div class="in-stock yellow">под заказ</div>
+							<div class="price">1 020<span>Р</span></div>
+						</div>
+						<div class="body">
+							<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+							<p>Масштаб модели: <span>1/25</span></p>
+							<p>Производитель: <span>Maisto</span></p>
+							<div class="bottom"><div class="btn ct flr"><a href="#"><b>&nbsp;<br />&nbsp;</b><span>Сообщить о<br />&nbsp;&nbsp;&nbsp;&nbsp;поступлении</span></a></div></div>
+						</div>
+					</div>
+					
+					<div class="fll">
+						<div class="photo">
+							<div><a href="#"><img src="images/other/21.jpg" alt="" /></a></div>
+							<div class="in-stock yellow">под заказ</div>
+							<div class="price">866<span>Р</span></div>
+						</div>
+						<div class="body">
+							<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+							<p>Масштаб модели: <span>1/45</span></p>
+							<p>Производитель: <span>Kinsmart</span></p>
+							<div class="bottom"><div class="btn ct flr"><a href="#"><b>&nbsp;<br />&nbsp;</b><span>Сообщить о<br />&nbsp;&nbsp;&nbsp;&nbsp;поступлении</span></a></div></div>
+						</div>
+					</div>
+					
+					<div class="fll">
+						<div class="photo">
+							<div><a href="#"><img src="images/other/09.jpg" alt="" /></a></div>
+							<div class="in-stock blue">ожидается</div>
+							<div class="price">1 020<span>Р</span></div>
+						</div>
+						<div class="body">
+							<p><a href="#">DF03Ra Mitsubishi Lancer EVO X,  4WD, электро (Tamiya, 58440)</a></p>
+							<p>Масштаб модели: <span>1/35</span></p>
+							<p>Производитель: <span>Bburago</span></p>
+							<div class="bottom"><div class="btn ct flr"><a href="#"><b>&nbsp;<br />&nbsp;</b><span>Сообщить о<br />&nbsp;&nbsp;&nbsp;&nbsp;поступлении</span></a></div></div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="navigation">
+					<span class="back">&larr;</span><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><span>10</span><a href="#">11</a><a href="#">12</a><a href="#">13</a><a href="#">14</a><a href="#">15</a><a href="#">16</a><a href="#">17</a><a href="#">18</a><a href="#">19</a><a href="#">20</a><a href="#" class="next">&rarr;</a>
+				</div>
+
+			</div>
+			<!-- end CONTENT -->
+		</div>
+		<!-- start LEFT-BLOCK -->
+		<div class="left-block">
+			<h2>Категории</h2>
+			<div class="lb-cat">
+				<ul>
+					<li>Масштабные модели автомобилей</li>
+					<li><a href="#">Сборные модели</a></li>
+					<li><a href="#">Аквариумы</a></li>
+					<li><a href="#">Почтовые марки</a></li>
+				</ul>
+			</div>
+			
+			<h2>Каталог</h2>
+			<div class="lb-menu">
+				<div class="lbm-in">
+				
+					<ul>
+						<li class="collapsed"><a href="#">Аэрография</a></li>
+						<li class="collapsed"><a href="#">Авиация</a></li>
+						<li class="collapsed"><a href="#">Автомодели</a></li>
+						<li class="expanded"><a href="#">Коллекционные модели военной техники</a>
+							<ul>
+								<li><a href="#">БТТ 1/72</a></li>
+								<li><a href="#">Вертолеты 1/72</a></li>
+								<li class="active"><a href="#">Самолеты 1/72</a></li>
+								<li><a href="#">Фигуры 1/72</a></li>
+							</ul>
+						</li>
+						<li class="collapsed"><a href="#">Коллекционные модели автомобилей</a></li>
+						<li class="collapsed"><a href="#">Разное</a></li>
+						
+						<li class="collapsed"><a href="#">Аэрография</a></li>
+						<li class="collapsed"><a href="#">Авиация</a></li>
+						<li class="collapsed"><a href="#">Автомодели</a></li>
+						<li class="expanded"><a href="#">Коллекционные модели военной техники</a>
+							<ul>
+								<li><a href="#">БТТ 1/72</a></li>
+								<li><a href="#">Вертолеты 1/72</a></li>
+								<li class="active"><a href="#">Самолеты 1/72</a></li>
+								<li><a href="#">Фигуры 1/72</a></li>
+							</ul>
+						</li>
+						<li class="collapsed"><a href="#">Коллекционные модели автомобилей</a></li>
+						<li class="collapsed"><a href="#">Разное</a></li>
+					</ul>
+					<a href="#" class="up disabled"><img src="images/up.gif" alt="" /></a>
+					<a href="#" class="down"><img src="images/down.gif" alt="" /></a>
+					
+				</div>
+				
+			</div>
+			
+			<h2>Производители</h2>
+			<div class="lb-manufacturers">
+				<ul>
+					<li><a href="#">AAM Boyer</a></li>
+					<li><a href="#">ABC/Brianza</a></li>
+					<li><a href="#">Action Performance</a></li>
+					<li><a href="#">ADP</a></li>
+					<li><a href="#">Alef Models</a></li>
+					<li><a href="#">Altaya Espana</a></li>
+					<li><a href="#">Altaya France</a></li>
+					<li><a href="#">Bang</a></li>
+					<li><a href="#">Baymo</a></li>
+					<li><a href="#">BBR</a></li>
+					<li><a href="#">Bburago</a></li>
+					<li><a href="#">BeKa</a></li>
+					<li><a href="#">Best</a></li>
+					<li><a href="#">Boley</a></li>
+					<li><a href="#">Brekina</a></li>
+					<li><a href="#">Carousel 1</a></li>
+					<li><a href="#">Classic Carlectables</a></li>
+					<li><a href="#">Classic Metal Works</a></li>
+					<li><a href="#">CMC</a></li>
+					<li><a href="#">Code</a></li>
+					<li><a href="#">Conrad</a></li>
+					<li><a href="#">Corgi</a></li>
+					<li><a href="#">Detail Cars</a></li>
+					<li><a href="#">Durham</a></li>
+					<li><a href="#">Eagle Collectibles</a></li>
+					<li><a href="#">Ebbro</a></li>
+					<li><a href="#">Edocar</a></li>
+					<li><a href="#">Eligor</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<!-- end LEFT-BLOCK -->
+	</div>
+		
+	<div class="down"></div>
+</div>
+<!-- start FOOTER -->
+<div class="footer">
+	<div class="f-in">
+		<div class="fll">разработка сайта<br /><a href="#"><img src="images/kirsites.jpg" alt="" /></a></div>
+		<div class="flr">
+			<div class="copy">Ahobby.ru<br />Все права защищены © 2011</div>
+			<div class="count">
+				<a href="#"><img src="images/other/10.gif" alt="" /></a>
+				<a href="#"><img src="images/other/10.gif" alt="" /></a>
+			</div>
+		</div>
+		<div class="fi-menu">
+			<ul>
+				<li><h3>AHOBBY</h3>
+					<ul>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li><h3>Сервисы</h3>
+					<ul>
+						<li><a href="#">Обратная связь</a></li>
+						<li><a href="#">Статьи</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li><h3>Условия</h3>
+					<ul>
+						<li><a href="#">Оплата и доставка</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="fi-cms">Работает на «1С-Битрикс: Управление сайтом»</div>
+	</div>
+</div>
+<!-- end FOOTER -->
+</body>
+</html>

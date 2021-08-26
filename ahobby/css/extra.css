@@ -1,0 +1,86 @@
+/*--------------------------
+#
+# created by MNP
+# url: www.mynetplatform.com
+# icq: 224454617
+# skype: ciuvir
+#
+------------------------  */
+.select-box, .select-box1 {position: relative; border: 0}
+.select-box {width: 74px; padding: 4px 0 7px 10px; background: url(../images/select.png) no-repeat left top; margin: 0 10px}
+.select-box1 {width: 31px; padding: 0 0 3px 10px; background: url(../images/select1.png) no-repeat left top; margin: 0 2px 0 4px}
+.select-box img, .select-box1 img, .select-box2 img {position: absolute; right: 5px}
+.select-box img, .select-box2 img {top: 6px}
+.select-box1 img {top: 2px}
+.select-box .options, .select-box1 .options, .select-box2 .options {position: absolute; left: 0; top: 0; padding: 5px 0 0}
+.select-box .options {width: 84px; height: 183px; background: url(../images/select-box.png) no-repeat left top}
+.select-box1 .options {width: 38px; height: 66px; background: url(../images/select-box1.png) no-repeat left top; text-align: center}
+.select-box .options p, .select-box1 .options p, .select-box2 .options p {cursor: pointer; line-height: 12px; margin: 0 0 0 1px}
+.select-box .options p, .select-box2 .options p {padding: 0 0 4px 11px}
+.select-box1 .options p {padding: 0 0 4px}
+.select-box .options p:hover, .select-box1 .options p:hover, .select-box2 .options p:hover {background: #9f9f9f; color: #fff}
+.select-box2 {position: relative; width: 162px; background: url(../images/input.png) no-repeat right top; border: 0; padding: 0 5px 0 0; margin: 0 10px}
+.select-box2 .select {padding: 5px 0 7px 10px}
+.select-box2 .options {width: 167px; background: url(../images/select-box-t.png) no-repeat left top; padding: 6px 0 0}
+.select-box2 .options .in {background: url(../images/select-box-b.png) no-repeat left bottom; padding: 0 0 6px}
+.select-box2 .options .in div {background: url(../images/select-box-c.png) repeat-y left top}
+
+.checked {background: url(../images/checkbox.png) no-repeat 0 0}
+.unchecked {background: url(../images/checkbox.png) no-repeat 0 -26px}
+.checked input, .unchecked input {cursor: pointer; margin: 0px; padding: 0px; width: 16px; opacity: 0; -moz-opacity: 0; -khtml-opacity: 0; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0)}
+
+/*sliders*/
+.small-slider {padding: 0 38px; position: relative; clear: right}
+.small-slider ul {list-style: none}
+.small-slider ul li {width: 61px; height: 45px; float: left; display: inline; margin: 0 9px}
+.small-slider ul li img {width: 61px; height: 45px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px}
+.small-slider .next, .cb-product .small-slider .back {position: absolute; top: 0; width: 14px; height: 45px}
+.small-slider .next {right: 0}
+.small-slider .back {left: 0}
+.small-slider .next img, .cb-product .small-slider .back img {margin: 12px 0 0}
+
+.similar-slider {background: #6ed5fd; padding: 14px 30px 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin: 0 0 17px; overflow: hidden}
+.similar-slider h3 {font-size: 14px; margin: 0 0 10px -11px}
+.ss-in {height: 180px; position: relative;}
+.ss-in ul {list-style: none; height: 180px; position: relative}
+.ss-in ul li {float: left; display: inline; width: 172px; height: 180px; background: url(../images/shadow1.png) no-repeat left 127px; text-align: center; margin: 0 12px 0 10px; font-size: 11px; line-height: 13px}
+.ss-in ul li a {color: #1c1c1c}
+.ss-in ul li img {height: 127px; width: 172px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px}
+.ss-in ul li .photo {text-align: left; height: 127px; position: relative; margin: 0 0 10px}
+.ss-in ul li .photo .price {position: absolute; left: 0; bottom: 0; padding: 0 7px 3px 9px; font-size: 14px; line-height: 14px; background: #d7e5eb; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px}
+.ss-in ul li .photo .price span {color: #676c6f; margin: 0 0 0 3px}
+.ss-in .back, .ss-in .next {position: absolute; top: 0; height: 180px; width: 20px; z-index: 99999;}
+.ss-in .back {left: -21px}
+.ss-in .next {right: -21px}
+.ss-in .back img, .ss-in .next img {margin: 52px 0 0}
+
+.c-slider {position: relative; overflow: hidden}
+.c-slider .top {display: block;height: 70px;left: 0;margin: 0;overflow: hidden; position: relative;}
+.c-slider .top li {float: left; display: inline; font-size: 20px; line-height: 20px; text-align: right; padding: 3px 0 20px; width: 210px;}
+.c-slider .top li a {color: #becace; text-decoration: none}
+.c-slider .top li a:hover {color: #959c9e}
+.c-slider .top li a span {font-size: 30px; line-height: 28px; display: block}
+.c-slider .top li.active a {color: #40bbfd}
+.c-slider a.back, .c-slider a.next {position: absolute; top: 0; height: 70px; width: 20px}
+.c-slider a.back {left: 0}
+.c-slider a.next {right: 0}
+.c-slider a.back img, .c-slider a.next img {margin: 11px 0 0}
+.c-slider a.back.disabled img,  .c-slider a.next.disabled img {filter:alpha(opacity=30); opacity: 0.3; -moz-opacity: 0.3; -khtml-opacity: 0.3}
+.c-slider .body {clear: both}
+.c-slider .body .photo {width: 270px; text-align: center}
+.c-slider .body .text {margin: 0 0 0 290px; font-size: 14px; color: #404040}
+.c-slider .body .text .more {font: italic 14px/15px Verdana, "Geneva CY", "DejaVu Sans", sans-serif; text-align: right; padding: 8px 0}
+.c-slider .body .text .more a {padding: 0 0 0 17px; background: url(../images/arrow.gif) no-repeat left 8px}
+.cartop {
+    height: 71px;
+    overflow: hidden;
+    margin: 0 36px;
+    position: relative;
+}
+.leftmenu {
+  height: 218px;
+  overflow: hidden;
+}
+.ssin {  height: 180px;
+  overflow: hidden;
+  width: 100% !important;}

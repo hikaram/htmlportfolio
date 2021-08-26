@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+		<script src="js/html5.js"></script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script>
+        	$(function () {
+						$(".bg1").css('height', $('.bg1 > img').height() - 33);
+						$("#main").css('height', $('.bg2').height() - 9);
+						$(".bg3").css('height', $('.bg3 > img').height() - 4);
+						$(window).resize(function(){
+								$(".bg1").css('height', $('.bg1 > img').height() - 33);
+								$("#main").css('height', $('.bg2').height() - 9);
+								$(".bg3").css('height', $('.bg3 > img').height() - 4);
+						});
+						$(window).load(function() {
+								$(".bg1").css('height', $('.bg1 > img').height() - 33);
+								$("#main").css('height', $('.bg2').height() - 9);
+								$(".bg3").css('height', $('.bg3 > img').height() - 4);
+						});
+				});
+			        </script>
+    </head>
+    <body>
+	  <div id="wrapper">
+		<header>
+			<h1>Angry Birds для мобильного</h1>
+		</header>
+		<section class="bg1"><img alt="" src="images/bg1.png" /><a href="#" class="but-top" ><img alt="" src="images/button.png" /></a></section>
+		<section id="main" class="cf">
+			<img class="bg2" alt="" src="images/bg2.png" />			
+			<div style="position: relative; z-index: 9999;">
+				<h2>Angry Birds получила большую популярность.</h2>
+			<p>Теперь в нее могут играть собственники мобильных.</p>
+				<p><strong>Правила игры просты</strong> — вам нужно убить зеленых<br />
+				свиней, которые своровали яйца у Злых Птиц.</p>
+			<a href="#" class="but-bottom" ><img alt="" src="images/button.png"/></a>
+			</div>
+		  </section>
+		  <section class="bg3"><img alt="" src="images/bg3.png" /></section>	  	
+		  <footer><a href="#">Пользовательское соглашение</a></footer>
+	  </div>
+	  
+
+    </body>
+</html>

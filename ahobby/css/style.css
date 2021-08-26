@@ -1,0 +1,150 @@
+/*--------------------------
+#
+# created by MNP
+# url: www.mynetplatform.com
+# icq: 224454617
+# skype: ciuvir
+#
+------------------------  */
+body {font: 12px/16px Tahoma, "Geneva CY", sans-serif; color:#1c1c1c}
+
+a {color: #00a5e5; outline: none}
+a:hover {text-decoration: none}
+h1 {font: bold 20px/24px Tahoma, "Geneva CY", sans-serif; color:#2d2d2d}
+h2 {font: bold 18px/22px Tahoma, "Geneva CY", sans-serif; color:#2d2d2d}
+h3 {font: bold 16px/20px Tahoma, "Geneva CY", sans-serif; color:#2d2d2d}
+h3 a {font-weight: normal; font-size: 12px; line-height: 12px; text-decoration: none; border-bottom: 1px dashed #00a5e5; margin: 0 0 0 6px}
+h3 a:hover {border-bottom: 0}
+.c-slider .body .text h2 {font-size: 16px; line-height: 46px; color: #1c1c1c}
+.cb-order h1 {font: bold 16px/18px Tahoma, "Geneva CY", sans-serif; color:#1c1c1c; padding: 0 0 1px 10px}
+.cb-order h2 {font: bold 14px/18px Tahoma, "Geneva CY", sans-serif; color:#01a6ff; padding: 0 0 11px 30px}
+.cb-delivery h1 {font: bold 16px/18px Tahoma, "Geneva CY", sans-serif; color:#1c1c1c; padding: 0 0 26px 10px}
+.cb-delivery h2 {font: 18px/18px Tahoma, "Geneva CY", sans-serif; color:#1c1c1c; padding: 0 0 0 30px}
+.cb-delivery h3 {font: 16px/26px Tahoma, "Geneva CY", sans-serif; color:#1c1c1c; padding: 15px 0 0 40px}
+
+input, select, option, textarea, .select-box, .select-box1, .select-box2 {font: italic 13px/16px Verdana, "Geneva CY", "DejaVu Sans", sans-serif; color: #404040}
+.select-box1 {font-style: normal}
+input.text5 {font-size: 12px}
+.pw-out .thanks {font-size: 14px}
+.pw-out .thanks p {font: italic 14px/20px Verdana, "Geneva CY", "DejaVu Sans", sans-serif; color: #1c1c1c}
+.pw-out .antibot .error {color: #e15017; font-size: 14px; line-height: 18px}
+
+
+
+.pw-out .antibot label {font-size: 13px}
+.pw-out .recovery p {font: italic 12px/20px Verdana, "Geneva CY", "DejaVu Sans", sans-serif}
+.pw-out .recovery .error {color: #e15017; font-size: 14px; line-height: 18px}
+.pw-out .recovery .row label {font-size: 14px; line-height: 26px}
+.pw-out .enter .error {color: #e15017; font-size: 13px}
+.pw-out .enter .row label {font-size: 14px; line-height: 26px}
+.pw-out .enter .reg {color: #00a5e5; font-size: 13px; line-height: 18px}
+.pw-out .pre-order p {font-size: 16px; line-height: 20px}
+.pw-out .pre-order .row label {font-size: 13px; line-height: 26px}
+.btn {font: bold 16px/16px Tahoma, "Geneva CY", sans-serif}
+.btn input {font: bold 16px/16px Tahoma, "Geneva CY", sans-serif; color: #1c1c1c; text-shadow: 0 1px 0 #fff}
+.btn.tc {font: bold 11px/11px Tahoma, "Geneva CY", sans-serif}
+.table-items th {font-weight: normal}
+.table-items .tit .details {color: #404040; font-size: 11px; line-height: 14px}
+.table-items .tit .del a {color: #00a5e5; font-size: 11px}
+.cb-personal.cart .table-items th {font-weight: bold; font-size: 14px}
+.h-logo {font: italic 14px/16px Verdana, "Geneva CY", "DejaVu Sans", sans-serif}
+.h-cart {font-size: 14px}
+.h-cart a {font: italic 13px/16px Verdana, "Geneva CY", "DejaVu Sans", sans-serif; color: #00a5e5}
+.h-enter {font: italic 13px/16px Verdana, "Geneva CY", "DejaVu Sans", sans-serif; color: #959c9e}
+.h-menu li {font-size: 14px}
+.search .src .row {font-size: 14px}
+.search .src .row .src-text {font-size: 12px}
+.search .price .row {font-size: 16px}
+.search .price .row p {font-size: 12px}
+.search .price .row p input {font: 11px Tahoma, "Geneva CY", sans-serif}
+.search .price .scale {font-size: 12px}
+.search .choose a {font-size: 13px}
+.search .sales p {font-size: 16px}
+.search .calc a {font-size: 13px}
+.search .picup a {font-size: 13px; line-height: 32px}
+.cb-articles h1 {font-size: 16px; line-height: 18px}
+.cba-catalog {font-size: 14px; line-height: 26px}
+.cba-catalog li ul {font-size: 12px; line-height: 14px}
+.cb-contacts {font-size: 14px; line-height: 30px; font-weight: bold}
+.cb-contacts h1 {font-size: 16px; line-height: 18px}
+.cb-contacts h2 {font-size: 16px; line-height: 20px}
+.cb-contacts sup {font-size: 10px}
+.cb-about {font-size: 12px; line-height: 20px}
+.cb-about h1 {font-size: 16px; line-height: 18px}
+.cb-about h2 {font-size: 24px; line-height: 20px}
+.cb-feedback {font-size: 12px; line-height: 26px}
+.cb-feedback h1 {font-size: 16px; line-height: 18px}
+.cb-payment {font-size: 12px; line-height: 20px}
+.cb-payment h1 {font-size: 16px; line-height: 18px}
+.cb-payment h2 {font-size: 16px; line-height: 20px; font-weight: normal}
+.cb-fullstory {font-size: 12px; line-height: 18px; text-align: justify}
+.cb-fullstory h1 {font-size: 16px; line-height: 22px}
+.cb-registr {font-size: 13px; line-height: 26px}
+.cb-registr h1 {font-size: 16px; line-height: 18px}
+.cb-shortstory {font-size: 13px; line-height: 26px}
+.cb-shortstory h1 {font-size: 16px; line-height: 18px}
+.cb-shortstory .item a {font-size: 16px; line-height: 18px}
+.cb-shortstory .item span {font-size: 14px; color: #404040}
+.cb-order .center p {font: italic 14px/18px Verdana, "Geneva CY", "DejaVu Sans", sans-serif; color: #1c1c1c}
+.cb-order .center .btn {font-size: 11px; line-height: 11px}
+.cb-order .enter fieldset .row label {font-size: 14px; line-height: 26px}
+.cb-order .enter fieldset .remember label {font-size: 14px; line-height: 16px}
+.cb-order .info h3 {font-size: 14px; line-height: 18px}
+.cb-order .customer-data label {font-size: 13px; line-height: 26px}
+.cb-delivery {font-size: 14px; line-height: 26px}
+.cb-product .top .body .status {font-size: 14px}
+.cb-product .top .body .status p span {font-size: 14px; line-height: 12px} 
+.cb-product .top .body .status .btn {font-size: 14px}
+.cb-product .top .body .under .btn {font-size: 11px; line-height: 11px}
+.cb-product .top .body .wait .btn {font-size: 11px; line-height: 11px}
+.cb-product .top .body .text {font-size: 13px}
+.cb-product .top .body .text p {font-size: 18px; line-height: 26px}
+.cb-product .top .body .text .price {font-size: 26px; line-height: 34px; color: #a3a3a3}
+.cb-product .top .body .text .price span {font-size: 34px; color: #414141}
+.cb-product .tabs-place ul.top li {font-size: 16px}
+.cb-product .tabs-place .body {font-size: 14px}
+.cb-product .tabs-place .body .description {font-size: 13px; line-height: 18px}
+.cb-personal h1 {font-size: 16px; line-height: 18px}
+.cb-personal .tabs-place .body {font-size: 13px}
+.cb-personal .tabs-place .body .param h3 {font-size: 14px; line-height: 20px; font-weight: normal}
+.cb-personal.user .tabs-place .body .param h3 {font-weight: bold}
+.cb-personal .tabs-place .body .order {font-size: 14px; line-height: 18px}
+.cb-personal .tabs-place .body .order .name span {font-size: 16px; color: #1c1c1c}
+.cb-personal .tabs-place .body .order h3 {font-size: 14px; font-weight: normal}
+.cb-personal .tabs-place .body .order.pre h3 {font-size: 14px; font-weight: normal}
+.cb-personal .tabs-place .body .order .total p {font-size: 22px; color: #a3a3a3}
+.cb-personal .tabs-place .body .order .total p b {font-size: 20px; font-weight: normal; color: #1c1c1c}
+.cb-personal.user .tabs-place .body .order.pre h3 {font-size: 14px; font-weight: normal}
+.cb-personal.cart .list .row label {font-size: 14px; line-height: 26px}
+.cb-personal.cart .total div.flr {font-size: 26px; color: #a3a3a3}
+.cb-personal.cart .total div.flr b {font-size: 26px; font-weight: normal; color: #1c1c1c}
+.cb-personal.cart .total div.flr span {font-size: 32px; color: #414141}
+.cb-product .comments .item .flr {color: #1dafff; font-size: 14px}
+.cb-product .comments .item .date {font-size: 12px; line-height: 12px; color: #656565}
+.cb-product .add-comm h3 {font-size: 14px}
+.cb-product .add-comm fieldset .row label {font-size: 13px; line-height: 26px}
+.c-special .news p {font-size: 11px}
+.c-special .sales .old {color: #959c9e; font-size: 16px; line-height: 16px}
+.c-special .sales .old span {font-size: 14px}
+.c-special .sales .new {color: #444444; font-size: 22px; line-height: 16px}
+.c-special .sales .new span {font-size: 18px}
+.c-special .sales .new em {font: italic 11px/16px Verdana, "Geneva CY", "DejaVu Sans", sans-serif; color: #fff}
+.c-bestsellers .fll .photo .in-stock {color: #2d2d2d; font-size: 11px; line-height: 15px}
+.c-bestsellers .fll .photo .price {color: #2d2d2d; font-size: 20px; line-height: 20px}
+.c-bestsellers .fll .photo .price span {color: #676c6f; font-size: 19px}
+.c-bestsellers .fll .body {color: #404040; font-size: 13px}
+.c-sort h2 {font-size: 16px}
+.c-catalog .fll .photo .in-stock {color: #2d2d2d; font-size: 11px; line-height: 15px}
+.c-catalog .fll .photo .price {color: #2d2d2d; font-size: 15px; line-height: 16px}
+.c-catalog .fll .body {color: #404040; font-size: 11px}
+.c-catalog .fll .body p a {color: #1c1c1c; font-size: 13px}
+.c-catalog .fll .body .btn.ct {font-size: 11px; line-height: 11px}
+.error-404 h1 {font-weight: normal}
+.error-404 p {font-size: 16px; line-height: 30px}
+.lbm-in ul li {font-size: 14px}
+.lb-cat ul {font-size: 16px; line-height: 18px}
+.lb-manufacturers {font-size: 13px; line-height: 18px}
+.f-in .fll {font-size: 11px; line-height: 11px; color: #4d5754}
+.fi-menu h3 {font-weight: normal}
+.fi-menu ul li ul li {font-size: 13px}
+.f-in .flr .copy {color: #1c1c1c; font-size: 14px}

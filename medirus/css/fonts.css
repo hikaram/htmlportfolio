@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'PFDinDisplayPro-Thin';
+  src: url('../fonts/ufontscompfdindisplayprothin.eot');
+  src: url('../fonts/ufontscompfdindisplayprothin.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayprothin.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayprothin.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayprothin.svg#ufontscompfdindisplayprothin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-Regular';
+  src: url('../fonts/ufontscompfdindisplayproregular.eot');
+  src: url('../fonts/ufontscompfdindisplayproregular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayproregular.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayproregular.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayproregular.svg#ufontscompfdindisplayproregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-MediumItalic';
+  src: url('../fonts/ufontscompfdindisplaypromediumitalic.eot');
+  src: url('../fonts/ufontscompfdindisplaypromediumitalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplaypromediumitalic.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplaypromediumitalic.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplaypromediumitalic.svg#ufontscompfdindisplaypromediumitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-Medium';
+  src: url('../fonts/ufontscompfdindisplaypromedium.eot');
+  src: url('../fonts/ufontscompfdindisplaypromedium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplaypromedium.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplaypromedium.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplaypromedium.svg#ufontscompfdindisplaypromedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-LightItalic';
+  src: url('../fonts/ufontscompfdindisplayprolightitalic.eot');
+  src: url('../fonts/ufontscompfdindisplayprolightitalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayprolightitalic.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayprolightitalic.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayprolightitalic.svg#ufontscompfdindisplayprolightitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-Light';
+  src: url('../fonts/ufontscompfdindisplayprolight.eot');
+  src: url('../fonts/ufontscompfdindisplayprolight.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayprolight.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayprolight.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayprolight.svg#ufontscompfdindisplayprolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-Italic';
+  src: url('../fonts/ufontscompfdindisplayproitalic.eot');
+  src: url('../fonts/ufontscompfdindisplayproitalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayproitalic.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayproitalic.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayproitalic.svg#ufontscompfdindisplayproitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-ExtraThinItalic';
+  src: url('../fonts/ufontscompfdindisplayproextrathinitalic.eot');
+  src: url('../fonts/ufontscompfdindisplayproextrathinitalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayproextrathinitalic.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayproextrathinitalic.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayproextrathinitalic.svg#ufontscompfdindisplayproextrathinitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-ExtraThin';
+  src: url('../fonts/ufontscompfdindisplayproextrathin.eot');
+  src: url('../fonts/ufontscompfdindisplayproextrathin.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayproextrathin.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayproextrathin.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayproextrathin.svg#ufontscompfdindisplayproextrathin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-BoldItalic';
+  src: url('../fonts/ufontscompfdindisplayprobolditalic.eot');
+  src: url('../fonts/ufontscompfdindisplayprobolditalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayprobolditalic.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayprobolditalic.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayprobolditalic.svg#ufontscompfdindisplayprobolditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-Bold';
+  src: url('../fonts/ufontscompfdindisplayprobold.eot');
+  src: url('../fonts/ufontscompfdindisplayprobold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayprobold.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayprobold.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayprobold.svg#ufontscompfdindisplayprobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-Black';
+  src: url('../fonts/ufontscompfdindisplayproblack.eot');
+  src: url('../fonts/ufontscompfdindisplayproblack.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayproblack.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayproblack.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayproblack.svg#ufontscompfdindisplayproblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinDisplayPro-BlackItalic';
+  src: url('../fonts/ufontscompfdindisplayproblackitalic.eot');
+  src: url('../fonts/ufontscompfdindisplayproblackitalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ufontscompfdindisplayproblackitalic.woff') format('woff'),
+	url('../fonts/ufontscompfdindisplayproblackitalic.ttf') format('truetype'),
+	url('../fonts/ufontscompfdindisplayproblackitalic.svg#ufontscompfdindisplayproblackitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

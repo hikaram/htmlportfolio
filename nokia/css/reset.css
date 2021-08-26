@@ -1,0 +1,22 @@
+/*	Reset */
+#NokiaPresentsWrapper body, #NokiaPresentsWrapper div, #NokiaPresentsWrapper dl, 
+#NokiaPresentsWrapper dt, #NokiaPresentsWrapper dd, #NokiaPresentsWrapper ul,
+#NokiaPresentsWrapper ol, #NokiaPresentsWrapper li,  #NokiaPresentsWrapper pre,
+#NokiaPresentsWrapper form, #NokiaPresentsWrapper fieldset, #NokiaPresentsWrapper input, 
+#NokiaPresentsWrapper blockquote, #NokiaPresentsWrapper table, #NokiaPresentsWrapper th, 
+#NokiaPresentsWrapper td, #NokiaPresentsWrapper embed, #NokiaPresentsWrapper object,
+#NokiaPresentsWrapper article, #NokiaPresentsWrapper section, 
+#NokiaPresentsWrapper figure, #NokiaPresentsWrapper figcaption,
+#NokiaPresentsWrapper h1, #NokiaPresentsWrapper h2, #NokiaPresentsWrapper h3, 
+#NokiaPresentsWrapper h4, #NokiaPresentsWrapper h5, 
+#NokiaPresentsWrapper h6, #NokiaPresentsWrapper p {padding: 0;	margin: 0;}
+#NokiaPresentsWrapper h1, #NokiaPresentsWrapper h2, 
+#NokiaPresentsWrapper h3, 
+#NokiaPresentsWrapper h4, 
+#NokiaPresentsWrapper h5, #NokiaPresentsWrapper h6, 
+#NokiaPresentsWrapper caption, 
+#NokiaPresentsWrapper th {font-weight: normal; font-style: normal;}
+#NokiaPresentsWrapper table {border-collapse: collapse; border-spacing: 0;}
+#NokiaPresentsWrapper fieldset, #NokiaPresentsWrapper img, #NokiaPresentsWrapper abbr {border: 0;}
+#NokiaPresentsWrapper caption, #NokiaPresentsWrapper th {text-align: left;}
+#NokiaPresentsWrapper ul {list-style: none;}

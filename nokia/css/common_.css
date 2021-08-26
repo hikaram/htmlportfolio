@@ -1,0 +1,1235 @@
+/*	Reset */
+body,  div,  dl, 
+dt,  dd,  ul,
+ol,  li,   pre,
+form,  fieldset,  input, 
+blockquote,  table,  th, 
+td,  embed,  object,
+article,  section, 
+figure,  figcaption,
+h1,  h2,  h3, 
+h4,  h5, 
+h6,  p {padding: 0;	margin: 0;}
+h1,  h2, 
+h3, 
+h4, 
+h5,  h6, 
+caption, 
+th {font-weight: normal; font-style: normal;}
+table {border-collapse: collapse; border-spacing: 0;}
+fieldset,  img,  abbr {border: 0;}
+caption,  th {text-align: left;}
+ul {list-style: none;}
+p {margin-bottom: 5px; font-size: 12px; color: #333; font-family: 'nokia_pure_text',arial,sans-serif;}
+.b-subcontent ul li {/*padding-left: 10px;*/}
+a {color: #124191; font-size: 12px; text-decoration: none;}
+a:hover {color: #124191; font-size: 12px; text-decoration: underline;}
+hr {
+  border: 1px solid #D4D4D4;
+  height: 1px;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'nokia_pure_textbold';
+  src: url('../fonts/nokiapuretextbold-webfont.eot');
+  src: url('../fonts/nokiapuretextbold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/nokiapuretextbold-webfont.woff') format('woff'),
+	url('../fonts/nokiapuretextbold-webfont.ttf') format('truetype'),
+	url('../fonts/nokiapuretextbold-webfont.svg#nokia_pure_textbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+
+} 
+
+@font-face {
+  font-family: 'nokia_pure_textregular';
+  src: url('../fonts/nokiapuretext-webfont.eot');
+  src: url('../fonts/nokiapuretext-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/nokiapuretext-webfont.woff') format('woff'),
+	url('../fonts/nokiapuretext-webfont.ttf') format('truetype'),
+	url('../fonts/nokiapuretext-webfont.svg#nokia_pure_textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nokia_pure_headlineregular';
+  src: url('../fonts/nokiapureheadline_regular-webfont.eot');
+  src: url('../fonts/nokiapureheadline_regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/nokiapureheadline_regular-webfont.woff') format('woff'),
+	url('../fonts/nokiapureheadline_regular-webfont.ttf') format('truetype'),
+	url('../fonts/nokiapureheadline_regular-webfont.svg#nokia_pure_textregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+h1,  h2,  h3, 
+h4,  h5, 
+h6 {
+  font-family: 'nokia_pure_headlineregular',arial,sans-serif !important;
+}
+.cf:before,
+.cf:after, .b-sidebar ul li:after, .b-sidebar ul li:before {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after, .b-sidebar ul li:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+*/
+.cf, .b-sidebar ul li {
+  *zoom: 1;
+}
+.clear {
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.f-l {float: left;}
+.f-r {float: right;}
+body {
+  background: #00709d;
+  font-family: 'nokia_pure_text', arial, sans-serif;
+}
+#NokiaPresentsWrapper .b-wrapper {
+  max-width: 838px;
+  min-width: 320px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 14px 0 14px 27px;
+  border:1px #e8e8e8 solid; 
+  -moz-border-radius: 10px;     /* для FF */
+  -webkit-border-radius: 10px;  /* для Safary и Chrome */
+  -khtml-border-radius: 10px;   /* для Linux  нужно проверить*/
+  border-radius:10px;           /* для всех враузеров, поддерживающих CSS3,  IE9 уже поддерживает */
+  behavior: url(images/border-radius.htc);  /* только для IE6-IE8 */
+}
+.bann {width: 100%; position: relative;}
+.bann a {display: block; float: left; margin-right: 18px; margin-bottom: 18px;}
+.bann span {
+  display: block;
+  position: absolute;
+  height: 120px;
+  position: absolute;
+  width: 285px;
+  top: 275px;
+  left: 0;
+}
+.bann1 {
+  background: url('../images/ban1.png') no-repeat center top;
+  height: 258px;
+  width: 258px;
+}
+.bann1:hover {background-position: 0 -258px;}
+.bann2 {
+  background: url('../images/ban2.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann2:hover {background-position: 0 -120px;}
+.bann3 {
+  background: url('../images/ban3.png') no-repeat center top;
+  height: 120px;
+  width: 258px;
+}
+.bann3:hover {background-position: 0 -120px;}
+.bann4 {
+  background: url('../images/ban4.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann4:hover {background-position: 0 -120px;}
+.bann5 {
+  background: url('../images/ban-center.png') no-repeat center top;
+  height: 258px;
+  width: 258px;
+}
+
+.bann6 {
+  background: url('../images/ban7.png') no-repeat center top;
+  height: 258px;
+  width: 258px;
+}
+.bann6:hover {background-position: 0 -258px;}
+.bann7 {
+  background: url('../images/ban5.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann7:hover {background-position: 0 -120px;}
+.bann8 {
+  background: url('../images/ban6.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann8:hover {background-position: 0 -120px;}
+.bann9 {
+  background: url('../images/ban8.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann9:hover {background-position: 0 -120px;}
+.bann10 {
+  background: url('../images/ban9.png') no-repeat center top;
+  height: 120px;
+  width: 258px;
+}
+.bann10:hover {background-position: 0 -120px;}
+.bann11 {
+  background: url('../images/ban10.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann11:hover {background-position: 0 -120px;}
+.bann12 {
+  background: url('../images/ban11.png') no-repeat center top;
+  height: 120px;
+  width: 258px;
+}
+.bann12:hover {background-position: 0 -120px;}
+.b-head nav {border-top: 1px solid #d4d8dd; margin-bottom: 30px; margin-top: 15px; margin-right: 27px;}
+.b-head nav ul {width: 342px;margin: 0 auto;}
+.b-head nav ul li {float: left;}
+.b-head nav ul li:first-child {background: #f0f0f0 url('../images/topmenu-left.png') no-repeat left top;padding-left: 6px;}
+.b-head nav ul li:last-child {background: #f0f0f0 url('../images/topmenu-right.png') no-repeat right top;padding-right: 6px;}
+.b-head nav ul li a {
+  color: #124191;
+  font-family:  'nokia_pure_text', arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #f0f0f0 url('../images/topmenu-bg.png') repeat-x;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #fcfcfc;
+  display: block;
+  float: left;
+  padding: 9px 13px;
+  text-align: center;
+  text-decoration: none;
+
+  /*TRANSISTIONS*/
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+/*HOVER*/
+.b-head nav ul li a:hover {
+  /*	background: #c6c6c6;*/
+}
+
+/*BORDER FIX*/
+.b-head nav ul li:last-child a {
+  border-right: none;
+}
+.b-head nav ul li:first-child a {
+  border-left: none;
+}
+.logo {float: left;}
+.enter {
+  color: #1B9CD8;
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 25px;
+  margin-top: 10px;
+  text-decoration: none;
+  text-decoration: underline;
+}
+a.enter:hover {text-decoration: none;}
+
+.b-sidebar {width: 180px; float: left; margin-right: 13px;}
+.b-sidebar h3 {
+  background: #00598d;
+  font-size: 14px;
+  font-family:  'nokia_pure_text', arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  /*border-bottom: 1px solid #0669a1;*/
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  padding: 8px 0 6px 11px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#015d91', endColorstr = '#015688');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#015d91', endColorstr = '#015688')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #015d91, #015688);
+  background-image: -ms-linear-gradient(top, #015d91, #015688);
+  background-image: -o-linear-gradient(top, #015d91, #015688);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#015d91), to(#015688));
+  background-image: -webkit-linear-gradient(top, #015d91, #015688);
+  background-image: linear-gradient(top, #015d91, #015688);
+  /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+}
+.b-sidebar h3 a {color: #fff; text-decoration: none;}
+.b-sidebar ul li {
+  background: #00598d;
+  font-size: 12px;
+  font-family:  'nokia_pure_text', arial, sans-serif;
+  color: #fff;
+  border-bottom: 1px solid #005688;
+  border-top: 1px solid #0669a1;
+  padding-left: 0;
+
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00639e', endColorstr = '#01609b');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00639e', endColorstr = '#01609b')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #00639e, #01609b);
+  background-image: -ms-linear-gradient(top, #00639e, #01609b);
+  background-image: -o-linear-gradient(top, #00639e, #01609b);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#00639e), to(#01609b));
+  background-image: -webkit-linear-gradient(top, #00639e, #01609b);
+  background-image: linear-gradient(top, #00639e, #01609b);
+  /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+}
+.b-sidebar ul li a {
+  color: #FFFFFF;
+  float: left;
+  line-height: 19px;
+  padding: 3px 0 0 15px;
+  text-decoration: none;
+}
+.b-sidebar ul li img {float: right; cursor: pointer;}
+.b-subcontent {float: left; width: 630px;}
+.b-sidebar ul li ul li {
+  background: #006bac;
+  border-bottom: 1px solid #005688;
+  border-top: 1px solid #0669a1;
+}
+.b-sidebar ul li ul li:last-child {
+  background: #006bac;
+  border-radius: 0px;
+}
+.b-sidebar ul li ul li a {
+  padding: 5px 10px 5px 30px;
+}
+.b-sidebar ul li span {
+  background: #4387b6;
+  float: right;
+  margin-right: 7px;
+  margin-top: 3px;
+  padding: 0 6px;
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#488fbe', endColorstr = '#3e80af');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#488fbe', endColorstr = '#3e80af')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #488fbe, #3e80af);
+  background-image: -ms-linear-gradient(top, #488fbe, #3e80af);
+  background-image: -o-linear-gradient(top, #488fbe, #3e80af);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#488fbe), to(#3e80af));
+  background-image: -webkit-linear-gradient(top, #488fbe, #3e80af);
+  background-image: linear-gradient(top, #488fbe, #3e80af);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+  /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+.b-sidebar ul > li:last-child {
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00639e', endColorstr = '#01609b');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00639e', endColorstr = '#01609b')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #00639e, #01609b);
+  background-image: -ms-linear-gradient(top, #00639e, #01609b);
+  background-image: -o-linear-gradient(top, #00639e, #01609b);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#00639e), to(#01609b));
+  background-image: -webkit-linear-gradient(top, #00639e, #01609b);
+  background-image: linear-gradient(top, #00639e, #01609b);
+  /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+}
+.b-subcontent h1 {
+  font-family: 'nokia_pure_headlineregular', arial, sans-serif;
+  font-size: 26px;
+  color: #124191;
+  margin-bottom: 40px;
+}
+
+.b-header-profmenu {
+  float: right;
+}
+.b-header-profmenu li {
+  float: left;
+  margin-left: 40px;
+}
+.b-header-profmenu li a, .b-header-profmenu li span {display: block;}
+.b-header-profmenu__cart {
+  background: url('../images/cart.gif') no-repeat left 4px;
+  padding-left: 40px;
+}
+.b-header-profmenu__balans {
+  background: url('../images/balans.gif') no-repeat left 7px;
+  padding-left: 40px;
+}
+.b-header-profmenu li a {
+  color: #1B9CD8;
+  font-size: 14px;
+  font-weight: bold;
+}
+.b-header-profmenu li span {
+  color: #e8471d;
+  font-size: 12px;
+}
+.b-header-profmenu__profile {
+  text-align: right;
+  margin-right: 25px;
+}
+.b-header-profmenu li.b-header-profmenu__profile span {color: #1b9cd8;}
+span.cart_count, span.cart_points {display: inline !important;}
+
+.b-title__profile {
+  color: #124191;
+  font-family: 'nokia_pure_headlineregular', arial, sans-serif;
+  font-size: 20px;
+  margin: 0px 0 35px 0;
+  padding-left: 15px;
+}
+.b-title__text {
+  color: #124191;
+  font-family: 'nokia_pure_headlineregular', arial, sans-serif;
+  font-size: 20px;
+  margin: 15px 0;
+  padding-left: 15px;
+}
+
+.b-aboutform-l {
+  float: left;
+  width: 285px;
+  margin-left: 15px;
+}
+.b-aboutform-r {
+  float: right;
+  width: 285px;
+}
+.b-aboutform__title {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.b-aboutform__inp {
+  border: 1px solid #E7E7E7;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 4px 10px;
+  width: 260px;
+
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  -moz-box-shadow: inset 0px 2px 1px #e3e3e3;
+  -webkit-box-shadow: inset 0px 2px 1px #e3e3e3;
+  box-shadow: inset 0px 2px 1px #e3e3e3;
+  /*Inner elements should not cover inner shadows*/
+  /*Chrome renders inset shadows incorrectly with border-radius*/
+  /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+
+}
+.checkbox {
+  background: url("../images/nk-chek.gif") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  float: left;
+  height: 16px;
+  margin-right: 15px;
+  vertical-align: middle;
+  width: 16px;
+}
+.checkbox.checked {
+  background-position: 0 -16px;
+}
+.b-aboutform-item {
+  margin-bottom: 25px; 
+}
+.b-aboutform-item2 {
+  margin-bottom: 25px; 
+}
+.b-aboutform-item__cheklist {
+  font-size: 14px;
+  float: right;
+  width: 254px;
+}
+.error {
+  color: #e8471d;
+}
+input.error {margin-bottom: 3px;}
+label.error {
+  display: block;
+  font-size: 12px;
+}
+.b-submit {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  padding: 2px 14px 6px;
+  height: 30px;
+  line-height: 14px;
+  border: none;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  -moz-box-shadow: 0px 2px 4px #adadad;
+  -webkit-box-shadow: 0px 2px 4px #adadad;
+  box-shadow: 0px 2px 4px #adadad;
+  filter: progid:DXImageTransform.Microsoft.Shadow(strength = 2, direction = 180, color = '#adadad');
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 4, Direction = 180, Color = '#adadad')";
+  /*Shadows look very different in IE (Only cardinal directions supported)*/
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element should have a background-color*/
+  /*All filters must be placed together*/
+  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#4884b9', endColorstr = '#015192');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#4884b9', endColorstr = '#015192')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #4884b9, #015192);
+  background-image: -ms-linear-gradient(top, #4884b9, #015192);
+  background-image: -o-linear-gradient(top, #4884b9, #015192);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#4884b9), to(#015192));
+  background-image: -webkit-linear-gradient(top, #4884b9, #015192);
+  background-image: linear-gradient(top, #4884b9, #015192);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+  /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+.b-aboutform-item select {
+  width: 280px;
+}
+.b-aboutform-item2 select {
+  width: 280px;
+}
+.b-rules {
+  font-size: 12px;
+  margin-left: 15px;
+}
+.b-rules li ul {
+  margin: 10px 0 0 0;
+  clear: both;
+  display: inline-block;
+}
+.b-rules li ul li {
+  margin-bottom: 10px;
+}
+.b-rules__num {
+  display: block;
+  float: left;
+  width: 15px;
+}
+.b-rules strong {float: left; display: block;}
+.b-rules__title {display: block; float: left; width: 555px;}
+.b-rules li:after, .b-rules li:before {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.b-rules li:after {clear: both;}
+.b-rules li {*zoom: 1;}
+.b-rules li {padding-left: 0 !important;}
+
+.b-stepsinfo {
+  /*margin-top: 40px;*/
+  margin-bottom: 15px;
+}
+.b-stepsinfo__item {
+  background: #edf1f6;
+  float: left;
+  height: 90px;
+  width: 184px;
+  padding: 15px 0 0 12px;
+  margin-right: 14px;
+  -moz-border-radius: 5px 5px 5px 5px !important;
+  -webkit-border-radius: 5px 5px 5px 5px !important;
+  border-radius: 5px 5px 5px 5px !important;
+}
+.b-stepsinfo__item h4 {
+  color: #333;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.b-stepsinfo__item a {
+  background: url('../images/mail-marker.gif') no-repeat left 3px;
+  padding-left: 12px;
+  color: #124191;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  display: block;
+  text-decoration: none;
+}
+.b-infocontent {
+  float: left;
+  width: 195px;
+  padding-top: 25px;
+}
+.img-info {
+  float: right;
+  margin-right: 15px;
+}
+.b-item {
+  color: #333;
+  font-size: 10px;
+  margin-top: 15px;
+}
+.b-item a {
+  color: #333;
+  font-size: 10px;
+}
+.b-infocontent ul {
+  color: #333333;
+  font-size: 12px;
+  list-style: disc outside none;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
+}
+.b-infocontent h3 {
+  font-family: 'nokia_pure_headlineregular', arial, sans-serif;
+  color: #124191;
+  font-size: 20px;
+  margin-left: 12px;
+}
+.b-infocontent ul li {
+  font-family: 'nokia_pure_text', arial, sans-serif;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.b-infocontent ul li strong {
+  color: #e8471d;
+  font-size: 12px;
+  font-weight: bold;
+}
+.b-infocontent ul li a {
+  color: #124191;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.b-messages__item {
+  border-top: 1px solid #d4d4d4;
+  padding: 5px 0;
+  position: relative;
+}
+.b-messages__item:last-child {border-bottom: 1px solid #d4d4d4;}
+.buttonplus {
+  background: url('../images/messages.png') no-repeat left top;
+  cursor: pointer;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  z-index: 9999;
+  top:15px;
+  right: 15px;
+}
+.buttonplus:hover {
+  background-position: -14px top;
+}
+.buttonminus {
+  background: url('../images/messages.png') no-repeat -28px top;
+  cursor: pointer;
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  z-index: 9999;
+  top:15px;
+  right: 15px;
+}
+.buttonminus:hover {
+  background-position: -39px top;
+}
+.b-messages__itemblock {position: relative; z-index: 99; padding: 12px 30px 1px 12px;}
+.b-messages__itemblock-active {
+  background: #edf1f6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 12px 35px 1px 12px;
+}
+
+.b-messages-pager {
+  color: #124191;
+  font-size: 11px;
+  font-family:  'nokia_pure_text', arial, sans-serif;
+  font-weight: bold; 
+  margin-bottom: 15px;  
+}
+.b-messages-pager ul {}
+.b-messages-pager ul li {
+  float: left;
+  margin: 0 0 0 10px;
+}
+.b-messages-pager ul li span.current {
+  background: #ccdae9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #434446;
+  display: inline-block;  
+  padding: 2px 0px;
+}
+.b-messages-pager ul li a {
+  color: #124191;
+  text-decoration: none;
+  display: inline-block;  
+  padding: 2px 0px;
+}
+.b-messages-pager ul li a:hover {color: #d8d8d8;}
+.right-arr {
+  background: url('../images/messages.png') no-repeat -60px top;
+  cursor: pointer;
+  display: inline-block;
+  width: 7px;
+  height: 11px;
+}
+.left-arr {
+  background: url('../images/messages.png') no-repeat -51px top;
+  cursor: pointer;
+  display: inline-block;
+  width: 7px;
+  height: 11px;
+}
+.b-messages__item h5 {
+  color: #124191;
+  font-family: 'nokia_pure_headlineregular', arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+.b-messages__item h5 strong {color: #e8471d;}
+.b-messages__item-txtbox {
+  font-family:  'nokia_pure_text', arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.b-messages__item p, .b-messages__item-text {
+  font-family:  'nokia_pure_text', arial, sans-serif;
+  font-size: 12px;
+}
+.b-catalog__item {
+  border-top: 1px solid #d4d4d4;
+  padding: 5px 0;
+}
+.b-catalog__item:last-child {
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+.b-catalog__img {
+  float: left;
+  margin-right: 12px;
+}
+.b-messages__txt {
+  float: left; 
+  width: 350px;
+  font-family: 'nokia_pure_text',arial,sans-serif;
+}
+
+.b-catalog {
+  margin-top: 35px;
+}
+.b-catalog__bals {float: right;}
+.b-catalog__bals p {
+  text-align: right;
+  color: #E8471D;
+  font-family: 'nokia_pure_text',arial,sans-serif;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.b-messages__txt h5 {
+  color: #124191;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.b-messages__txt p {
+  font-size: 16px;
+  color: #1b9cd8;
+}
+input[disabled="disabled"] {
+  background: #cbcbcc;
+  cursor: auto;
+}
+
+/*	  Popup registration	*/
+#popup-reg {width: 670px; padding-bottom: 20px;}
+.b-reg {
+  float: left;
+  width: 290px;
+}
+.b-reg .checkbox {
+  float: left;
+}
+.b-reg .b-aboutform-item span {font-size: 14px;}
+.b-login {
+  float: left;
+  width: 350px;
+}
+.popupTitle1 {
+  padding: 25px 30px 25px 0;
+  color: #124191;
+  font-size: 26px;
+}
+.p-icon{
+  font-family: 'nokia_pure_textbold',arial,sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.forgot, .b-reg a {
+  color: #124191;
+  font-family: 'nokia_pure_textbold', arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.forgot {margin-bottom: 10px; display: block;}
+.close-popup {
+  background: url('../images/closepopup.jpg') no-repeat left top;
+  width: 7px;
+  height: 8px;
+  display: block;
+}
+.close-popup:hover {
+  background-position: left -8px;
+}
+#popup-reg .b-popupform__title {font-size: 14px;}
+#popup-reg .b-aboutform-item {margin-bottom: 20px;}
+.remem {margin-bottom: 20px; display: block;}
+.b-aboutform__txt {
+  display: inline-block;
+  float: left;
+  font-size: 13px !important;
+  line-height: 12px;
+  width: 240px;
+}
+#reg-form a {
+  font-size: 16px;
+}
+/*	  end Popup registration	*/
+
+/*	  Popup Shoping Cart	*/
+#popup-cart {
+  width: 670px;
+}
+.popup-cartTitle {
+  padding: 25px 0px;
+  margin-left: 40px;
+  color: #124191;
+  font-size: 26px;
+  float: left;
+}
+.b-shopcart {
+  padding: 0 40px;
+  margin-top: 20px;
+}
+.b-catalog__bottom {
+  background: none repeat scroll 0 0 #F1F1F1;
+  border-top: 1px solid #D4D4D4;
+  padding: 25px 40px;
+  margin-top: 45px;
+}
+.b-catalog__bottom a, .del-cartone {
+  background: url('../images/del-cart.gif') no-repeat right 3px;
+  color: #124191;
+  font-size: 14px;
+  display: inline-block;
+  padding: 0px 12px 0px 0;
+  text-decoration: none;
+}
+.top-all {
+  text-align: right;
+  float: right;
+  color: #E8471D;
+  font-family: 'nokia_pure_text',arial,sans-serif;
+  font-size: 20px;
+  margin: 25px 40px 0 0;
+}
+/*	  end Popup Shoping Cart	*/
+
+/*	  SELECT IMG*/
+.b-selectimg {
+  position: relative;
+  font-size: 12px;
+  font-family: verdana;
+}
+.b-selectimg .select {
+  color: #124191;
+  font: bold 12px Arial,"Helvetica CY","Nimbus Sans L",sans-serif;
+  cursor: pointer;
+  border: 1px solid #e4e5e5;
+  border-bottom: 1px solid #b6b6b7;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 3px 2px 3px 8px;
+  width: 275px;
+  background: #eff0f2 url("../images/selects-2.png") no-repeat;
+  background-position: right top;
+}
+.b-selectimg .select:hover, .b-selectimg .options:hover {
+  border: 1px solid #c6c6c6;
+}
+.b-selectimg .options {
+  position: absolute;
+  top: 23px;
+  left: -25%;
+  width: 570px;
+  border: 1px solid #fff;
+  background: #f8f8f8;
+  z-index: 10;
+  display: none;
+  padding: 25px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  overflow: auto;
+  height: 250px;
+}
+.b-selectimg .options > div {
+  padding: 3px 2px 3px 8px;
+  cursor: pointer;
+  float: left;
+  width: 113px;
+  height: 95px;
+  text-align: center;
+  padding: 15px 0;
+}
+.b-selectimg .options > div img {
+  margin-bottom: 5px;
+}
+.b-selectimg .options > div p {
+}
+.b-selectimg .options > div:hover {
+  background: #eee;
+}
+.b-selectimg .options > div.check {
+  /*background: #e1e1e1;*/
+}
+/*	  end SELECT IMG*/
+.pageText {margin-top: 40px;}
+.pageText a:hover {text-decoration: underline;}
+.pageText ul li, .pageText p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.pageText p {
+  font-family: 'nokia_pure_text',arial,sans-serif;
+  line-height: 16px;
+}
+.ui-widget-content {margin-bottom: 15px;}
+.ui-accordion-header {
+  margin-bottom: 15px;
+  -moz-border-radius: 5px 5px 5px 5px !important;
+  -webkit-border-radius: 5px 5px 5px 5px !important;
+  border-radius: 5px 5px 5px 5px !important;
+}
+.ui-accordion-header-active {margin-bottom: 0px;
+							 -moz-border-radius: 5px 5px 0px 0px !important;
+							 -webkit-border-radius: 5px 5px 0px 0px !important;
+							 border-radius: 5px 5px 0px 0px !important;
+}
+.pageText table {
+  border-collapse: collapse;
+  padding: 0;
+  width: 100%;
+}
+.b-rules table {margin: 15px 0;}
+.b-rules table th {
+  background-color: #0075B7;
+  border-bottom: 1px solid #CFD3DA;
+  border-right: 1px solid #00639F;
+  color: #FFFFFF;
+  font-size: 13px;
+  padding: 9px 15px;
+  text-align: left;
+}
+.b-rules table td {
+  background: none repeat scroll 0 0 #F8F9FC;
+  border-bottom: 1px solid #CFD3DA;
+  border-right: 1px solid #CFD3DA;
+  border-top: 1px solid #FFFFFF;
+  color: #333333;
+  font-size: 11px;
+  padding: 9px 15px;
+}
+.b-rules table td:last-child {border-right: 0;}
+.b-radiobox {}
+.b-radiobox__item {
+  float: left;
+}
+.b-radiobox__item label {
+  display: block;
+  font-size: 12px;
+}
+.b-radiobox__item2 {
+  border-top: 1px solid #D5D5D5;
+  bottom: -26px;
+  float: left;
+  height: 10px;
+  position: relative;
+}
+
+/*		Banners		*/
+.b-banner {
+  background: #1b9cd8;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  color: #fff;
+  min-height: 100px;
+  margin-bottom: 30px;
+  padding-right: 170px;
+  padding-left: 13px;
+  position: relative;
+  width: 433px;
+  font-size: 12px
+}
+.b-banner img {
+  position: absolute;
+  right: 20px;
+  top: 25%;
+}
+.b-banner h4 {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 10px 0 15px 0;
+}
+.b-banner p {color: #fff;}
+.b-banner a {
+  color: #fff;
+  font-weight: bold;
+}
+.onepage {
+  margin-left: 40px;
+}
+
+
+/*		Banners program		*/
+.bann13 {
+  background: url('../images/iconprog1.png') no-repeat center top;
+  height: 120px;
+  width: 258px;
+}
+.bann13:hover {background-position: 0 -120px;}
+.bann14 {
+  background: url('../images/iconprog2.png') no-repeat center top;
+  height: 120px;
+  width: 258px;
+}
+.bann14:hover {background-position: 0 -120px;}
+.bann15 {
+  background: url('../images/iconprog3.png') no-repeat center top;
+  height: 120px;
+  width: 258px;
+}
+.bann15:hover {background-position: 0 -120px;}
+.bann16 {
+  background: url('../images/iconprog4.png') no-repeat center top;
+  height: 120px;
+  width: 258px;
+}
+.bann16:hover {background-position: 0 -120px;}
+/*		end Banners program		*/
+
+
+/*		Banners FAQ		*/
+.bann17 {
+  background: url('../images/iconfaq1.png') no-repeat center top;
+  height: 120px;
+  width: 258px;
+}
+.bann17:hover {background-position: 0 -120px;}
+.bann18 {
+  background: url('../images/iconfaq2.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann18:hover {background-position: 0 -120px;}
+.bann19 {
+  background: url('../images/iconfaq3.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann19:hover {background-position: 0 -120px;}
+.bann20 {
+  background: url('../images/iconfaq4.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann20:hover {background-position: 0 -120px;}
+.bann21 {
+  background: url('../images/iconfaq5.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann21:hover {background-position: 0 -120px;}
+
+.bann22 {
+  background: url('../images/iconfaq6.png') no-repeat center top;
+  height: 120px;
+  width: 258px;
+}
+.bann22:hover {background-position: 0 -120px;}
+.bann23 {
+  background: url('../images/iconfaq7.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann23:hover {background-position: 0 -120px;}
+.bann24 {
+  background: url('../images/iconfaq8.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann24:hover {background-position: 0 -120px;}
+.bann25 {
+  background: url('../images/iconfaq9.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann25:hover {background-position: 0 -120px;}
+.bann26 {
+  background: url('../images/iconfaq10.png') no-repeat center top;
+  height: 120px;
+  width: 120px;
+}
+.bann26:hover {background-position: 0 -120px;}
+.bann-zero {
+  background: url('../images/zerobg.png') no-repeat center top;
+  height: 110px;
+  width: 248px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0 0 10px;
+
+}
+.bann-zero:hover {background-position: 0 -120px;
+				  font-size: 16px;
+				  color: #fff;
+				  text-decoration: none;
+}
+/*		end Banners FAQ		*/
+/*		end Banners		*/
+
+.b-box1 {
+  width: 300px;
+}
+.b-box1 h3 {
+  color: #124191;
+  font-family: 'nokia_pure_headlineregular',arial,sans-serif;
+  font-size: 20px;
+  margin: 25px 0;
+}
+.b-box1 a {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.big-b {margin-right: 15px;}
+
+
+.b-reglink li:before,
+.b-reglink li:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.b-reglink li:after {
+  clear: both;
+}
+.b-reglink li {
+  *zoom: 1;
+}
+.b-reglink li img {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-top: 4px;
+  vertical-align: top;
+  width: 31px;
+}
+.b-reglink li p {
+  color: #333333;
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 13px;
+  margin-bottom: 0;
+}
+.b-reglink li p a {
+  margin-top: 0;
+}
+.b-reglink li strong {
+  font-weight: normal;
+  color: #e8471d;
+}
+.b-box1 input{display: block;}
+.note {font-size: 10px; width: 150px;display: inline-block;}
+.w280 {width: 280px;}
+.red {color: #e8471d;}
+.b-notes {
+  background: #edf1f6;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 15px 40px 10px 15px;
+}
+.b-notes ul {
+  color: #124191;
+    list-style: disc outside none;
+    padding-left: 15px;
+}.b-notes ul li {
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.b-notes p {color: #000; font-size: 14px;}
+.b-notes ul li span {color: #000;}
+.a-note {
+  background: url("../images/mail-marker.gif") no-repeat scroll left 4px transparent;
+  padding-left: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}

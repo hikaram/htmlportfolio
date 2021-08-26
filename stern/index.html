@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="hikaram" />
+	<title>Главная</title>
+      <link type="text/css" rel="stylesheet" href="css/general.css" />
+      <link type="text/css" rel="stylesheet" href="css/jquery.rating.css" />
+      <link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.11.custom.css" />
+      
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/jquery.MetaData.js"></script>
+      <script type="text/javascript" src="js/jquery.rating.pack.js"></script>      
+      <script type="text/javascript" src="js/jquery-ui.js"></script>
+     <!--[if IE 6]>
+<script src="js/pngfix.js"></script>
+<script>
+DD_belatedPNG.fix('img, .ui-widget-content, .bigsearch, .ui-state-default');
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+$(function() {
+	$( "#slider" ).slider({
+		value:100,
+		min: 10000,
+		max: 50000,
+		step: 50,
+		slide: function( event, ui ) {
+			$( "#amount" ).val( ui.value + "руб."  );
+		}
+	});
+	$( "#amount" ).val( $( "#slider" ).slider( "value" ) + "руб." );
+
+
+	pictures = new Array()
+	for(i=0;i<8;i++)
+	   {
+	    pictures[i] = new Image()
+	    if(i==0) pictures[i].src = "freeze.gif"
+	    if(i==1) pictures[i].src = "dust.gif"
+	    if(i==2) pictures[i].src = "toster.gif"
+	    if(i==3) pictures[i].src = "cook.gif"
+	    if(i==4) pictures[i].src = "oven.gif"
+	    if(i==5) pictures[i].src = "wash.gif"
+	    if(i==6) pictures[i].src = "dishwash.gif"
+	   }
+	n=0;
+	flag=0;
+	function next_image() {
+	    if(flag==0) {
+	       n++;if(n>6) n=0;
+	       document.images[1].src = pictures[n].src
+	      }
+	   }
+	function back_image() {
+	    if(flag==0) {
+	       n--;if(n<0) n=6;
+	       document.images[1].src = pictures[n].src
+	      }
+	   }
+	function scroll_image() {
+	    if(flag==1) {
+	       n++;if(n>6) n=0;
+	       document.images[1].src = pictures[n].src
+	      }
+	    setTimeout("scroll_image()",1500);
+	   }
+	function start_stop() {
+	    if(flag==0) {
+	       flag=1 
+	      }
+	    else {flag=0}
+	   }
+
+});
+
+</script>
+</head>
+
+<body>
+<div id="main">
+<div id="page">
+<div id="header">
+
+<div id="menu">
+<img src="images/logo1.png" class="logo-top" alt="" />
+<ul class="menu1">
+<li><a href="#">каталог Велосипедов</a></li>
+<li><img src="images/pimpa2.png" alt="" class="pimpa2" /></li>
+<li><a href="#">Велоодежда и защита</a></li>
+<li><img src="images/pimpa2.png" alt="" class="pimpa2" /></li>
+<li><a href="#">Аксесуары</a></li>
+</ul>
+
+<ul class="menu2">
+<li><a href="#">о компании</a></li>
+<li><img src="images/pimpa2.png" alt="" class="pimpa2" /></li>
+<li><a href="#"><img src="images/map.png" alt="" /></a></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div id="content">
+<div class="cont-left">
+<img src="images/viborvel.png" alt="" class="viborvel" />
+
+<div class="menu3">
+<ul>
+<li><img src="images/bgm1.png" alt=""/></li>
+<li><img src="images/bgm2.png" alt=""/></li>
+<li><img src="images/bgm3.png" alt=""/></li>
+<li><img src="images/bgm4.png" alt=""/></li>
+</ul>
+<div class="clear"></div>
+</div>
+
+<div class="menu4">
+<ul>
+<li><img src="images/bgmm1.png" alt=""/></li>
+</ul>
+<div class="clear"></div>
+</div>
+
+<div class="begprice">
+<span class="minprice">10 000 руб.</span>	
+<div id="slider"></div>
+<input type="text" id="amount" />
+<div class="clear"></div>
+</div>
+
+
+<div class="bigsearch">
+Расширенный поиск
+</div>
+
+</div>
+<div class="cont-right">
+<img src="images/big_price.png" alt="" style="margin-top: 10px;" />
+</div>
+<div class="clear"></div>
+
+<div class="arrow">
+<a href="#"><img src="images/arr_left.png" alt="" class="arrleft" onclick="next_image();" /></a>
+
+<a href="#"><img src="images/arr_right.png" alt="" class="arrright" onclick="back_image()" /></a>
+<div class="clear"></div>
+</div>
+<div class="cont-fot">
+<div class="price1">
+18 200 руб.
+</div>
+<div class="pricetext1">
+City 2.0
+</div>
+<div class="clear"></div>
+<div class="pricetext2">
+    <p><span>По асфальту:</span> &nbsp;&nbsp;
+    <input name="star1" type="radio" class="star"/> 
+<input name="star1" type="radio" class="star"/> 
+<input name="star1" type="radio" class="star"/> 
+<input name="star1" type="radio" class="star"/> 
+<input name="star1" type="radio" class="star"/>
+</p>
+    <p><span>По бездорожью:</span> &nbsp;&nbsp;
+    <input name="star2" type="radio" class="star"/> 
+<input name="star2" type="radio" class="star"/> 
+<input name="star2" type="radio" class="star"/> 
+<input name="star2" type="radio" class="star"/>
+<input name="star2" type="radio" class="star"/>
+    </p>
+    <p><span>В горку:</span> &nbsp;&nbsp;
+    <input name="star3" type="radio" class="star"/> 
+<input name="star3" type="radio" class="star"/> 
+<input name="star3" type="radio" class="star"/> 
+<input name="star3" type="radio" class="star"/>
+<input name="star3" type="radio" class="star"/>
+    </p>
+<a href="#"><img src="images/like.png" alt="" /></a>
+<a href="#"><img src="images/bigznaniya.png" alt="" /></a>
+</div>
+</div>
+
+<div class="clear"></div>
+<div id="botbanners"> 
+<a href="#"><img src="images/tehnology.jpg" alt="" style="margin-right: 10px;" /></a>
+<a href="#"><img src="images/catalog.jpg" alt="" style="margin-right: 10px;" /></a>
+<a href="#"><img src="images/gde.jpg" alt="" /></a>
+<div class="clear"></div>
+</div>
+
+</div>
+</div>
+<div id="footer">
+
+<div class="footertext">
+© 2011. “Stern” ltd. Все права защищены
+</div>
+<div id="footericons">
+<a href="#"><img src="images/icon-f.png" alt="" /></a>
+<a href="#"><img src="images/icon-t.png" alt="" /></a>
+<a href="#"><img src="images/icon-b.png" alt="" /></a>
+
+</div>
+<img src="images/logo-footer.png" class="logo-footer" alt="" />
+<div class="clear"></div>
+
+</div>
+</div>
+</body>
+</html>

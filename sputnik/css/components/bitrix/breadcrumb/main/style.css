@@ -1,0 +1,31 @@
+ul.breadcrumb-navigation
+{
+	padding:0; margin:0;
+	padding-top:4px;
+	list-style:none;
+	margin-bottom: 20px;
+}
+
+ul.breadcrumb-navigation li
+{
+	display:inline;
+	font-size: 10px;
+	color: #818285;
+}
+
+ul.breadcrumb-navigation a
+{
+	font-size: 10px;
+	color: #818285;
+	text-decoration: none;
+}
+
+ul.breadcrumb-navigation a:hover
+{
+	text-decoration: underline;
+}
+
+ul.breadcrumb-navigation span
+{
+	
+}

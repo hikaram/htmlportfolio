@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/redmond/jquery-ui-1.10.3.custom.css">
+		<script src="js/html5.js"></script>
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script>
+            $(document).ready(function(){
+
+					$("#progressbar").progressbar({
+						value: 80
+					});
+
+ 				});
+		</script>
+    </head>
+    <body>
+		<header>
+		<div class="head">
+      	<a href="#"><img alt="" src="images/logo.png"/></a>
+		</div>
+		</header>
+		  <section class="download">
+		    <div class="head">
+		   <img alt="" class="picbig" src="images/picbig.png"/>
+			<h3 class="center">Идёт проверка и сборка
+			пакета обновлений 
+			для вашего компьютера!</h3>
+			<div id="progressbar"></div>
+           </div>
+		  </section>
+		   <footer></footer>
+    </body>
+</html>
